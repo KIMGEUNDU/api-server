@@ -69,7 +69,7 @@ async function registUser() {
   var data = [
     {
       _id: await nextSeq('user'),
-      email: 'admin',
+      email: 'admin@market.com',
       password: '$2b$10$S.8GNMDyvUF0xzujPtHBu.j5gtS19.OhRmYbpJBnCHg2S83WLx1T2',
       name: '무지',
       phone: '01011112222',
@@ -95,7 +95,7 @@ async function registUser() {
     },
     {
       _id: await nextSeq('user'),
-      email: 'ss11',
+      email: 's1@market.com',
       password: '$2b$10$S.8GNMDyvUF0xzujPtHBu.j5gtS19.OhRmYbpJBnCHg2S83WLx1T2',
       name: '네오',
       phone: '01022223333',
@@ -121,7 +121,7 @@ async function registUser() {
     },
     {
       _id: await nextSeq('user'),
-      email: 'ss22',
+      email: 's2@market.com',
       password: '$2b$10$S.8GNMDyvUF0xzujPtHBu.j5gtS19.OhRmYbpJBnCHg2S83WLx1T2',
       name: '어피치',
       phone: '01033334444',
@@ -147,7 +147,7 @@ async function registUser() {
     },
     {
       _id: await nextSeq('user'),
-      email: 'uu11',
+      email: 'u1@market.com',
       password: '$2b$10$S.8GNMDyvUF0xzujPtHBu.j5gtS19.OhRmYbpJBnCHg2S83WLx1T2',
       name: '제이지',
       phone: '01044445555',
