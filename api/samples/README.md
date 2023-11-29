@@ -69,6 +69,18 @@
 </optgroup>
 ```
 
+```gum
+    'https://ggaggamukja.com/product/%EB%8B%AD%EA%B0%80%EC%8A%B4%EC%82%B4-%EC%9C%A1%ED%8F%AC/34/category/66/display/1/',
+    'https://ggaggamukja.com/product/%EC%98%A4%EB%A6%AC%EC%95%88%EC%8B%AC-%EC%9C%A1%ED%8F%AC/36/category/66/display/1/',
+    'https://ggaggamukja.com/product/%EC%86%8C%EA%B3%A0%EA%B8%B0-%ED%81%90%EB%B8%8C/40/category/66/display/1/',
+    'https://ggaggamukja.com/product/%EB%AC%B4%EC%97%BC-%ED%99%A9%ED%83%9C%ED%8F%AC/77/category/66/display/1/',
+    'https://ggaggamukja.com/product/%EB%8F%BC%EC%A7%80%EC%95%88%EC%8B%AC-%EC%9C%A1%ED%8F%AC/123/category/66/display/1/',
+    'https://ggaggamukja.com/product/%EC%97%B0%EC%96%B4-%ED%81%90%EB%B8%8C/38/category/66/display/1/',
+    'https://ggaggamukja.com/product/%EC%97%B4%EB%B9%99%EC%96%B4-%EC%9C%A1%ED%8F%AC/90/category/66/display/1/',
+    'https://ggaggamukja.com/product/%EC%A0%9C%EC%A3%BC-%EB%A7%90%EA%B3%A0%EA%B8%B0-%ED%81%90%EB%B8%8C/78/category/66/display/1/',
+    'https://ggaggamukja.com/product/%ED%95%9C%EC%9A%B0-%EC%86%8C%EA%B0%84-%EC%9C%A1%ED%8F%AC/44/category/66/display/1/',
+```
+
 ```bone
 [
 'https://ggaggamukja.com/product/%ED%95%9C%EC%9A%B0-%EC%9A%B0%EC%A1%B1-%EC%B2%9C%EC%97%B0%EA%BB%8C/52/category/67/display/1/',
