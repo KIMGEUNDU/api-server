@@ -415,7 +415,10 @@ async function registProduct() {
       show: true,
       active: true,
       name: '콤비네이션 타르트',
-      options: [{ 사이즈: 'P00000CP000B' }, { 사이즈: 'P00000CP000C' }],
+      options: [
+        { 사이즈: '기본 9.5cm' },
+        { 사이즈: '케이크 대용 12cm (+5,000원)' },
+      ],
       mainImages: [
         '//ggaggamukja.com/web/product/big/202012/8e6738607993c7cbe4b3b724072677e0.jpg',
         '//ggaggamukja.com/web/product/extra/big/202012/ce2f2ad2acbcb9b993d03113ebf09933.jpg',
@@ -591,9 +594,9 @@ async function registProduct() {
       active: true,
       name: '코코넛 치즈볼',
       options: [
-        { 용량: 'P00000GL000B' },
-        { 용량: 'P00000GL000C' },
-        { 용량: 'P00000GL000D' },
+        { 용량: '단품' },
+        { 용량: '5팩(5% 할인) (+15,000원)' },
+        { 용량: '10팩(10% 할인) (+32,000원)' },
       ],
       mainImages: [
         '//ggaggamukja.com/web/product/big/202207/18a2e36960287be027bdc83940350d50.jpg',
@@ -1129,9 +1132,9 @@ async function registProduct() {
       active: true,
       name: '까까묵자 X 스너플 도그비어 캠핑 세트',
       options: [
-        { '세트 선택': 'P00000HE000B' },
-        { '세트 선택': 'P00000HE000C' },
-        { '세트 선택': 'P00000HE000D' },
+        { '세트 선택': '피자+치킨+도그비어' },
+        { '세트 선택': '피자+도그비어 (-12,000원)' },
+        { '세트 선택': '치킨+도그비어 (-14,000원)' },
       ],
       mainImages: [
         '//ggaggamukja.com/web/product/big/202308/d85b8fbf57e1ba9093adc4bc0932f09a.jpg',
@@ -1242,9 +1245,9 @@ async function registProduct() {
       active: true,
       name: '까까묵자 X 스너플 콜라보 세트',
       options: [
-        { '세트 선택': 'P00000HF000A' },
-        { '세트 선택': 'P00000HF000B' },
-        { '세트 선택': 'P00000HF000C' },
+        { '세트 선택': '조각피자+조각치킨+도그비어 캔' },
+        { '세트 선택': '조각피자+도그비어 캔 (-3,500원)' },
+        { '세트 선택': '조각치킨+도그비어 캔 (-4,000원)' },
       ],
       mainImages: [
         '//ggaggamukja.com/web/product/big/202309/5ba45f0712c3d4ca1c9125ff445ea801.jpg',
@@ -1401,9 +1404,9 @@ async function registProduct() {
       active: true,
       name: '닭가슴살 테린',
       options: [
-        { '용량 선택': 'P00000DE000B' },
-        { '용량 선택': 'P00000DE000C' },
-        { '용량 선택': 'P00000DE000D' },
+        { '용량 선택': '기본 단품' },
+        { '용량 선택': '5팩(5% 할인) (+14,000원)' },
+        { '용량 선택': '10팩(10% 할인) (+28,000원)' },
       ],
       mainImages: [
         '//ggaggamukja.com/web/product/big/202102/54f9c3a6dbfb72fb4a14df9ffbedf540.jpg',
@@ -1448,9 +1451,9 @@ async function registProduct() {
       active: true,
       name: '한우 미트볼',
       options: [
-        { '용량 선택': 'P00000DG000B' },
-        { '용량 선택': 'P00000DG000C' },
-        { '용량 선택': 'P00000DG000D' },
+        { '용량 선택': '기본 단품' },
+        { '용량 선택': '5팩(5% 할인) (+18,750원)' },
+        { '용량 선택': '10팩(10% 할인) (+40,000원)' },
       ],
       mainImages: [
         '//ggaggamukja.com/web/product/big/202110/f8999fa26ba0b517725642c613f93323.jpg',
@@ -1495,9 +1498,9 @@ async function registProduct() {
       active: true,
       name: '오리안심 테린',
       options: [
-        { '용량 선택': 'P00000DF000B' },
-        { '용량 선택': 'P00000DF000C' },
-        { '용량 선택': 'P00000DF000D' },
+        { '용량 선택': '기본 단품' },
+        { '용량 선택': '5팩(5% 할인) (+14,050원)' },
+        { '용량 선택': '10팩(10% 할인) (+32,000원)' },
       ],
       mainImages: [
         '//ggaggamukja.com/web/product/big/202102/efd3f06cf95a6693c80118bd08e3575f.jpg',
@@ -1822,9 +1825,9 @@ async function registProduct() {
       active: true,
       name: '닭가슴살 육포',
       options: [
-        { '용량 선택': 'P00000BI000B' },
-        { '용량 선택': 'P00000BI000C' },
-        { '용량 선택': 'P00000BI000D' },
+        { '용량 선택': '기본 단품' },
+        { '용량 선택': '5팩(5% 할인) (+18,380원)' },
+        { '용량 선택': '10팩(10% 할인) (+39,200원)' },
       ],
       mainImages: [
         '//ggaggamukja.com/web/product/big/202207/82e27378db65ce514d3c7eda9f45a4a4.jpg',
@@ -1871,9 +1874,9 @@ async function registProduct() {
       active: true,
       name: '오리안심 육포',
       options: [
-        { '용량 선택': 'P00000BK000B' },
-        { '용량 선택': 'P00000BK000C' },
-        { '용량 선택': 'P00000BK000D' },
+        { '용량 선택': '기본 단품' },
+        { '용량 선택': '5팩(5% 할인) (+24,380원)' },
+        { '용량 선택': '10팩(10% 할인) (+52,000원)' },
       ],
       mainImages: [
         '//ggaggamukja.com/web/product/big/202207/eab5c40f540af2fad5f855a9d2d1137c.jpg',
@@ -1922,9 +1925,9 @@ async function registProduct() {
       active: true,
       name: '소고기 큐브',
       options: [
-        { '용량 선택': 'P00000BO000B' },
-        { '용량 선택': 'P00000BO000C' },
-        { '용량 선택': 'P00000BO000D' },
+        { '용량 선택': '기본 단품' },
+        { '용량 선택': '5팩(5% 할인) (+25,880원)' },
+        { '용량 선택': '10팩(10% 할인) (+55,200원)' },
       ],
       mainImages: [
         '//ggaggamukja.com/web/product/big/202207/bccd7356518124a50abe56586768e099.jpg',
@@ -1971,9 +1974,9 @@ async function registProduct() {
       active: true,
       name: '무염 황태포',
       options: [
-        { '용량 선택': 'P00000CZ000B' },
-        { '용량 선택': 'P00000CZ000C' },
-        { '용량 선택': 'P00000CZ000D' },
+        { '용량 선택': '기본 단품' },
+        { '용량 선택': '5팩(5% 할인) (+27,600원)' },
+        { '용량 선택': '10팩(10% 할인) (+55,200원)' },
       ],
       mainImages: [
         '//ggaggamukja.com/web/product/big/202111/ce6c17bb7c93e1542fa2d68d314af500.jpg',
@@ -2020,9 +2023,9 @@ async function registProduct() {
       active: true,
       name: '돼지안심 육포',
       options: [
-        { '용량 선택': 'P00000ET000B' },
-        { '용량 선택': 'P00000ET000C' },
-        { '용량 선택': 'P00000ET000D' },
+        { '용량 선택': '기본 단품' },
+        { '용량 선택': '5팩(5% 할인) (+22,130원)' },
+        { '용량 선택': '10팩(10% 할인) (+47,200원)' },
       ],
       mainImages: [
         '//ggaggamukja.com/web/product/big/202207/84c73d5433269022af69fe53ba3c221c.jpg',
@@ -2069,9 +2072,9 @@ async function registProduct() {
       active: true,
       name: '연어 큐브',
       options: [
-        { '용량 선택': 'P00000BM000B' },
-        { '용량 선택': 'P00000BM000C' },
-        { '용량 선택': 'P00000BM000D' },
+        { '용량 선택': '기본 단품' },
+        { '용량 선택': '5팩(5% 할인) (+29,250원)' },
+        { '용량 선택': '10팩(10% 할인) (+62,400원)' },
       ],
       mainImages: [
         '//ggaggamukja.com/web/product/big/202207/f71a10b75623d1820ae6865a14b31156.jpg',
@@ -2118,9 +2121,9 @@ async function registProduct() {
       active: true,
       name: '열빙어 육포',
       options: [
-        { '용량 선택': 'P00000DM000B' },
-        { '용량 선택': 'P00000DM000C' },
-        { '용량 선택': 'P00000DM000D' },
+        { '용량 선택': '기본 단품' },
+        { '용량 선택': '5팩(5% 할인) (+28,130원)' },
+        { '용량 선택': '10팩(10% 할인) (+60,000원)' },
       ],
       mainImages: [
         '//ggaggamukja.com/web/product/big/202207/a5be444af0f495e820e1f88ae9b5819f.jpg',
@@ -2169,9 +2172,9 @@ async function registProduct() {
       active: true,
       name: '제주 말고기 큐브',
       options: [
-        { '용량 선택': 'P00000DA000B' },
-        { '용량 선택': 'P00000DA000C' },
-        { '용량 선택': 'P00000DA000D' },
+        { '용량 선택': '기본 단품' },
+        { '용량 선택': '5팩(5% 할인) (+25,880원)' },
+        { '용량 선택': '10팩(10% 할인) (+55,200원)' },
       ],
       mainImages: [
         '//ggaggamukja.com/web/product/big/202207/fb911580fb36b82574e3c7d6af159c4b.jpg',
@@ -2218,9 +2221,9 @@ async function registProduct() {
       active: true,
       name: '한우 소간 육포',
       options: [
-        { '용량 선택': 'P00000BS000B' },
-        { '용량 선택': 'P00000BS000C' },
-        { '용량 선택': 'P00000BS000D' },
+        { '용량 선택': '기본 단품' },
+        { '용량 선택': '5팩(5% 할인) (+16,880원)' },
+        { '용량 선택': '10팩(10% 할인) (+36,000원)' },
       ],
       mainImages: [
         '//ggaggamukja.com/web/product/big/202207/db8d9610a952e0dbf4f12db9d1ebec90.jpg',
@@ -2266,9 +2269,9 @@ async function registProduct() {
       active: true,
       name: '한우 우족 천연껌',
       options: [
-        { '용량 선택': 'P00000CA000B' },
-        { '용량 선택': 'P00000CA000C' },
-        { '용량 선택': 'P00000CA000D' },
+        { '용량 선택': '기본 단품' },
+        { '용량 선택': '5팩(5% 할인) (+22,130원)' },
+        { '용량 선택': '10팩(10% 할인) (+47,200원)' },
       ],
       mainImages: [
         '//ggaggamukja.com/web/product/big/202111/3339b97d1c243c143ca4cd41d20177d9.jpg',
@@ -2315,9 +2318,9 @@ async function registProduct() {
       active: true,
       name: '메추리 천연껌',
       options: [
-        { '용량 선택': 'P00000DB000B' },
-        { '용량 선택': 'P00000DB000C' },
-        { '용량 선택': 'P00000DB000D' },
+        { '용량 선택': '기본 단품' },
+        { '용량 선택': '5팩(5% 할인) (+15,000원)' },
+        { '용량 선택': '10팩(10% 할인) (+32,000원)' },
       ],
       mainImages: [
         '//ggaggamukja.com/web/product/big/202207/424f0152158efa65c94aa9af9f4d2be7.jpg',
@@ -2364,9 +2367,9 @@ async function registProduct() {
       active: true,
       name: '송아지목뼈 천연껌',
       options: [
-        { '용량 선택': 'P00000CX000B' },
-        { '용량 선택': 'P00000CX000C' },
-        { '용량 선택': 'P00000CX000D' },
+        { '용량 선택': '기본 단품' },
+        { '용량 선택': '5팩(5% 할인) (+29,630원)' },
+        { '용량 선택': '10팩(10% 할인) (+63,200원)' },
       ],
       mainImages: [
         '//ggaggamukja.com/web/product/big/202207/fc313662a4a1b1be059ece9c78be29a3.jpg',
@@ -2413,9 +2416,9 @@ async function registProduct() {
       active: true,
       name: '제주 말갈비 천연껌',
       options: [
-        { '용량 선택': 'P00000EW000D' },
-        { '용량 선택': 'P00000EW000E' },
-        { '용량 선택': 'P00000EW000F' },
+        { '용량 선택': '기본 단품' },
+        { '용량 선택': '5팩(5% 할인) (+35,630원)' },
+        { '용량 선택': '10팩(10% 할인) (+76,000원)' },
       ],
       mainImages: [
         '//ggaggamukja.com/web/product/big/202112/e68f7baedc07f6c4ee6a1bc96ac6d4aa.jpg',
@@ -2460,9 +2463,9 @@ async function registProduct() {
       active: true,
       name: '오리장각 천연껌',
       options: [
-        { '용량 선택': 'P00000DY000B' },
-        { '용량 선택': 'P00000DY000C' },
-        { '용량 선택': 'P00000DY000D' },
+        { '용량 선택': '기본 단품' },
+        { '용량 선택': '5팩(5% 할인) (+16,880원)' },
+        { '용량 선택': '10팩(10% 할인) (+36,000원)' },
       ],
       mainImages: [
         '//ggaggamukja.com/web/product/big/202207/4c77e71767cf7f04499cc8c2d84ba623.jpg',
@@ -2509,9 +2512,9 @@ async function registProduct() {
       active: true,
       name: '캥거루꼬리 천연껌',
       options: [
-        { '용량 선택': 'P00000DD000B' },
-        { '용량 선택': 'P00000DD000C' },
-        { '용량 선택': 'P00000DD000D' },
+        { '용량 선택': '기본 단품' },
+        { '용량 선택': '5팩(5% 할인) (+29,630원)' },
+        { '용량 선택': '10팩(10% 할인) (+63,200원)' },
       ],
       mainImages: [
         '//ggaggamukja.com/web/product/big/202111/c2f99f661c7cfa9695a9ddf345c5995c.jpg',
@@ -2558,9 +2561,9 @@ async function registProduct() {
       active: true,
       name: '오리근위 천연껌',
       options: [
-        { '용량 선택': 'P00000DN000B' },
-        { '용량 선택': 'P00000DN000C' },
-        { '용량 선택': 'P00000DN000D' },
+        { '용량 선택': '기본 단품' },
+        { '용량 선택': '5팩(5% 할인) (+22,130원)' },
+        { '용량 선택': '10팩(10% 할인) (+47,200원)' },
       ],
       mainImages: [
         '//ggaggamukja.com/web/product/big/202207/4ae384240f184e0fcc5d818d0f0e6034.jpg',
@@ -2609,9 +2612,9 @@ async function registProduct() {
       active: true,
       name: '양등뼈 천연껌',
       options: [
-        { '용량 선택': 'P00000EV000E' },
-        { '용량 선택': 'P00000EV000F' },
-        { '용량 선택': 'P00000EV000G' },
+        { '용량 선택': '기본 단품' },
+        { '용량 선택': '5팩(5% 할인) (+16,880원)' },
+        { '용량 선택': '10팩(10% 할인) (+36,000원)' },
       ],
       mainImages: [
         '//ggaggamukja.com/web/product/big/202112/f167c512114c314b94cac80161f5cdcd.jpg',
@@ -2658,9 +2661,9 @@ async function registProduct() {
       active: true,
       name: '상어연골 천연껌',
       options: [
-        { '용량 선택': 'P00000CW000B' },
-        { '용량 선택': 'P00000CW000C' },
-        { '용량 선택': 'P00000CW000D' },
+        { '용량 선택': '기본 단품' },
+        { '용량 선택': '5팩(5% 할인) (+24,380원)' },
+        { '용량 선택': '10팩(10% 할인) (+52,000원)' },
       ],
       mainImages: [
         '//ggaggamukja.com/web/product/big/202207/df69af13efaafe33be45f0ec3413230e.jpg',
@@ -2707,9 +2710,9 @@ async function registProduct() {
       active: true,
       name: '오리 오돌뼈 천연껌',
       options: [
-        { '용량 선택': 'P00000EX000B' },
-        { '용량 선택': 'P00000EX000C' },
-        { '용량 선택': 'P00000EX000D' },
+        { '용량 선택': '기본 한팩' },
+        { '용량 선택': '5팩(5% 할인) (+24,380원)' },
+        { '용량 선택': '10팩(10% 할인) (+52,000원)' },
       ],
       mainImages: [
         '//ggaggamukja.com/web/product/big/202112/fc00b86e2537ef4ed46bf9f7f34b8e81.jpg',
@@ -2758,9 +2761,9 @@ async function registProduct() {
       active: true,
       name: '한우 소발톱 천연껌',
       options: [
-        { '용량 선택': 'P00000EU000B' },
-        { '용량 선택': 'P00000EU000C' },
-        { '용량 선택': 'P00000EU000D' },
+        { '용량 선택': '기본 단품' },
+        { '용량 선택': '5팩(5% 할인) (+22,130원)' },
+        { '용량 선택': '10팩(10% 할인) (+47,200원)' },
       ],
       mainImages: [
         '//ggaggamukja.com/web/product/big/202207/a5806ed454e6d86d6a9fb805bbe1dc5c.jpg',
@@ -2925,7 +2928,7 @@ async function registProduct() {
       show: true,
       active: true,
       name: '스마일 꼬깔모자',
-      options: [{ 사이즈: 'P00000EM000B' }, { 사이즈: 'P00000EM000C' }],
+      options: [{ 사이즈: '소형견용' }, { 사이즈: '중대형견용 (+500원)' }],
       mainImages: [
         '//ggaggamukja.com/web/product/big/202110/ee8c49d2a232879b4429df85af2df2c4.png',
       ],
@@ -3096,7 +3099,10 @@ async function registProduct() {
       show: true,
       active: true,
       name: '핑크색 스트라이프 일회용 디자인 접시',
-      options: [{ 사이즈: 'P00000FM000A' }, { 사이즈: 'P00000FM000B' }],
+      options: [
+        { 사이즈: '지름 18cm 3개입' },
+        { 사이즈: '지름 23cm 3개입 (+300원)' },
+      ],
       mainImages: [
         '//ggaggamukja.com/web/product/big/202203/ef2e520505c40a8810ce14fa2b681705.jpg',
       ],
@@ -3183,6 +3189,7 @@ async function registProduct() {
       ],
       descriptImages: [
         '//ggaggamukja.com/web/upload/NNEditor/20211013/ff9c4b0d93b77b7c100b06740ddde4d9.jpg',
+        '//ggaggamukja.com/web/upload/NNEditor/20211013/e3e9da3158f476f01fa2cc6dd0f79950.jpg',
       ],
       content: `
               <div class="product-detail">
@@ -3419,8 +3426,8 @@ async function registProduct() {
       active: true,
       name: '스너플 도그비어',
       options: [
-        { '종류 선택': 'P00000HG000A' },
-        { '종류 선택': 'P00000HG000B' },
+        { '종류 선택': '병 맥주' },
+        { '종류 선택': '캔 맥주 (-1,000원)' },
       ],
       mainImages: [
         '//ggaggamukja.com/web/product/big/202309/4e4a90ff9933f1acef4b839a153e5091.png',
