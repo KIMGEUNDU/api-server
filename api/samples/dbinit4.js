@@ -736,6 +736,8 @@ async function registProduct() {
         '//ggaggamukja.com/web/product/extra/big/202307/98ab3e9dfdf61537a5672a3e53591972.jpg',
         '//ggaggamukja.com/web/product/extra/big/202303/8d611923b24901201892ea487aa26b9f.jpg',
         '//ggaggamukja.com/web/product/extra/big/202307/a6b5927060a6b5d1f38246b635e78fcb.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202307/70511074c0f07a3914c3a8003532fcc6.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202307/1cca6ce4bde1c8ff7d47cc25b828cb12.jpg',
       ],
       detailImages: [
         '//ggaggamukja.com/web/product/small/202307/d64257586ae41b2308778821c4a4d763.jpg',
