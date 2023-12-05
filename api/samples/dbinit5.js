@@ -377,52 +377,6 @@ async function registProduct() {
     {
       _id: await nextSeq('product'),
       seller_id: 2,
-      price: 5000,
-      shippingFees: 0,
-      show: true,
-      active: true,
-      name: '오리 핫도그 (대)',
-      options: [],
-      mainImages: [
-        '//ggaggamukja.com/web/product/big/202112/7adb945ee4e648b1142667e6cf58d05a.jpg',
-        '//ggaggamukja.com/web/product/extra/big/202112/bd3aafae9c6b611a8c1e72e5967278e9.jpg',
-        '//ggaggamukja.com/web/product/extra/big/202207/8f87b80453f33b87cc87720138cce8a0.jpg',
-        '//ggaggamukja.com/web/product/extra/big/202207/fb76ee1476cfb94c64f52831f55a6082.jpg',
-        '//ggaggamukja.com/web/product/extra/big/202207/987fc91eae2b10aa29762fec02da627e.jpg',
-      ],
-      detailImages: [
-        '//ggaggamukja.com/web/product/small/202112/dd7df883482a33eeb35531357064785e.jpg',
-        '//ggaggamukja.com/web/product/extra/small/202112/bd3aafae9c6b611a8c1e72e5967278e9.jpg',
-        '//ggaggamukja.com/web/product/extra/small/202207/8f87b80453f33b87cc87720138cce8a0.jpg',
-        '//ggaggamukja.com/web/product/extra/small/202207/fb76ee1476cfb94c64f52831f55a6082.jpg',
-        '//ggaggamukja.com/web/product/extra/small/202207/987fc91eae2b10aa29762fec02da627e.jpg',
-      ],
-      descriptImages: [
-        '//ggaggamukja.com/web/upload/NNEditor/20230515/6fe8ebd8a461ad9fa928aa0dc2696c9e.jpg',
-        '//ggaggamukja.com/web/upload/NNEditor/20230515/e62f0864d9d44d7c426e4526da5ae6fe.jpg',
-        '//ggaggamukja.com/web/upload/NNEditor/20230515/95eed9e876414fcb5165f9cc23c9075d.jpg',
-        '//ggaggamukja.com/web/upload/NNEditor/20230515/caca27624b35bf580096546da4535856.jpg',
-        '//ggaggamukja.com/web/upload/NNEditor/20230515/eecc3de2a9b091bbe20a83dbe363b8f5.jpg',
-      ],
-      content: `
-              <div class="product-detail">
-                  <p>오리 핫도그 (대)</p>
-              </div>`,
-      createdAt: getTime(-41, -60 * 60 * 2),
-      updatedAt: getTime(-40, -60 * 15),
-      quantity: 100,
-      buyQuantity: 0,
-      extra: {
-        isNew: true,
-        isBest: true,
-        category: ['PC-shop', 'PC-dessert'],
-        sort: 1,
-      },
-    },
-
-    {
-      _id: await nextSeq('product'),
-      seller_id: 2,
       price: 7000,
       shippingFees: 0,
       show: true,
@@ -544,47 +498,6 @@ async function registProduct() {
       content: `
               <div class="product-detail">
                   <p>멍치킨</p>
-              </div>`,
-      createdAt: getTime(-41, -60 * 60 * 2),
-      updatedAt: getTime(-40, -60 * 15),
-      quantity: 100,
-      buyQuantity: 0,
-      extra: {
-        isNew: true,
-        isBest: true,
-        category: ['PC-shop', 'PC-dessert'],
-        sort: 1,
-      },
-    },
-
-    {
-      _id: await nextSeq('product'),
-      seller_id: 2,
-      price: 7000,
-      shippingFees: 0,
-      show: true,
-      active: true,
-      name: '멍김밥',
-      options: [],
-      mainImages: [
-        '//ggaggamukja.com/web/product/big/202207/885223ea2c8094f00d04369add009393.jpg',
-        '//ggaggamukja.com/web/product/extra/big/202205/ceb3ca10cbe58a89f80308538e88db2a.jpg',
-      ],
-      detailImages: [
-        '//ggaggamukja.com/web/product/small/202207/b7d18431b28dd68d13bd6316a24cf9e2.jpg',
-        '//ggaggamukja.com/web/product/extra/small/202205/ceb3ca10cbe58a89f80308538e88db2a.jpg',
-      ],
-      descriptImages: [
-        '//ggaggamukja.com/web/upload/NNEditor/20230518/98f05710cdeb624f6c5593bf3f0f45ec.jpg',
-        '//ggaggamukja.com/web/upload/NNEditor/20230518/b9bcd13d6a2da2b31530f6bf13b35cbd.jpg',
-        '//ggaggamukja.com/web/upload/NNEditor/20230518/094696e4088ee271603d3692dc7a9b27.jpg',
-        '//ggaggamukja.com/web/upload/NNEditor/20230518/0be82999b488b6e1d44fa4f99f6e0644.jpg',
-        '//ggaggamukja.com/web/upload/NNEditor/20230518/2420adb24c1c3f5a8382951d81568dd4.jpg',
-        '//ggaggamukja.com/web/upload/NNEditor/20230518/0d6fd7d2de0fda5ce8e054ce80a23c90.jpg',
-      ],
-      content: `
-              <div class="product-detail">
-                  <p>멍김밥</p>
               </div>`,
       createdAt: getTime(-41, -60 * 60 * 2),
       updatedAt: getTime(-40, -60 * 15),
@@ -784,52 +697,6 @@ async function registProduct() {
       },
     },
 
-    {
-      _id: await nextSeq('product'),
-      seller_id: 2,
-      price: 8000,
-      shippingFees: 0,
-      show: true,
-      active: true,
-      name: '멍돈까스',
-      options: [],
-      mainImages: [
-        '//ggaggamukja.com/web/product/big/202303/9a0d91db522758c9ba7e3a764acca74e.jpg',
-        '//ggaggamukja.com/web/product/extra/big/202303/2d331c8980222af7b3faeae9efdaeab6.jpg',
-        '//ggaggamukja.com/web/product/extra/big/202110/9cd1e8d4cd0d1dbd11d22941157e38ad.jpg',
-        '//ggaggamukja.com/web/product/extra/big/202110/328cda91e825f00e46dc7bc08f65110b.jpg',
-        '//ggaggamukja.com/web/product/extra/big/202110/439efb4631f53fea75d646b65e30c8c7.jpg',
-      ],
-      detailImages: [
-        '//ggaggamukja.com/web/product/small/202303/57c5da5b02f13fdd22cf697e06e30dac.jpg',
-        '//ggaggamukja.com/web/product/extra/small/202303/2d331c8980222af7b3faeae9efdaeab6.jpg',
-        '//ggaggamukja.com/web/product/extra/small/202110/9cd1e8d4cd0d1dbd11d22941157e38ad.jpg',
-        '//ggaggamukja.com/web/product/extra/small/202110/328cda91e825f00e46dc7bc08f65110b.jpg',
-        '//ggaggamukja.com/web/product/extra/small/202110/439efb4631f53fea75d646b65e30c8c7.jpg',
-      ],
-      descriptImages: [
-        '//ggaggamukja.com/web/upload/NNEditor/20220707/0371b10f06aff2dc2765ad26505102c1.jpg',
-        '//ggaggamukja.com/web/upload/NNEditor/20220707/33f238cd33d8418ad18f793ebbd5dbfd.jpg',
-        '//ggaggamukja.com/web/upload/NNEditor/20220707/11fbad51b1a60f06aa68a9ce7a0947d6.jpg',
-        '//ggaggamukja.com/web/upload/NNEditor/20220707/d3e94fa5918b2f24818a2151e509621e.jpg',
-        '//ggaggamukja.com/web/upload/NNEditor/20220707/d1caa7d599487e36b0f944d206ac1aed.jpg',
-        '//ggaggamukja.com/web/upload/NNEditor/20220707/3b8ac6e6cb41897b708a26180dbdede3.jpg',
-      ],
-      content: `
-              <div class="product-detail">
-                  <p>멍돈까스</p>
-              </div>`,
-      createdAt: getTime(-41, -60 * 60 * 2),
-      updatedAt: getTime(-40, -60 * 15),
-      quantity: 100,
-      buyQuantity: 0,
-      extra: {
-        isNew: true,
-        isBest: true,
-        category: ['PC-shop', 'PC-dessert'],
-        sort: 1,
-      },
-    },
     {
       _id: await nextSeq('product'),
       seller_id: 2,
@@ -1672,65 +1539,6 @@ async function registProduct() {
       content: `
               <div class="product-detail">
                   <p>멍돈까스</p>
-              </div>`,
-      createdAt: getTime(-41, -60 * 60 * 2),
-      updatedAt: getTime(-40, -60 * 15),
-      quantity: 100,
-      buyQuantity: 0,
-      extra: {
-        isNew: true,
-        isBest: true,
-        category: ['PC-shop', 'PC-special'],
-        sort: 2,
-      },
-    },
-
-    {
-      _id: await nextSeq('product'),
-      seller_id: 2,
-      price: 23000,
-      shippingFees: 0,
-      show: true,
-      active: true,
-      name: '멍피자 멍치킨 피크닉 세트',
-      options: [],
-      mainImages: [
-        '//ggaggamukja.com/web/product/big/202303/10e4612462adca4ed8178f25e12e8083.jpg',
-        '//ggaggamukja.com/web/product/extra/big/202303/b83a3d8f88f030b4f28e0987c83020de.jpg',
-        '//ggaggamukja.com/web/product/extra/big/202303/121156cafdf7bc4610ac0c3b49696a3a.jpg',
-        '//ggaggamukja.com/web/product/extra/big/202303/266f98400d5d3e53e65df78951412c46.jpg',
-        '//ggaggamukja.com/web/product/extra/big/202303/ef0c1559d727feaec2f7223cd36c04f6.jpg',
-        '//ggaggamukja.com/web/product/extra/big/202303/7adfc1b453f4b700e30238f6556f4245.jpg',
-        '//ggaggamukja.com/web/product/extra/big/202303/4268fd08fee82b7e319f2eb269e01a1e.jpg',
-        '//ggaggamukja.com/web/product/extra/big/202303/411dfcf850dd267c4703461edd21e8c0.jpg',
-        '//ggaggamukja.com/web/product/extra/big/202303/28af8c9ff75fdaad88632da271232e12.jpg',
-      ],
-      detailImages: [
-        '//ggaggamukja.com/web/product/small/202303/bba1e510035257013c19be281d17f0f7.jpg',
-        '//ggaggamukja.com/web/product/extra/small/202303/b83a3d8f88f030b4f28e0987c83020de.jpg',
-        '//ggaggamukja.com/web/product/extra/small/202303/121156cafdf7bc4610ac0c3b49696a3a.jpg',
-        '//ggaggamukja.com/web/product/extra/small/202303/266f98400d5d3e53e65df78951412c46.jpg',
-        '//ggaggamukja.com/web/product/extra/small/202303/ef0c1559d727feaec2f7223cd36c04f6.jpg',
-        '//ggaggamukja.com/web/product/extra/small/202303/7adfc1b453f4b700e30238f6556f4245.jpg',
-        '//ggaggamukja.com/web/product/extra/small/202303/4268fd08fee82b7e319f2eb269e01a1e.jpg',
-        '//ggaggamukja.com/web/product/extra/small/202303/411dfcf850dd267c4703461edd21e8c0.jpg',
-        '//ggaggamukja.com/web/product/extra/small/202303/28af8c9ff75fdaad88632da271232e12.jpg',
-      ],
-      descriptImages: [
-        '//ggaggamukja.com/web/upload/NNEditor/20230313/0614fa8fa31563099cdb94289728e69f.jpg',
-        '//ggaggamukja.com/web/upload/NNEditor/20230313/02f806bc0aa8bafda701001846d511df.jpg',
-        '//ggaggamukja.com/web/upload/NNEditor/20230313/15f6639969a121a245e8cd20d09b456d.jpg',
-        '//ggaggamukja.com/web/upload/NNEditor/20230313/6d8c20d032a4fd939ba5f9ae51188496.jpg',
-        '//ggaggamukja.com/web/upload/NNEditor/20230313/cf34df9a03891c8ac3707314d09fa474.jpg',
-        '//ggaggamukja.com/web/upload/NNEditor/20230313/0d5cfe904a9161110202b508284f1a91.jpg',
-        '//ggaggamukja.com/web/upload/NNEditor/20230313/a18e8d305099a5e5afd59a54bb9c8e17.jpg',
-        '//ggaggamukja.com/web/upload/NNEditor/20230313/8b64a55f5e0b8fd2063b70bc84b81b1b.jpg',
-        '//ggaggamukja.com/web/upload/NNEditor/20230313/ec916e8b78317da9fa98c4882e6c322b.jpg',
-        '//ggaggamukja.com/web/upload/NNEditor/20230313/3b9ca86c99b8133471e75c3cb31bf8d6.jpg',
-      ],
-      content: `
-              <div class="product-detail">
-                  <p>멍피자 멍치킨 피크닉 세트</p>
               </div>`,
       createdAt: getTime(-41, -60 * 60 * 2),
       updatedAt: getTime(-40, -60 * 15),
