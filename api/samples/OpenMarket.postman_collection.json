@@ -72,8 +72,10 @@
 									"key": "attach",
 									"type": "file",
 									"src": [
-										"/D:/cloud/OneDrive-skku/03.likelion/01.frontend_plus/01.class/01/02.ts/FESP01-typescript/PPT/02.타입스크립트 - 클래스, 모듈, 제네릭.pptx",
-										"/D:/cloud/OneDrive-skku/03.likelion/01.frontend_plus/01.class/01/02.ts/FESP01-typescript/PPT/03.타입스크립트 - 타입 관련 문법.pptx"
+										"/D:/cloud/OneDrive-skku/03.likelion/01.frontend_plus/01.class/01/04.Project/FESP01-API/api/samples/dbinit.js",
+										"/D:/cloud/OneDrive-skku/03.likelion/01.frontend_plus/01.class/01/04.Project/FESP01-API/api/samples/dbinit_3.js",
+										"/D:/cloud/OneDrive-skku/03.likelion/01.frontend_plus/01.class/01/04.Project/FESP01-API/api/samples/dbinit_4.js",
+										"/D:/cloud/OneDrive-skku/03.likelion/01.frontend_plus/01.class/01/04.Project/FESP01-API/api/samples/dbinit_6.js"
 									]
 								}
 							]
@@ -819,6 +821,42 @@
 							"response": []
 						},
 						{
+							"name": "장바구니 상품 구매",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"type\": \"cart\",\r\n    \"products\": [\r\n        {\r\n            \"_id\": 1,\r\n            \"quantity\": 2\r\n        },\r\n        {\r\n            \"_id\": 2,\r\n            \"quantity\": 1\r\n        }\r\n    ],\r\n    \"address\": {\r\n        \"name\": \"학교\",\r\n        \"value\": \"서울시 강남구 역삼동 234\"\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/orders",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"orders"
+									]
+								}
+							},
+							"response": []
+						},
+						{
 							"name": "장바구니 상품 전체 교체",
 							"request": {
 								"auth": {
@@ -892,7 +930,7 @@
 							"response": []
 						},
 						{
-							"name": "장바구니 상품 삭제",
+							"name": "장바구니 상품 삭제(한건)",
 							"request": {
 								"auth": {
 									"type": "bearer",
@@ -907,13 +945,49 @@
 								"method": "DELETE",
 								"header": [],
 								"url": {
-									"raw": "{{url}}/carts/9",
+									"raw": "{{url}}/carts/5",
 									"host": [
 										"{{url}}"
 									],
 									"path": [
 										"carts",
-										"9"
+										"5"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "장바구니 상품 삭제(여러건)",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"carts\": [1, 2]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/carts",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"carts"
 									]
 								}
 							},
@@ -1141,6 +1215,61 @@
 							"response": []
 						},
 						{
+							"name": "후기 상세 조회",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/replies",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"replies"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "모든 후기 목록 조회",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/replies/all",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"replies",
+										"all"
+									]
+								}
+							},
+							"response": []
+						},
+						{
 							"name": "판매자 후기 목록 조회",
 							"request": {
 								"method": "GET",
@@ -1154,6 +1283,25 @@
 										"replies",
 										"seller",
 										"3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "상품 후기 목록 조회",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/replies/products/4",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"replies",
+										"products",
+										"4"
 									]
 								}
 							},
@@ -1186,7 +1334,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"price\": -100,\r\n    \"shippingFees\": 3000,\r\n    \"show\": true,\r\n    \"active\": true,\r\n    \"name\": \"ZOZOFO 테이블 게임 축구 보드 사커 게임기 보드게임 2인경기 완구 가족모임 미니 월드컵 스포츠 어린이 크리스마스 선물 생일 선물\",\r\n    \"mainImages\": [\"/uploads/sample-janngu.jpg\"],\r\n    \"content\": \"<div class=\\\"product-detail\\\"><p>ZOZOFO 테이블 게임 축구 보드 사커 게임기 보드게임 2인경기 완구 가족모임 미니 월드컵 스포츠 어린이 크리스마스 선물 생일 선물 상세 설명</p></div>\",\r\n\t\"createdAt\": \"2023.10.12 12:34:56\",\r\n    \"updatedAt\": \"2023.10.12 12:34:56\",\r\n    \"extra\": {\r\n        \"isNew\": true,\r\n        \"isBest\": true,\r\n        \"category\": [\"PC02\", \"PC0201\"],\r\n        \"quantity\": 600,\r\n        \"buyQuantity\": 190,\r\n        \"sort\": 7\r\n    }\r\n}",
+									"raw": "{\r\n    \"price\": 1000,\r\n    \"shippingFees\": 3000,\r\n    \"quantity\": 600,\r\n    \"buyQuantity\": 190,\r\n    \"show\": true,\r\n    \"active\": true,\r\n    \"name\": \"ZOZOFO 테이블 게임 축구 보드 사커 게임기 보드게임 2인경기 완구 가족모임 미니 월드컵 스포츠 어린이 크리스마스 선물 생일 선물\",\r\n    \"mainImages\": [\"/uploads/sample-janngu.jpg\"],\r\n    \"content\": \"<div class=\\\"product-detail\\\"><p>ZOZOFO 테이블 게임 축구 보드 사커 게임기 보드게임 2인경기 완구 가족모임 미니 월드컵 스포츠 어린이 크리스마스 선물 생일 선물 상세 설명</p></div>\",\r\n\t\"createdAt\": \"2023.10.12 12:34:56\",\r\n    \"updatedAt\": \"2023.10.12 12:34:56\",\r\n    \"extra\": {\r\n        \"isNew\": true,\r\n        \"isBest\": true,\r\n        \"category\": [\"PC02\", \"PC0201\"],\r\n        \"sort\": 7\r\n    }\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
