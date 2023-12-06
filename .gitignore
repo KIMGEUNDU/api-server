@@ -7,6 +7,9 @@ client-app-nextjs
 # docs
 docs
 
+# sample
+api/samples/dbinit_*
+
 # vscode settings
 .vscode
 

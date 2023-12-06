@@ -1,7 +1,7 @@
 import _ from 'lodash';
 import moment from 'moment';
 import logger from '#utils/logger.js';
-import db, { nextSeq, getClient } from '#utils/dbutil.js';
+import db, { nextSeq, getClient } from '#utils/dbUtil.js';
 import orderModel from '#models/user/order.model.js';
 
 const reply = {
@@ -55,6 +55,7 @@ const reply = {
           rating: 1,
           content: 1,
           createdAt: 1,
+          extra: 1,
           'product._id': '$product._id',
           'product.image': { $arrayElemAt: ['$product.mainImages', 0] },
           'product.name': '$product.name',
@@ -122,6 +123,7 @@ const reply = {
           name: 1,
           'image': { $arrayElemAt: ['$mainImages', 0] },
           'reply._id': '$reply._id',
+          'reply.extra': '$reply.extra',
           'reply.user_name': {
             $concat: [
               { $substrCP: ['$user.name', 0, 1 ] }, // 첫 번째 문자 추출
