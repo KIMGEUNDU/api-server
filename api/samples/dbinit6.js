@@ -3551,9 +3551,10 @@ async function registReply() {
     },
     {
       _id: await nextSeq('reply'),
-      user_id: 43,
+      user_id: 4,
       product_id: 24,
       content: '배송 언제쯤 시작되나요',
+      rating: 1,
       createdAt: getTime(-2, -60 * 60 * 10),
       extra: {
         type: 'qna',
@@ -3562,9 +3563,10 @@ async function registReply() {
     },
     {
       _id: await nextSeq('reply'),
-      user_id: 49,
+      user_id: 2,
       product_id: 56,
       content: '제곧내',
+      rating: 1,
       createdAt: getTime(-2, -60 * 60 * 10),
       extra: {
         type: 'qna',
@@ -3573,12 +3575,14 @@ async function registReply() {
     },
     {
       _id: await nextSeq('reply'),
-      user_id: 2,
-      content: '댓글올라가는것인가',
+      user_id: 1,
+      product_id: 1,
+      content: '카카오톡으로 답변드렸습니다. 불편을 드려 죄송합니다.',
+      rating: 1,
       createdAt: getTime(-3, -60 * 60 * 1),
       extra: {
         type: 'reviewComment',
-        boardId: 2,
+        boardId: 5,
       },
     },
   ];
