@@ -3340,13 +3340,14 @@ async function registOrder() {
       user_id: 4,
       products: [
         {
-          _id: 2,
+          _id: 57,
           seller_id: 2,
           state: 'OS010',
-          name: '헬로카봇 스톰다이버',
-          image: `${process.env.API_PROTOCOL}://${process.env.API_HOST}:${process.env.API_PORT}/uploads/sample-diver.jpg`,
+          name: '꽃가루 풍선 2개',
+          image:
+            '//ggaggamukja.com/web/product/big/202110/c31318a8a513343a1089acce6ddd9b50.png',
           quantity: 2,
-          price: 34520,
+          price: 2400,
           reply_id: 3,
         },
       ],
@@ -3371,22 +3372,24 @@ async function registOrder() {
       user_id: 4,
       products: [
         {
-          _id: 3,
+          _id: 6,
           seller_id: 2,
           state: 'OS010',
-          name: '레고 클래식 라지 조립 박스 10698',
-          image: `${process.env.API_PROTOCOL}://${process.env.API_HOST}:${process.env.API_PORT}/uploads/sample-classic.jpg`,
+          name: '단호박 머핀 2P',
+          image:
+            '//ggaggamukja.com/web/product/big/202102/53b029a9a7e0f51578fa17f02a39f233.jpg',
           quantity: 1,
-          price: 48870,
+          price: 4000,
         },
         {
-          _id: 4,
+          _id: 7,
           seller_id: 3,
           state: 'OS010',
-          name: '레고 테크닉 42151 부가티 볼리드',
-          image: `${process.env.API_PROTOCOL}://${process.env.API_HOST}:${process.env.API_PORT}/uploads/sample-bugatti.png`,
+          name: '멍치킨',
+          image:
+            '//ggaggamukja.com/web/product/big/202207/faa22208906b96be2b548f02ada28ed3.jpg',
           quantity: 2,
-          price: 90000,
+          price: 24000,
           reply_id: 2,
         },
       ],
@@ -3411,13 +3414,14 @@ async function registOrder() {
       user_id: 4,
       products: [
         {
-          _id: 4,
+          _id: 45,
           seller_id: 3,
           state: 'OS310',
-          name: '레고 테크닉 42151 부가티 볼리드',
-          image: `${process.env.API_PROTOCOL}://${process.env.API_HOST}:${process.env.API_PORT}/uploads/sample-bugatti.png`,
+          name: '캥거루꼬리 천연껌',
+          image:
+            '//ggaggamukja.com/web/product/big/202111/c2f99f661c7cfa9695a9ddf345c5995c.jpg',
           quantity: 1,
-          price: 45000,
+          price: 7900,
           reply_id: 1,
         },
       ],
@@ -3442,13 +3446,14 @@ async function registOrder() {
       user_id: 2,
       products: [
         {
-          _id: 2,
+          _id: 53,
           seller_id: 2,
           state: 'OS310',
-          name: '헬로카봇 스톰다이버',
-          image: `${process.env.API_PROTOCOL}://${process.env.API_HOST}:${process.env.API_PORT}/uploads/sample-diver.jpg`,
+          name: '강아지 전용 멍소주 330ml',
+          image:
+            '//ggaggamukja.com/web/product/big/202110/dcfec4998d7808b1b58dcc4f94ad8b1c.png',
           quantity: 1,
-          price: 17260,
+          price: 7000,
           reply_id: 2,
           delivery: {
             company: '한진 택배',
@@ -3483,33 +3488,102 @@ async function registReply() {
   var data = [
     {
       _id: await nextSeq('reply'),
-      user_id: 4,
-      order_id: 1,
-      product_id: 2,
-      rating: 5,
-      content: '아이가 좋아해요.',
+      user_id: 1,
+      product_id: 1,
+      content: '',
       createdAt: getTime(-4, -60 * 60 * 12),
+      extra: {
+        type: 'notice',
+        title: '카카오톡 채널 친구추가 EVENT',
+        attachFile:
+          'https://github.com/likelion-plus/counting-stars-13/assets/126174401/1b3a17c4-f26b-485c-9211-b91f4025a4f5',
+        tag: '공지',
+      },
+    },
+    {
+      _id: await nextSeq('reply'),
+      user_id: 1,
+      product_id: 1,
+      content:
+        '<center><h3>⭐ 별해달 ⭐</h3>&nbsp;<h4>쇼핑지원금 5,000원 시크릿 쿠폰!</h4>&nbsp;<p>선착순 3000건의 온라인 배송건(모든 배송건 아이스박스 1개당 쿠폰하나)에 5,000원의 시크릿 쿠폰 동봉하여 보내드립니다.</p > </p>쿠폰 많이많이 활용해주세요 ❤️🩷❤️🩷</p > </center>',
+      createdAt: getTime(-4, -60 * 60 * 12),
+      extra: {
+        type: 'notice',
+        title: '별해달 5,000원 쇼핑 쿠폰 받기',
+        tag: '공지',
+      },
+    },
+    {
+      _id: await nextSeq('reply'),
+      user_id: 4,
+      product_id: 33,
+      rating: 5,
+      content: '너무 맛있게 잘먹어서 사준 보람이 있어요',
+      createdAt: getTime(-4, -60 * 60 * 12),
+      extra: {
+        type: 'review',
+        title: '아이가 좋아해요.',
+      },
     },
     {
       _id: await nextSeq('reply'),
       user_id: 2,
-      order_id: 4,
-      product_id: 2,
+      product_id: 11,
       rating: 4,
-      content: '배송이 좀 느려요.',
+      content: '배송이 느린거 제외하고는 애기가 좋아해서 괜찮았어요',
       createdAt: getTime(-3, -60 * 60 * 1),
+      extra: {
+        type: 'review',
+        title: '배송이 좀 느려요.',
+      },
     },
     {
       _id: await nextSeq('reply'),
       user_id: 4,
-      order_id: 2,
-      product_id: 3,
+      product_id: 65,
       rating: 1,
-      content: '하루만에 고장났어요.',
-      extra: {
-        title: '추천하지 않습니다.',
-      },
+      content: '문의드렸는데 아직도 답변이 없네요',
       createdAt: getTime(-2, -60 * 60 * 10),
+      extra: {
+        type: 'review',
+        title: '하루만에 고장났어요.',
+      },
+    },
+    {
+      _id: await nextSeq('reply'),
+      user_id: 4,
+      product_id: 24,
+      content: '배송 언제쯤 시작되나요',
+      rating: 1,
+      createdAt: getTime(-2, -60 * 60 * 10),
+      extra: {
+        type: 'qna',
+        title: '배송문의',
+      },
+    },
+    {
+      _id: await nextSeq('reply'),
+      user_id: 2,
+      product_id: 56,
+      content: '제곧내',
+      rating: 1,
+      createdAt: getTime(-2, -60 * 60 * 10),
+      extra: {
+        type: 'qna',
+        title: '재입고 언제되나요',
+      },
+    },
+    {
+      _id: await nextSeq('reply'),
+      user_id: 1,
+      product_id: 1,
+      content: '카카오톡으로 답변드렸습니다. 불편을 드려 죄송합니다.',
+      rating: 1,
+      createdAt: getTime(-3, -60 * 60 * 1),
+      extra: {
+        type: 'reviewComment',
+        boardId: 5,
+      },
     },
   ];
 
