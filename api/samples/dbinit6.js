@@ -25,41 +25,41 @@ main()
   .finally(() => getClient().close());
 
 async function initDB() {
-  // 시퀀스 등록
-  await registSeq();
-  console.info('1. 시퀀스 등록 완료.');
-
   // 회원 등록
   await registUser();
-  console.info('2. 회원 등록 완료.');
+  console.info('1. 회원 등록 완료.');
 
   // 상품 등록
   await registProduct();
-  console.info('3. 상품 등록 완료.');
+  console.info('2. 상품 등록 완료.');
 
   // 장바구니 등록
   await registCart();
-  console.info('4. 장바구니 등록 완료.');
+  console.info('3. 장바구니 등록 완료.');
 
   // 구매 등록
   await registOrder();
-  console.info('5. 구매 등록 완료.');
+  console.info('4. 구매 등록 완료.');
 
   // 후기 등록
   await registReply();
-  console.info('6. 후기 등록 완료.');
+  console.info('5. 후기 등록 완료.');
 
   // 코드 등록
   await registCode();
-  console.info('7. 코드 등록 완료.');
+  console.info('6. 코드 등록 완료.');
 
   // 북마크 등록
   await registBookmark();
-  console.info('8. 북마크 등록 완료.');
+  console.info('7. 북마크 등록 완료.');
 
   // config
   await registConfig();
-  console.info('9. config 등록 완료.');
+  console.info('8. config 등록 완료.');
+
+  // 게시물 등록
+  await registPost();
+  console.info('9. 게시물 등록 완료.');
 
   // 상품 조회
   await productList();
@@ -73,13 +73,6 @@ function getTime(day = 0, second = 0) {
     .add(day, 'days')
     .add(second, 'seconds')
     .format('YYYY.MM.DD HH:mm:ss');
-}
-
-// 시퀀스 등록
-async function registSeq() {
-  const seqList = ['user', 'product', 'cart', 'order', 'reply', 'bookmark'];
-  const data = seqList.map((_id) => ({ _id, no: 1 }));
-  await db.seq.insertMany(data);
 }
 
 // 회원 등록
@@ -119,7 +112,7 @@ async function registUser() {
       name: '네오',
       phone: '01022223333',
       address: '서울시 강남구 삼성동 456',
-      type: 'user',
+      type: 'seller',
       createdAt: getTime(-50),
       updatedAt: getTime(-30, -60 * 60 * 3),
       extra: {
@@ -143,10 +136,10 @@ async function registUser() {
       _id: await nextSeq('user'),
       email: 's2@market.com',
       password: '$2b$10$S.8GNMDyvUF0xzujPtHBu.j5gtS19.OhRmYbpJBnCHg2S83WLx1T2',
-      name: '윤동주',
+      name: '어피치',
       phone: '01033334444',
       address: '서울시 강남구 도곡동 789',
-      type: 'user',
+      type: 'seller',
       createdAt: getTime(-40, -60 * 30),
       updatedAt: getTime(-30, -60 * 20),
       extra: {
@@ -2754,7 +2747,7 @@ async function registProduct() {
       shippingFees: 0,
       show: true,
       active: true,
-      name: '숫자 초 (색상랜덤)',
+      name: '숫자 초 (색상 랜덤)',
       options: ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
       mainImages: [
         '//ggaggamukja.com/web/product/big/202110/e0bd41c91b4a6bae9406bbe92bc6bb71.png',
@@ -4056,6 +4049,88 @@ async function registConfig() {
     },
   ];
   await db.config.insertMany(data);
+}
+
+// 게시물 등록
+async function registPost() {
+  var data = [
+    {
+      _id: await nextSeq('post'),
+      type: 'qna',
+      product_id: 1,
+      seller_id: 2,
+      user_id: 4,
+      title: '크기가 얼만만한가요?',
+      content: '아이가 6살인데 가지고 놀기 적당한 크기인가요?',
+      replies: [
+        {
+          _id: 1,
+          user_id: 2,
+          content: '크기는 상품 상세 정보에 나와 있습니다.',
+          createdAt: getTime(-2, -60 * 60 * 20),
+          updatedAt: getTime(-2, -60 * 60 * 2),
+        },
+        {
+          _id: 2,
+          user_id: 4,
+          content: '어디있나 모르겠어요.',
+          createdAt: getTime(-2, -60 * 60 * 10),
+          updatedAt: getTime(-2, -60 * 60 * 1),
+        },
+        {
+          _id: 3,
+          user_id: 2,
+          content: '높이 60cm 입니다.',
+          createdAt: getTime(-2, -60 * 60 * 9),
+          updatedAt: getTime(-1, -60 * 60 * 20),
+        },
+      ],
+      createdAt: getTime(-3, -60 * 60 * 2),
+      updatedAt: getTime(-3, -60 * 60 * 2),
+    },
+    {
+      _id: await nextSeq('post'),
+      type: 'qna',
+      product_id: 1,
+      seller_id: 2,
+      user_id: 4,
+      title: '이번주 토요일까지 받아볼 수 있을까요?',
+      content: '토요일 생일 선물로 준비 중인데 그때까지 배송 가능할까요?',
+      createdAt: getTime(-2, -60 * 60 * 1),
+      updatedAt: getTime(-1, -60 * 60 * 20),
+    },
+    {
+      _id: await nextSeq('post'),
+      type: 'qna',
+      product_id: 4,
+      seller_id: 3,
+      user_id: 2,
+      title: '배송 빨리 보내주세요.',
+      content: '양품으로 보내주세요.',
+      createdAt: getTime(-1, -60 * 60 * 14),
+      updatedAt: getTime(-1, -60 * 60 * 2),
+    },
+    {
+      _id: await nextSeq('post'),
+      type: 'notice',
+      user_id: 1,
+      title: '배송지연 안내',
+      content: '크리스마스 물류 증가로 인해 평소보다 2~3일 지연될 예정입니다.',
+      createdAt: getTime(-4, -60 * 60 * 2),
+      updatedAt: getTime(-2, -60 * 60 * 13),
+    },
+    {
+      _id: await nextSeq('post'),
+      type: 'notice',
+      user_id: 1,
+      title: '배송비 인상 안내',
+      content:
+        '택배사 배송비 인상으로 인해 기존 3,000원에서 3,500원으로 인상됩니다.',
+      createdAt: getTime(-6, -60 * 60 * 20),
+      updatedAt: getTime(-4, -60 * 60 * 13),
+    },
+  ];
+  await db.post.insertMany(data);
 }
 
 // 모든 상품명을 출력한다.
