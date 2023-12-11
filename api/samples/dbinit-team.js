@@ -68,6 +68,7 @@ async function initDB() {
 function getDay(day = 0) {
   return moment().add(day, 'days').format('YYYY.MM.DD');
 }
+
 function getTime(day = 0, second = 0) {
   return moment()
     .add(day, 'days')
@@ -303,10 +304,8 @@ async function registProduct() {
         '//ggaggamukja.com/web/upload/NNEditor/20220706/d0c6a78dcdd7936a97a165b85c2e357c.jpg',
         '//ggaggamukja.com/web/upload/NNEditor/20220706/9f1dc859794c418c22c058ba133ff5d0.jpg',
       ],
-      content: `
-              <div class="product-detail">
-                  <p>멍도넛</p>
-              </div>`,
+      content:
+        '\n            <div class="product-detail">\n                <p>멍도넛</p>\n            </div>',
       createdAt: getTime(-41, -60 * 60 * 2),
       updatedAt: getTime(-40, -60 * 15),
       quantity: 100,
@@ -316,9 +315,9 @@ async function registProduct() {
         isBest: true,
         category: ['PC-shop', 'PC-dessert'],
         sort: 1,
+        depth: 1,
       },
     },
-
     {
       _id: await nextSeq('product'),
       seller_id: 2,
@@ -346,10 +345,8 @@ async function registProduct() {
         '//ggaggamukja.com/web/upload/NNEditor/20230305/a2ed778c7070e10070c7ccca79f4a837.jpg',
         '//ggaggamukja.com/web/upload/NNEditor/20230305/9a459cfaca8c890384303c55c02a8095.jpg',
       ],
-      content: `
-              <div class="product-detail">
-                  <p>고구마 쏙 마들렌 6P</p>
-              </div>`,
+      content:
+        '\n            <div class="product-detail">\n                <p>고구마 쏙 마들렌 6P</p>\n            </div>',
       createdAt: getTime(-41, -60 * 60 * 2),
       updatedAt: getTime(-40, -60 * 15),
       quantity: 100,
@@ -359,9 +356,9 @@ async function registProduct() {
         isBest: true,
         category: ['PC-shop', 'PC-dessert'],
         sort: 1,
+        depth: 1,
       },
     },
-
     {
       _id: await nextSeq('product'),
       seller_id: 2,
@@ -389,10 +386,8 @@ async function registProduct() {
         '//ggaggamukja.com/web/upload/NNEditor/20220706/89ac11ed85ae03147c1b5a39e0a33352.jpg',
         '//ggaggamukja.com/web/upload/NNEditor/20220706/44e97d41ddb04c868087f4b46a1dd3a2.jpg',
       ],
-      content: `
-              <div class="product-detail">
-                  <p>단호박 무스 타르트</p>
-              </div>`,
+      content:
+        '\n            <div class="product-detail">\n                <p>단호박 무스 타르트</p>\n            </div>',
       createdAt: getTime(-41, -60 * 60 * 2),
       updatedAt: getTime(-40, -60 * 15),
       quantity: 100,
@@ -402,9 +397,9 @@ async function registProduct() {
         isBest: true,
         category: ['PC-shop', 'PC-dessert'],
         sort: 1,
+        depth: 1,
       },
     },
-
     {
       _id: await nextSeq('product'),
       seller_id: 2,
@@ -432,10 +427,8 @@ async function registProduct() {
         '//ggaggamukja.com/web/upload/NNEditor/20220706/53f3ba812cf78076fa551d2389cd6c0a.jpg',
         '//ggaggamukja.com/web/upload/NNEditor/20220706/c6830d845d071d29c53686f5f86bc210.jpg',
       ],
-      content: `
-              <div class="product-detail">
-                  <p>당근 와플</p>
-              </div>`,
+      content:
+        '\n            <div class="product-detail">\n                <p>당근 와플</p>\n            </div>',
       createdAt: getTime(-41, -60 * 60 * 2),
       updatedAt: getTime(-40, -60 * 15),
       quantity: 100,
@@ -445,9 +438,9 @@ async function registProduct() {
         isBest: true,
         category: ['PC-shop', 'PC-dessert'],
         sort: 1,
+        depth: 1,
       },
     },
-
     {
       _id: await nextSeq('product'),
       seller_id: 2,
@@ -457,8 +450,12 @@ async function registProduct() {
       active: true,
       name: '콤비네이션 타르트',
       options: [
-        { 사이즈: '기본 9.5cm' },
-        { 사이즈: '케이크 대용 12cm (+5,000원)' },
+        {
+          사이즈: '기본 9.5cm',
+        },
+        {
+          사이즈: '케이크 대용 12cm (+5,000원)',
+        },
       ],
       mainImages: [
         '//ggaggamukja.com/web/product/big/202012/8e6738607993c7cbe4b3b724072677e0.jpg',
@@ -480,10 +477,8 @@ async function registProduct() {
         '//ggaggamukja.com/web/upload/NNEditor/20220625/c8ddf44d252ed464da985978f507433c.jpg',
         '//ggaggamukja.com/web/upload/NNEditor/20220625/f72ac49a5c6b2ef23a70138357826d6c.jpg',
       ],
-      content: `
-              <div class="product-detail">
-                  <p>콤비네이션 타르트</p>
-              </div>`,
+      content:
+        '\n            <div class="product-detail">\n                <p>콤비네이션 타르트</p>\n            </div>',
       createdAt: getTime(-41, -60 * 60 * 2),
       updatedAt: getTime(-40, -60 * 15),
       quantity: 100,
@@ -493,9 +488,9 @@ async function registProduct() {
         isBest: true,
         category: ['PC-shop', 'PC-dessert'],
         sort: 1,
+        depth: 1,
       },
     },
-
     {
       _id: await nextSeq('product'),
       seller_id: 2,
@@ -523,10 +518,8 @@ async function registProduct() {
         '//ggaggamukja.com/web/upload/NNEditor/20230305/e55c8a5144fa99b4989100054e7e5e97.jpg',
         '//ggaggamukja.com/web/upload/NNEditor/20230305/baccd00cb159db7ef344170ccd45ffba.jpg',
       ],
-      content: `
-              <div class="product-detail">
-                  <p>단호박 머핀 2P</p>
-              </div>`,
+      content:
+        '\n            <div class="product-detail">\n                <p>단호박 머핀 2P</p>\n            </div>',
       createdAt: getTime(-41, -60 * 60 * 2),
       updatedAt: getTime(-40, -60 * 15),
       quantity: 100,
@@ -536,9 +529,9 @@ async function registProduct() {
         isBest: true,
         category: ['PC-shop', 'PC-dessert'],
         sort: 1,
+        depth: 1,
       },
     },
-
     {
       _id: await nextSeq('product'),
       seller_id: 2,
@@ -569,10 +562,8 @@ async function registProduct() {
         '//ggaggamukja.com/web/upload/NNEditor/20220707/8b625dbcaa2d819f27aab4ba84895a9e.jpg',
         '//ggaggamukja.com/web/upload/NNEditor/20220707/067585ed4730522d56b633bdf426adc6.jpg',
       ],
-      content: `
-              <div class="product-detail">
-                  <p>멍치킨</p>
-              </div>`,
+      content:
+        '\n            <div class="product-detail">\n                <p>멍치킨</p>\n            </div>',
       createdAt: getTime(-41, -60 * 60 * 2),
       updatedAt: getTime(-40, -60 * 15),
       quantity: 100,
@@ -582,9 +573,9 @@ async function registProduct() {
         isBest: true,
         category: ['PC-shop', 'PC-dessert'],
         sort: 1,
+        depth: 1,
       },
     },
-
     {
       _id: await nextSeq('product'),
       seller_id: 2,
@@ -594,9 +585,15 @@ async function registProduct() {
       active: true,
       name: '코코넛 치즈볼',
       options: [
-        { 용량: '단품' },
-        { 용량: '5팩(5% 할인) (+15,000원)' },
-        { 용량: '10팩(10% 할인) (+32,000원)' },
+        {
+          용량: '단품',
+        },
+        {
+          용량: '5팩(5% 할인) (+15,000원)',
+        },
+        {
+          용량: '10팩(10% 할인) (+32,000원)',
+        },
       ],
       mainImages: [
         '//ggaggamukja.com/web/product/big/202207/18a2e36960287be027bdc83940350d50.jpg',
@@ -614,10 +611,8 @@ async function registProduct() {
         '//ggaggamukja.com/web/upload/NNEditor/20220707/78501d4e6bce4eb9ccca8cfff7d1e336.jpg',
         '//ggaggamukja.com/web/upload/NNEditor/20220707/6a9bbd05cbadd6a85f34bb6de0673e94.jpg',
       ],
-      content: `
-              <div class="product-detail">
-                  <p>코코넛 치즈볼</p>
-              </div>`,
+      content:
+        '\n            <div class="product-detail">\n                <p>코코넛 치즈볼</p>\n            </div>',
       createdAt: getTime(-41, -60 * 60 * 2),
       updatedAt: getTime(-40, -60 * 15),
       quantity: 100,
@@ -627,9 +622,9 @@ async function registProduct() {
         isBest: true,
         category: ['PC-shop', 'PC-dessert'],
         sort: 1,
+        depth: 1,
       },
     },
-
     {
       _id: await nextSeq('product'),
       seller_id: 2,
@@ -657,10 +652,8 @@ async function registProduct() {
         '//ggaggamukja.com/web/upload/NNEditor/20230305/1eb0c22afbc1bbf323aaf52b47858747.jpg',
         '//ggaggamukja.com/web/upload/NNEditor/20230305/bb27c421486869527b520511d221d27b.jpg',
       ],
-      content: `
-              <div class="product-detail">
-                  <p>치즈 호두과자 6P</p>
-              </div>`,
+      content:
+        '\n            <div class="product-detail">\n                <p>치즈 호두과자 6P</p>\n            </div>',
       createdAt: getTime(-41, -60 * 60 * 2),
       updatedAt: getTime(-40, -60 * 15),
       quantity: 100,
@@ -670,9 +663,9 @@ async function registProduct() {
         isBest: true,
         category: ['PC-shop', 'PC-dessert'],
         sort: 1,
+        depth: 1,
       },
     },
-
     {
       _id: await nextSeq('product'),
       seller_id: 2,
@@ -701,10 +694,8 @@ async function registProduct() {
         '//ggaggamukja.com/web/upload/NNEditor/20220707/539d07a36bb4a40e3ff4ce89048a1410.jpg',
         '//ggaggamukja.com/web/upload/NNEditor/20220707/e1ebcef7c2bf92f34fef83cc5d0af0ff.jpg',
       ],
-      content: `
-              <div class="product-detail">
-                  <p>멍피자</p>
-              </div>`,
+      content:
+        '\n            <div class="product-detail">\n                <p>멍피자</p>\n            </div>',
       createdAt: getTime(-41, -60 * 60 * 2),
       updatedAt: getTime(-40, -60 * 15),
       quantity: 100,
@@ -714,6 +705,7 @@ async function registProduct() {
         isBest: true,
         category: ['PC-shop', 'PC-dessert'],
         sort: 1,
+        depth: 1,
       },
     },
     {
@@ -755,10 +747,8 @@ async function registProduct() {
         '//ggaggamukja.com/web/upload/NNEditor/20230724/bb1303a7040215553aa4c5273809d79f.jpg',
         '//ggaggamukja.com/web/upload/NNEditor/20230724/a8cea7bbc7f1246311f00be249dc058a.jpg',
       ],
-      content: `
-              <div class="product-detail">
-                  <p>피크닉 도시락 세트</p>
-              </div>`,
+      content:
+        '\n            <div class="product-detail">\n                <p>피크닉 도시락 세트</p>\n            </div>',
       createdAt: getTime(-41, -60 * 60 * 2),
       updatedAt: getTime(-40, -60 * 15),
       quantity: 100,
@@ -768,9 +758,9 @@ async function registProduct() {
         isBest: true,
         category: ['PC-shop', 'PC-dessert'],
         sort: 1,
+        depth: 1,
       },
     },
-
     {
       _id: await nextSeq('product'),
       seller_id: 2,
@@ -802,10 +792,8 @@ async function registProduct() {
         '//ggaggamukja.com/web/upload/NNEditor/20230317/db1485caea74c0dc3c10aa45c8748a08.jpg',
         '//ggaggamukja.com/web/upload/NNEditor/20230317/5a3c34e0c45a62091d6f280ed8aa48d2.jpg',
       ],
-      content: `
-              <div class="product-detail">
-                  <p>특별한 날엔 케이크</p>
-              </div>`,
+      content:
+        '\n            <div class="product-detail">\n                <p>특별한 날엔 케이크</p>\n            </div>',
       createdAt: getTime(-41, -60 * 60 * 2),
       updatedAt: getTime(-40, -60 * 15),
       quantity: 100,
@@ -815,9 +803,9 @@ async function registProduct() {
         isBest: true,
         category: ['PC-shop', 'PC-dessert'],
         sort: 1,
+        depth: 1,
       },
     },
-
     {
       _id: await nextSeq('product'),
       seller_id: 2,
@@ -861,10 +849,8 @@ async function registProduct() {
         '//ggaggamukja.com/web/upload/NNEditor/20230313/ec916e8b78317da9fa98c4882e6c322b.jpg',
         '//ggaggamukja.com/web/upload/NNEditor/20230313/3b9ca86c99b8133471e75c3cb31bf8d6.jpg',
       ],
-      content: `
-              <div class="product-detail">
-                  <p>멍피자 멍치킨 피크닉 세트</p>
-              </div>`,
+      content:
+        '\n            <div class="product-detail">\n                <p>멍피자 멍치킨 피크닉 세트</p>\n            </div>',
       createdAt: getTime(-41, -60 * 60 * 2),
       updatedAt: getTime(-40, -60 * 15),
       quantity: 100,
@@ -874,9 +860,9 @@ async function registProduct() {
         isBest: true,
         category: ['PC-shop', 'PC-dessert'],
         sort: 1,
+        depth: 1,
       },
     },
-
     {
       _id: await nextSeq('product'),
       seller_id: 2,
@@ -907,10 +893,8 @@ async function registProduct() {
         '//ggaggamukja.com/web/upload/NNEditor/20230802/67d711419097b494d4ebc9af461855cb.jpg',
         '//ggaggamukja.com/web/upload/NNEditor/20230802/36159addccaaf6f9494e84f1071964fa.jpg',
       ],
-      content: `
-              <div class="product-detail">
-                  <p>바캉스 도시락 세트</p>
-              </div>`,
+      content:
+        '\n            <div class="product-detail">\n                <p>바캉스 도시락 세트</p>\n            </div>',
       createdAt: getTime(-41, -60 * 60 * 2),
       updatedAt: getTime(-40, -60 * 15),
       quantity: 100,
@@ -920,9 +904,9 @@ async function registProduct() {
         isBest: true,
         category: ['PC-shop', 'PC-dessert'],
         sort: 1,
+        depth: 1,
       },
     },
-
     {
       _id: await nextSeq('product'),
       seller_id: 2,
@@ -967,10 +951,8 @@ async function registProduct() {
         '//ggaggamukja.com/web/upload/NNEditor/20230724/6e59834811780df1151abb6f900d172b.jpg',
         '//ggaggamukja.com/web/upload/NNEditor/20230724/a14549e6ccd335646e7e6a9ba9fc8e3b.jpg',
       ],
-      content: `
-              <div class="product-detail">
-                  <p>특별한 날 간식세트 2023</p>
-              </div>`,
+      content:
+        '\n            <div class="product-detail">\n                <p>특별한 날 간식세트 2023</p>\n            </div>',
       createdAt: getTime(-41, -60 * 60 * 2),
       updatedAt: getTime(-40, -60 * 15),
       quantity: 100,
@@ -980,9 +962,9 @@ async function registProduct() {
         isBest: true,
         category: ['PC-shop', 'PC-dessert'],
         sort: 1,
+        depth: 1,
       },
     },
-
     {
       _id: await nextSeq('product'),
       seller_id: 2,
@@ -1016,10 +998,8 @@ async function registProduct() {
         '//ggaggamukja.com/web/upload/NNEditor/20230802/251fbdf9815028433cfb0b832761f7d9.jpg',
         '//ggaggamukja.com/web/upload/NNEditor/20230802/65a0b466a8339c1ad5d9f5bf5d3472e3.jpg',
       ],
-      content: `
-              <div class="product-detail">
-                  <p>까까묵자 생일 파티 세트</p>
-              </div>`,
+      content:
+        '\n            <div class="product-detail">\n                <p>까까묵자 생일 파티 세트</p>\n            </div>',
       createdAt: getTime(-41, -60 * 60 * 2),
       updatedAt: getTime(-40, -60 * 15),
       quantity: 100,
@@ -1029,9 +1009,9 @@ async function registProduct() {
         isBest: true,
         category: ['PC-shop', 'PC-dessert'],
         sort: 1,
+        depth: 1,
       },
     },
-
     {
       _id: await nextSeq('product'),
       seller_id: 2,
@@ -1063,10 +1043,8 @@ async function registProduct() {
         '//ggaggamukja.com/web/upload/NNEditor/20230724/dc17785b537a141a0e03fcc2fed26e25.jpg',
         '//ggaggamukja.com/web/upload/NNEditor/20230724/739579de6302ffb62f9c910b6d9426a0.jpg',
       ],
-      content: `
-              <div class="product-detail">
-                  <p>곰돌이 주먹밥 3p</p>
-              </div>`,
+      content:
+        '\n            <div class="product-detail">\n                <p>곰돌이 주먹밥 3p</p>\n            </div>',
       createdAt: getTime(-41, -60 * 60 * 2),
       updatedAt: getTime(-40, -60 * 15),
       quantity: 100,
@@ -1076,9 +1054,9 @@ async function registProduct() {
         isBest: true,
         category: ['PC-shop', 'PC-dessert'],
         sort: 1,
+        depth: 1,
       },
     },
-
     {
       _id: await nextSeq('product'),
       seller_id: 2,
@@ -1088,9 +1066,15 @@ async function registProduct() {
       active: true,
       name: '까까묵자 X 스너플 도그비어 캠핑 세트',
       options: [
-        { '세트 선택': '피자+치킨+도그비어' },
-        { '세트 선택': '피자+도그비어 (-12,000원)' },
-        { '세트 선택': '치킨+도그비어 (-14,000원)' },
+        {
+          '세트 선택': '피자+치킨+도그비어',
+        },
+        {
+          '세트 선택': '피자+도그비어 (-12,000원)',
+        },
+        {
+          '세트 선택': '치킨+도그비어 (-14,000원)',
+        },
       ],
       mainImages: [
         '//ggaggamukja.com/web/product/big/202308/d85b8fbf57e1ba9093adc4bc0932f09a.jpg',
@@ -1118,10 +1102,8 @@ async function registProduct() {
         '//ggaggamukja.com/web/upload/NNEditor/20230806/0d5ceffd7d5a1779ebe7ebbce3fb15e4.jpg',
         '//ggaggamukja.com/web/upload/NNEditor/20230806/7cff1bc13ff1209f3e1064e34ee98724.jpg',
       ],
-      content: `
-              <div class="product-detail">
-                  <p>까까묵자 X 스너플 도그비어 캠핑 세트</p>
-              </div>`,
+      content:
+        '\n            <div class="product-detail">\n                <p>까까묵자 X 스너플 도그비어 캠핑 세트</p>\n            </div>',
       createdAt: getTime(-41, -60 * 60 * 2),
       updatedAt: getTime(-40, -60 * 15),
       quantity: 100,
@@ -1131,9 +1113,9 @@ async function registProduct() {
         isBest: true,
         category: ['PC-shop', 'PC-dessert'],
         sort: 1,
+        depth: 1,
       },
     },
-
     {
       _id: await nextSeq('product'),
       seller_id: 2,
@@ -1176,10 +1158,8 @@ async function registProduct() {
         '//ggaggamukja.com/web/upload/NNEditor/20230802/37fdb8f97606283c71a865ec73eba35f.jpg',
         '//ggaggamukja.com/web/upload/NNEditor/20230802/a201eb8c884f1985942f4ef2601761d1.jpg',
       ],
-      content: `
-              <div class="product-detail">
-                  <p>베이커리 파티 세트</p>
-              </div>`,
+      content:
+        '\n            <div class="product-detail">\n                <p>베이커리 파티 세트</p>\n            </div>',
       createdAt: getTime(-41, -60 * 60 * 2),
       updatedAt: getTime(-40, -60 * 15),
       quantity: 100,
@@ -1189,9 +1169,9 @@ async function registProduct() {
         isBest: true,
         category: ['PC-shop', 'PC-dessert'],
         sort: 1,
+        depth: 1,
       },
     },
-
     {
       _id: await nextSeq('product'),
       seller_id: 2,
@@ -1201,9 +1181,15 @@ async function registProduct() {
       active: true,
       name: '까까묵자 X 스너플 콜라보 세트',
       options: [
-        { '세트 선택': '조각피자+조각치킨+도그비어 캔' },
-        { '세트 선택': '조각피자+도그비어 캔 (-3,500원)' },
-        { '세트 선택': '조각치킨+도그비어 캔 (-4,000원)' },
+        {
+          '세트 선택': '조각피자+조각치킨+도그비어 캔',
+        },
+        {
+          '세트 선택': '조각피자+도그비어 캔 (-3,500원)',
+        },
+        {
+          '세트 선택': '조각치킨+도그비어 캔 (-4,000원)',
+        },
       ],
       mainImages: [
         '//ggaggamukja.com/web/product/big/202309/5ba45f0712c3d4ca1c9125ff445ea801.jpg',
@@ -1230,10 +1216,8 @@ async function registProduct() {
         '//ggaggamukja.com/web/upload/NNEditor/20230806/0d5ceffd7d5a1779ebe7ebbce3fb15e4.jpg',
         '//ggaggamukja.com/web/upload/NNEditor/20230806/7cff1bc13ff1209f3e1064e34ee98724.jpg',
       ],
-      content: `
-              <div class="product-detail">
-                  <p>까까묵자 X 스너플 콜라보 세트</p>
-              </div>`,
+      content:
+        '\n            <div class="product-detail">\n                <p>까까묵자 X 스너플 콜라보 세트</p>\n            </div>',
       createdAt: getTime(-41, -60 * 60 * 2),
       updatedAt: getTime(-40, -60 * 15),
       quantity: 100,
@@ -1243,9 +1227,9 @@ async function registProduct() {
         isBest: true,
         category: ['PC-shop', 'PC-dessert'],
         sort: 1,
+        depth: 1,
       },
     },
-
     {
       _id: await nextSeq('product'),
       seller_id: 2,
@@ -1288,10 +1272,8 @@ async function registProduct() {
         '//ggaggamukja.com/web/upload/NNEditor/20230802/6bc56115929e1975496838c7ecbda0d2.jpg',
         '//ggaggamukja.com/web/upload/NNEditor/20230802/e5325f843a3557f88f742576ce8929d5.jpg',
       ],
-      content: `
-              <div class="product-detail">
-                  <p>풀패키지 파티 세트</p>
-              </div>`,
+      content:
+        '\n            <div class="product-detail">\n                <p>풀패키지 파티 세트</p>\n            </div>',
       createdAt: getTime(-41, -60 * 60 * 2),
       updatedAt: getTime(-40, -60 * 15),
       quantity: 100,
@@ -1301,9 +1283,9 @@ async function registProduct() {
         isBest: true,
         category: ['PC-shop', 'PC-dessert'],
         sort: 1,
+        depth: 1,
       },
     },
-
     {
       _id: await nextSeq('product'),
       seller_id: 2,
@@ -1336,10 +1318,8 @@ async function registProduct() {
         '//ggaggamukja.com/web/upload/NNEditor/20230317/30b08ec94e0bf4965df89d8d2bef0dfb.jpg',
         '//ggaggamukja.com/web/upload/NNEditor/20230317/644a565263964ed6b50615a2843e6467.jpg',
       ],
-      content: `
-              <div class="product-detail">
-                  <p>소풍 도시락 세트</p>
-              </div>`,
+      content:
+        '\n            <div class="product-detail">\n                <p>소풍 도시락 세트</p>\n            </div>',
       createdAt: getTime(-41, -60 * 60 * 2),
       updatedAt: getTime(-40, -60 * 15),
       quantity: 100,
@@ -1349,6 +1329,7 @@ async function registProduct() {
         isBest: true,
         category: ['PC-shop', 'PC-dessert'],
         sort: 1,
+        depth: 1,
       },
     },
     {
@@ -1360,9 +1341,15 @@ async function registProduct() {
       active: true,
       name: '닭가슴살 테린',
       options: [
-        { '용량 선택': '기본 단품' },
-        { '용량 선택': '5팩(5% 할인) (+14,000원)' },
-        { '용량 선택': '10팩(10% 할인) (+28,000원)' },
+        {
+          '용량 선택': '기본 단품',
+        },
+        {
+          '용량 선택': '5팩(5% 할인) (+14,000원)',
+        },
+        {
+          '용량 선택': '10팩(10% 할인) (+28,000원)',
+        },
       ],
       mainImages: [
         '//ggaggamukja.com/web/product/big/202102/54f9c3a6dbfb72fb4a14df9ffbedf540.jpg',
@@ -1382,10 +1369,8 @@ async function registProduct() {
         '//ggaggamukja.com/web/upload/NNEditor/20220707/7b9b066d28bc56310396a9117f6e40ce.jpg',
         '//ggaggamukja.com/web/upload/NNEditor/20220707/5f9ad6c72d5836b2ab787a61ce6fa0ce.jpg',
       ],
-      content: `
-              <div class="product-detail">
-                  <p>닭가슴살 테린</p>
-              </div>`,
+      content:
+        '\n            <div class="product-detail">\n                <p>닭가슴살 테린</p>\n            </div>',
       createdAt: getTime(-41, -60 * 60 * 2),
       updatedAt: getTime(-40, -60 * 15),
       quantity: 100,
@@ -1395,9 +1380,9 @@ async function registProduct() {
         isBest: true,
         category: ['PC-shop', 'PC-special'],
         sort: 2,
+        depth: 1,
       },
     },
-
     {
       _id: await nextSeq('product'),
       seller_id: 2,
@@ -1407,9 +1392,15 @@ async function registProduct() {
       active: true,
       name: '한우 미트볼',
       options: [
-        { '용량 선택': '기본 단품' },
-        { '용량 선택': '5팩(5% 할인) (+18,750원)' },
-        { '용량 선택': '10팩(10% 할인) (+40,000원)' },
+        {
+          '용량 선택': '기본 단품',
+        },
+        {
+          '용량 선택': '5팩(5% 할인) (+18,750원)',
+        },
+        {
+          '용량 선택': '10팩(10% 할인) (+40,000원)',
+        },
       ],
       mainImages: [
         '//ggaggamukja.com/web/product/big/202110/f8999fa26ba0b517725642c613f93323.jpg',
@@ -1429,10 +1420,8 @@ async function registProduct() {
         '//ggaggamukja.com/web/upload/NNEditor/20220707/6c4f1a118303466dd3044a8636f2159c.jpg',
         '//ggaggamukja.com/web/upload/NNEditor/20220707/6ff8a62387b08cbb1d6e0d96719a5ba7.jpg',
       ],
-      content: `
-              <div class="product-detail">
-                  <p>한우 미트볼</p>
-              </div>`,
+      content:
+        '\n            <div class="product-detail">\n                <p>한우 미트볼</p>\n            </div>',
       createdAt: getTime(-41, -60 * 60 * 2),
       updatedAt: getTime(-40, -60 * 15),
       quantity: 100,
@@ -1442,9 +1431,9 @@ async function registProduct() {
         isBest: true,
         category: ['PC-shop', 'PC-special'],
         sort: 2,
+        depth: 1,
       },
     },
-
     {
       _id: await nextSeq('product'),
       seller_id: 2,
@@ -1454,9 +1443,15 @@ async function registProduct() {
       active: true,
       name: '오리안심 테린',
       options: [
-        { '용량 선택': '기본 단품' },
-        { '용량 선택': '5팩(5% 할인) (+14,050원)' },
-        { '용량 선택': '10팩(10% 할인) (+32,000원)' },
+        {
+          '용량 선택': '기본 단품',
+        },
+        {
+          '용량 선택': '5팩(5% 할인) (+14,050원)',
+        },
+        {
+          '용량 선택': '10팩(10% 할인) (+32,000원)',
+        },
       ],
       mainImages: [
         '//ggaggamukja.com/web/product/big/202102/efd3f06cf95a6693c80118bd08e3575f.jpg',
@@ -1476,10 +1471,8 @@ async function registProduct() {
         '//ggaggamukja.com/web/upload/NNEditor/20220707/8d09c29c3a17d64cecf875230442a914.jpg',
         '//ggaggamukja.com/web/upload/NNEditor/20220707/41a8c487ab439fd5c4f13b43ae98f041.jpg',
       ],
-      content: `
-              <div class="product-detail">
-                  <p>오리안심 테린</p>
-              </div>`,
+      content:
+        '\n            <div class="product-detail">\n                <p>오리안심 테린</p>\n            </div>',
       createdAt: getTime(-41, -60 * 60 * 2),
       updatedAt: getTime(-40, -60 * 15),
       quantity: 100,
@@ -1489,9 +1482,9 @@ async function registProduct() {
         isBest: true,
         category: ['PC-shop', 'PC-special'],
         sort: 2,
+        depth: 1,
       },
     },
-
     {
       _id: await nextSeq('product'),
       seller_id: 2,
@@ -1522,10 +1515,8 @@ async function registProduct() {
         '//ggaggamukja.com/web/upload/NNEditor/20230515/caca27624b35bf580096546da4535856.jpg',
         '//ggaggamukja.com/web/upload/NNEditor/20230515/eecc3de2a9b091bbe20a83dbe363b8f5.jpg',
       ],
-      content: `
-              <div class="product-detail">
-                  <p>오리 핫도그 (대)</p>
-              </div>`,
+      content:
+        '\n            <div class="product-detail">\n                <p>오리 핫도그 (대)</p>\n            </div>',
       createdAt: getTime(-41, -60 * 60 * 2),
       updatedAt: getTime(-40, -60 * 15),
       quantity: 100,
@@ -1535,9 +1526,9 @@ async function registProduct() {
         isBest: true,
         category: ['PC-shop', 'PC-special'],
         sort: 2,
+        depth: 1,
       },
     },
-
     {
       _id: await nextSeq('product'),
       seller_id: 2,
@@ -1563,10 +1554,8 @@ async function registProduct() {
         '//ggaggamukja.com/web/upload/NNEditor/20230518/2420adb24c1c3f5a8382951d81568dd4.jpg',
         '//ggaggamukja.com/web/upload/NNEditor/20230518/0d6fd7d2de0fda5ce8e054ce80a23c90.jpg',
       ],
-      content: `
-              <div class="product-detail">
-                  <p>멍김밥</p>
-              </div>`,
+      content:
+        '\n            <div class="product-detail">\n                <p>멍김밥</p>\n            </div>',
       createdAt: getTime(-41, -60 * 60 * 2),
       updatedAt: getTime(-40, -60 * 15),
       quantity: 100,
@@ -1576,9 +1565,9 @@ async function registProduct() {
         isBest: true,
         category: ['PC-shop', 'PC-special'],
         sort: 2,
+        depth: 1,
       },
     },
-
     {
       _id: await nextSeq('product'),
       seller_id: 2,
@@ -1610,10 +1599,8 @@ async function registProduct() {
         '//ggaggamukja.com/web/upload/NNEditor/20220707/d1caa7d599487e36b0f944d206ac1aed.jpg',
         '//ggaggamukja.com/web/upload/NNEditor/20220707/3b8ac6e6cb41897b708a26180dbdede3.jpg',
       ],
-      content: `
-              <div class="product-detail">
-                  <p>멍돈까스</p>
-              </div>`,
+      content:
+        '\n            <div class="product-detail">\n                <p>멍돈까스</p>\n            </div>',
       createdAt: getTime(-41, -60 * 60 * 2),
       updatedAt: getTime(-40, -60 * 15),
       quantity: 100,
@@ -1623,9 +1610,9 @@ async function registProduct() {
         isBest: true,
         category: ['PC-shop', 'PC-special'],
         sort: 2,
+        depth: 1,
       },
     },
-
     {
       _id: await nextSeq('product'),
       seller_id: 2,
@@ -1654,10 +1641,8 @@ async function registProduct() {
         '//ggaggamukja.com/web/upload/NNEditor/20230726/8ff0cd37deeb5cdd90668fd26d3eac27.jpg',
         '//ggaggamukja.com/web/upload/NNEditor/20230726/f933480ad9c44c500e51967ed770456b.jpg',
       ],
-      content: `
-              <div class="product-detail">
-                  <p>캥거루 스테이크 2P</p>
-              </div>`,
+      content:
+        '\n            <div class="product-detail">\n                <p>캥거루 스테이크 2P</p>\n            </div>',
       createdAt: getTime(-41, -60 * 60 * 2),
       updatedAt: getTime(-40, -60 * 15),
       quantity: 100,
@@ -1667,9 +1652,9 @@ async function registProduct() {
         isBest: true,
         category: ['PC-shop', 'PC-special'],
         sort: 2,
+        depth: 1,
       },
     },
-
     {
       _id: await nextSeq('product'),
       seller_id: 2,
@@ -1698,10 +1683,8 @@ async function registProduct() {
         '//ggaggamukja.com/web/upload/NNEditor/20230726/abe0d0ab91935a11a2f948537616a209.jpg',
         '//ggaggamukja.com/web/upload/NNEditor/20230726/8a89ff97f84264e3dc79b5e32ad73a72.jpg',
       ],
-      content: `
-              <div class="product-detail">
-                  <p>말고기 스테이크 2P</p>
-              </div>`,
+      content:
+        '\n            <div class="product-detail">\n                <p>말고기 스테이크 2P</p>\n            </div>',
       createdAt: getTime(-41, -60 * 60 * 2),
       updatedAt: getTime(-40, -60 * 15),
       quantity: 100,
@@ -1711,6 +1694,7 @@ async function registProduct() {
         isBest: true,
         category: ['PC-shop', 'PC-special'],
         sort: 2,
+        depth: 1,
       },
     },
     {
@@ -1722,9 +1706,15 @@ async function registProduct() {
       active: true,
       name: '닭가슴살 육포',
       options: [
-        { '용량 선택': '기본 단품' },
-        { '용량 선택': '5팩(5% 할인) (+18,380원)' },
-        { '용량 선택': '10팩(10% 할인) (+39,200원)' },
+        {
+          '용량 선택': '기본 단품',
+        },
+        {
+          '용량 선택': '5팩(5% 할인) (+18,380원)',
+        },
+        {
+          '용량 선택': '10팩(10% 할인) (+39,200원)',
+        },
       ],
       mainImages: [
         '//ggaggamukja.com/web/product/big/202207/82e27378db65ce514d3c7eda9f45a4a4.jpg',
@@ -1746,10 +1736,8 @@ async function registProduct() {
         '//ggaggamukja.com/web/upload/NNEditor/20220706/37e376a6b7ad6aa421ac9479a1d23e06.jpg',
         '//ggaggamukja.com/web/upload/NNEditor/20220706/4e15736a2d6a6093cb4f12a80ed0b8ce.jpg',
       ],
-      content: `
-              <div class="product-detail">
-                  <p>닭가슴살 육포</p>
-              </div>`,
+      content:
+        '\n            <div class="product-detail">\n                <p>닭가슴살 육포</p>\n            </div>',
       createdAt: getTime(-41, -60 * 60 * 2),
       updatedAt: getTime(-40, -60 * 15),
       quantity: 100,
@@ -1759,9 +1747,9 @@ async function registProduct() {
         isBest: true,
         category: ['PC-shop', 'PC-gum'],
         sort: 3,
+        depth: 1,
       },
     },
-
     {
       _id: await nextSeq('product'),
       seller_id: 2,
@@ -1771,9 +1759,15 @@ async function registProduct() {
       active: true,
       name: '오리안심 육포',
       options: [
-        { '용량 선택': '기본 단품' },
-        { '용량 선택': '5팩(5% 할인) (+24,380원)' },
-        { '용량 선택': '10팩(10% 할인) (+52,000원)' },
+        {
+          '용량 선택': '기본 단품',
+        },
+        {
+          '용량 선택': '5팩(5% 할인) (+24,380원)',
+        },
+        {
+          '용량 선택': '10팩(10% 할인) (+52,000원)',
+        },
       ],
       mainImages: [
         '//ggaggamukja.com/web/product/big/202207/eab5c40f540af2fad5f855a9d2d1137c.jpg',
@@ -1797,10 +1791,8 @@ async function registProduct() {
         '//ggaggamukja.com/web/upload/NNEditor/20220706/b441c274cd03857a5bb961701b420322.jpg',
         '//ggaggamukja.com/web/upload/NNEditor/20220706/438adadf4f868fad8f69930e13702721.jpg',
       ],
-      content: `
-              <div class="product-detail">
-                  <p>오리안심 육포</p>
-              </div>`,
+      content:
+        '\n            <div class="product-detail">\n                <p>오리안심 육포</p>\n            </div>',
       createdAt: getTime(-41, -60 * 60 * 2),
       updatedAt: getTime(-40, -60 * 15),
       quantity: 100,
@@ -1810,9 +1802,9 @@ async function registProduct() {
         isBest: true,
         category: ['PC-shop', 'PC-gum'],
         sort: 3,
+        depth: 1,
       },
     },
-
     {
       _id: await nextSeq('product'),
       seller_id: 2,
@@ -1822,9 +1814,15 @@ async function registProduct() {
       active: true,
       name: '소고기 큐브',
       options: [
-        { '용량 선택': '기본 단품' },
-        { '용량 선택': '5팩(5% 할인) (+25,880원)' },
-        { '용량 선택': '10팩(10% 할인) (+55,200원)' },
+        {
+          '용량 선택': '기본 단품',
+        },
+        {
+          '용량 선택': '5팩(5% 할인) (+25,880원)',
+        },
+        {
+          '용량 선택': '10팩(10% 할인) (+55,200원)',
+        },
       ],
       mainImages: [
         '//ggaggamukja.com/web/product/big/202207/bccd7356518124a50abe56586768e099.jpg',
@@ -1846,10 +1844,8 @@ async function registProduct() {
         '//ggaggamukja.com/web/upload/NNEditor/20220706/23e53b750d6dac5576abd979cdd2ed00.jpg',
         '//ggaggamukja.com/web/upload/NNEditor/20220706/0eb2a27205cd5f7c2d4a63c4a83c1e5c.jpg',
       ],
-      content: `
-              <div class="product-detail">
-                  <p>소고기 큐브</p>
-              </div>`,
+      content:
+        '\n            <div class="product-detail">\n                <p>소고기 큐브</p>\n            </div>',
       createdAt: getTime(-41, -60 * 60 * 2),
       updatedAt: getTime(-40, -60 * 15),
       quantity: 100,
@@ -1859,9 +1855,9 @@ async function registProduct() {
         isBest: true,
         category: ['PC-shop', 'PC-gum'],
         sort: 3,
+        depth: 1,
       },
     },
-
     {
       _id: await nextSeq('product'),
       seller_id: 2,
@@ -1871,9 +1867,15 @@ async function registProduct() {
       active: true,
       name: '무염 황태포',
       options: [
-        { '용량 선택': '기본 단품' },
-        { '용량 선택': '5팩(5% 할인) (+27,600원)' },
-        { '용량 선택': '10팩(10% 할인) (+55,200원)' },
+        {
+          '용량 선택': '기본 단품',
+        },
+        {
+          '용량 선택': '5팩(5% 할인) (+27,600원)',
+        },
+        {
+          '용량 선택': '10팩(10% 할인) (+55,200원)',
+        },
       ],
       mainImages: [
         '//ggaggamukja.com/web/product/big/202111/ce6c17bb7c93e1542fa2d68d314af500.jpg',
@@ -1895,10 +1897,8 @@ async function registProduct() {
         '//ggaggamukja.com/web/upload/NNEditor/20220707/00a75743066488d23f4bd99fe7c7e75f.jpg',
         '//ggaggamukja.com/web/upload/NNEditor/20220707/fb158252a360f22b1f130d516e0fdbc5.jpg',
       ],
-      content: `
-              <div class="product-detail">
-                  <p>무염 황태포</p>
-              </div>`,
+      content:
+        '\n            <div class="product-detail">\n                <p>무염 황태포</p>\n            </div>',
       createdAt: getTime(-41, -60 * 60 * 2),
       updatedAt: getTime(-40, -60 * 15),
       quantity: 100,
@@ -1908,9 +1908,9 @@ async function registProduct() {
         isBest: true,
         category: ['PC-shop', 'PC-gum'],
         sort: 3,
+        depth: 1,
       },
     },
-
     {
       _id: await nextSeq('product'),
       seller_id: 2,
@@ -1920,9 +1920,15 @@ async function registProduct() {
       active: true,
       name: '돼지안심 육포',
       options: [
-        { '용량 선택': '기본 단품' },
-        { '용량 선택': '5팩(5% 할인) (+22,130원)' },
-        { '용량 선택': '10팩(10% 할인) (+47,200원)' },
+        {
+          '용량 선택': '기본 단품',
+        },
+        {
+          '용량 선택': '5팩(5% 할인) (+22,130원)',
+        },
+        {
+          '용량 선택': '10팩(10% 할인) (+47,200원)',
+        },
       ],
       mainImages: [
         '//ggaggamukja.com/web/product/big/202207/84c73d5433269022af69fe53ba3c221c.jpg',
@@ -1944,10 +1950,8 @@ async function registProduct() {
         '//ggaggamukja.com/web/upload/NNEditor/20220707/5ff00f2335c247ce2f47281b10dcb4ec.jpg',
         '//ggaggamukja.com/web/upload/NNEditor/20220707/8af75b35b5ea73acd2dfaded5e3addc7.jpg',
       ],
-      content: `
-              <div class="product-detail">
-                  <p>돼지안심 육포</p>
-              </div>`,
+      content:
+        '\n            <div class="product-detail">\n                <p>돼지안심 육포</p>\n            </div>',
       createdAt: getTime(-41, -60 * 60 * 2),
       updatedAt: getTime(-40, -60 * 15),
       quantity: 100,
@@ -1957,9 +1961,9 @@ async function registProduct() {
         isBest: true,
         category: ['PC-shop', 'PC-gum'],
         sort: 3,
+        depth: 1,
       },
     },
-
     {
       _id: await nextSeq('product'),
       seller_id: 2,
@@ -1969,9 +1973,15 @@ async function registProduct() {
       active: true,
       name: '연어 큐브',
       options: [
-        { '용량 선택': '기본 단품' },
-        { '용량 선택': '5팩(5% 할인) (+29,250원)' },
-        { '용량 선택': '10팩(10% 할인) (+62,400원)' },
+        {
+          '용량 선택': '기본 단품',
+        },
+        {
+          '용량 선택': '5팩(5% 할인) (+29,250원)',
+        },
+        {
+          '용량 선택': '10팩(10% 할인) (+62,400원)',
+        },
       ],
       mainImages: [
         '//ggaggamukja.com/web/product/big/202207/f71a10b75623d1820ae6865a14b31156.jpg',
@@ -1993,10 +2003,8 @@ async function registProduct() {
         '//ggaggamukja.com/web/upload/NNEditor/20220706/a0623744ecd5a3c5b5942687c1bf299c.jpg',
         '//ggaggamukja.com/web/upload/NNEditor/20220706/9e51f2191213c0bf15454ec698be59a7.jpg',
       ],
-      content: `
-              <div class="product-detail">
-                  <p>연어 큐브</p>
-              </div>`,
+      content:
+        '\n            <div class="product-detail">\n                <p>연어 큐브</p>\n            </div>',
       createdAt: getTime(-41, -60 * 60 * 2),
       updatedAt: getTime(-40, -60 * 15),
       quantity: 100,
@@ -2006,9 +2014,9 @@ async function registProduct() {
         isBest: true,
         category: ['PC-shop', 'PC-gum'],
         sort: 3,
+        depth: 1,
       },
     },
-
     {
       _id: await nextSeq('product'),
       seller_id: 2,
@@ -2018,9 +2026,15 @@ async function registProduct() {
       active: true,
       name: '열빙어 육포',
       options: [
-        { '용량 선택': '기본 단품' },
-        { '용량 선택': '5팩(5% 할인) (+28,130원)' },
-        { '용량 선택': '10팩(10% 할인) (+60,000원)' },
+        {
+          '용량 선택': '기본 단품',
+        },
+        {
+          '용량 선택': '5팩(5% 할인) (+28,130원)',
+        },
+        {
+          '용량 선택': '10팩(10% 할인) (+60,000원)',
+        },
       ],
       mainImages: [
         '//ggaggamukja.com/web/product/big/202207/a5be444af0f495e820e1f88ae9b5819f.jpg',
@@ -2044,10 +2058,8 @@ async function registProduct() {
         '//ggaggamukja.com/web/upload/NNEditor/20220707/874283ebdb43885819add1d1f274d8d0.jpg',
         '//ggaggamukja.com/web/upload/NNEditor/20220707/f0759f1d397d04e94fc333c2dcd06575.jpg',
       ],
-      content: `
-              <div class="product-detail">
-                  <p>열빙어 육포</p>
-              </div>`,
+      content:
+        '\n            <div class="product-detail">\n                <p>열빙어 육포</p>\n            </div>',
       createdAt: getTime(-41, -60 * 60 * 2),
       updatedAt: getTime(-40, -60 * 15),
       quantity: 100,
@@ -2057,9 +2069,9 @@ async function registProduct() {
         isBest: true,
         category: ['PC-shop', 'PC-gum'],
         sort: 3,
+        depth: 1,
       },
     },
-
     {
       _id: await nextSeq('product'),
       seller_id: 2,
@@ -2069,9 +2081,15 @@ async function registProduct() {
       active: true,
       name: '제주 말고기 큐브',
       options: [
-        { '용량 선택': '기본 단품' },
-        { '용량 선택': '5팩(5% 할인) (+25,880원)' },
-        { '용량 선택': '10팩(10% 할인) (+55,200원)' },
+        {
+          '용량 선택': '기본 단품',
+        },
+        {
+          '용량 선택': '5팩(5% 할인) (+25,880원)',
+        },
+        {
+          '용량 선택': '10팩(10% 할인) (+55,200원)',
+        },
       ],
       mainImages: [
         '//ggaggamukja.com/web/product/big/202207/fb911580fb36b82574e3c7d6af159c4b.jpg',
@@ -2093,10 +2111,8 @@ async function registProduct() {
         '//ggaggamukja.com/web/upload/NNEditor/20220707/55162d69518794c99ccffc1d7cfdfffc.jpg',
         '//ggaggamukja.com/web/upload/NNEditor/20220707/343ab8affc8dd4802d4562a9ddc415c3.jpg',
       ],
-      content: `
-              <div class="product-detail">
-                  <p>제주 말고기 큐브</p>
-              </div>`,
+      content:
+        '\n            <div class="product-detail">\n                <p>제주 말고기 큐브</p>\n            </div>',
       createdAt: getTime(-41, -60 * 60 * 2),
       updatedAt: getTime(-40, -60 * 15),
       quantity: 100,
@@ -2106,9 +2122,9 @@ async function registProduct() {
         isBest: true,
         category: ['PC-shop', 'PC-gum'],
         sort: 3,
+        depth: 1,
       },
     },
-
     {
       _id: await nextSeq('product'),
       seller_id: 2,
@@ -2118,9 +2134,15 @@ async function registProduct() {
       active: true,
       name: '한우 소간 육포',
       options: [
-        { '용량 선택': '기본 단품' },
-        { '용량 선택': '5팩(5% 할인) (+16,880원)' },
-        { '용량 선택': '10팩(10% 할인) (+36,000원)' },
+        {
+          '용량 선택': '기본 단품',
+        },
+        {
+          '용량 선택': '5팩(5% 할인) (+16,880원)',
+        },
+        {
+          '용량 선택': '10팩(10% 할인) (+36,000원)',
+        },
       ],
       mainImages: [
         '//ggaggamukja.com/web/product/big/202207/db8d9610a952e0dbf4f12db9d1ebec90.jpg',
@@ -2142,10 +2164,8 @@ async function registProduct() {
         '//ggaggamukja.com/web/upload/NNEditor/20220706/76df96ec939efc2bd42eff906f960302.jpg',
         '//ggaggamukja.com/web/upload/NNEditor/20220706/b727db380bd76345755ca2712e944ef0.jpg',
       ],
-      content: `
-              <div class="product-detail">
-                  <p>한우 소간 육포</p>
-              </div>`,
+      content:
+        '\n            <div class="product-detail">\n                <p>한우 소간 육포</p>\n            </div>',
       createdAt: getTime(-41, -60 * 60 * 2),
       updatedAt: getTime(-40, -60 * 15),
       quantity: 100,
@@ -2155,6 +2175,7 @@ async function registProduct() {
         isBest: true,
         category: ['PC-shop', 'PC-gum'],
         sort: 3,
+        depth: 1,
       },
     },
     {
@@ -2166,9 +2187,15 @@ async function registProduct() {
       active: true,
       name: '한우 우족 천연껌',
       options: [
-        { '용량 선택': '기본 단품' },
-        { '용량 선택': '5팩(5% 할인) (+22,130원)' },
-        { '용량 선택': '10팩(10% 할인) (+47,200원)' },
+        {
+          '용량 선택': '기본 단품',
+        },
+        {
+          '용량 선택': '5팩(5% 할인) (+22,130원)',
+        },
+        {
+          '용량 선택': '10팩(10% 할인) (+47,200원)',
+        },
       ],
       mainImages: [
         '//ggaggamukja.com/web/product/big/202111/3339b97d1c243c143ca4cd41d20177d9.jpg',
@@ -2190,10 +2217,8 @@ async function registProduct() {
         '//ggaggamukja.com/web/upload/NNEditor/20220706/df7e8ca13ab96a06d3d21f0599e652d3.jpg',
         '//ggaggamukja.com/web/upload/NNEditor/20220706/a0d7aa64ea8fc0822478f8edeaa3d6da.jpg',
       ],
-      content: `
-              <div class="product-detail">
-                  <p>한우 우족 천연껌</p>
-              </div>`,
+      content:
+        '\n            <div class="product-detail">\n                <p>한우 우족 천연껌</p>\n            </div>',
       createdAt: getTime(-41, -60 * 60 * 2),
       updatedAt: getTime(-40, -60 * 15),
       quantity: 100,
@@ -2203,9 +2228,9 @@ async function registProduct() {
         isBest: true,
         category: ['PC-shop', 'PC-bone'],
         sort: 4,
+        depth: 1,
       },
     },
-
     {
       _id: await nextSeq('product'),
       seller_id: 2,
@@ -2215,9 +2240,15 @@ async function registProduct() {
       active: true,
       name: '메추리 천연껌',
       options: [
-        { '용량 선택': '기본 단품' },
-        { '용량 선택': '5팩(5% 할인) (+15,000원)' },
-        { '용량 선택': '10팩(10% 할인) (+32,000원)' },
+        {
+          '용량 선택': '기본 단품',
+        },
+        {
+          '용량 선택': '5팩(5% 할인) (+15,000원)',
+        },
+        {
+          '용량 선택': '10팩(10% 할인) (+32,000원)',
+        },
       ],
       mainImages: [
         '//ggaggamukja.com/web/product/big/202207/424f0152158efa65c94aa9af9f4d2be7.jpg',
@@ -2239,10 +2270,8 @@ async function registProduct() {
         '//ggaggamukja.com/web/upload/NNEditor/20220707/2be36f9250f0b690da2cfaa565dae160.jpg',
         '//ggaggamukja.com/web/upload/NNEditor/20220707/188cf8d6925d7d951c4bcbf3658a9e2f.jpg',
       ],
-      content: `
-              <div class="product-detail">
-                  <p>메추리 천연껌</p>
-              </div>`,
+      content:
+        '\n            <div class="product-detail">\n                <p>메추리 천연껌</p>\n            </div>',
       createdAt: getTime(-41, -60 * 60 * 2),
       updatedAt: getTime(-40, -60 * 15),
       quantity: 100,
@@ -2252,9 +2281,9 @@ async function registProduct() {
         isBest: true,
         category: ['PC-shop', 'PC-bone'],
         sort: 4,
+        depth: 1,
       },
     },
-
     {
       _id: await nextSeq('product'),
       seller_id: 2,
@@ -2264,9 +2293,15 @@ async function registProduct() {
       active: true,
       name: '송아지목뼈 천연껌',
       options: [
-        { '용량 선택': '기본 단품' },
-        { '용량 선택': '5팩(5% 할인) (+29,630원)' },
-        { '용량 선택': '10팩(10% 할인) (+63,200원)' },
+        {
+          '용량 선택': '기본 단품',
+        },
+        {
+          '용량 선택': '5팩(5% 할인) (+29,630원)',
+        },
+        {
+          '용량 선택': '10팩(10% 할인) (+63,200원)',
+        },
       ],
       mainImages: [
         '//ggaggamukja.com/web/product/big/202207/fc313662a4a1b1be059ece9c78be29a3.jpg',
@@ -2288,10 +2323,8 @@ async function registProduct() {
         '//ggaggamukja.com/web/upload/NNEditor/20220707/a953c391e66fbfd5778ed71a38ed0e72.jpg',
         '//ggaggamukja.com/web/upload/NNEditor/20220707/ba9c6d1e750a23111cb850b9d52be7c3.jpg',
       ],
-      content: `
-              <div class="product-detail">
-                  <p>송아지목뼈 천연껌</p>
-              </div>`,
+      content:
+        '\n            <div class="product-detail">\n                <p>송아지목뼈 천연껌</p>\n            </div>',
       createdAt: getTime(-41, -60 * 60 * 2),
       updatedAt: getTime(-40, -60 * 15),
       quantity: 100,
@@ -2301,9 +2334,9 @@ async function registProduct() {
         isBest: true,
         category: ['PC-shop', 'PC-bone'],
         sort: 4,
+        depth: 1,
       },
     },
-
     {
       _id: await nextSeq('product'),
       seller_id: 2,
@@ -2313,9 +2346,15 @@ async function registProduct() {
       active: true,
       name: '제주 말갈비 천연껌',
       options: [
-        { '용량 선택': '기본 단품' },
-        { '용량 선택': '5팩(5% 할인) (+35,630원)' },
-        { '용량 선택': '10팩(10% 할인) (+76,000원)' },
+        {
+          '용량 선택': '기본 단품',
+        },
+        {
+          '용량 선택': '5팩(5% 할인) (+35,630원)',
+        },
+        {
+          '용량 선택': '10팩(10% 할인) (+76,000원)',
+        },
       ],
       mainImages: [
         '//ggaggamukja.com/web/product/big/202112/e68f7baedc07f6c4ee6a1bc96ac6d4aa.jpg',
@@ -2335,10 +2374,8 @@ async function registProduct() {
         '//ggaggamukja.com/web/upload/NNEditor/20220707/fd861c88419c69199813e8f0f3bf9c11.jpg',
         '//ggaggamukja.com/web/upload/NNEditor/20220707/117b711c0e85984abbbbc3a28f553c5b.jpg',
       ],
-      content: `
-              <div class="product-detail">
-                  <p>제주 말갈비 천연껌</p>
-              </div>`,
+      content:
+        '\n            <div class="product-detail">\n                <p>제주 말갈비 천연껌</p>\n            </div>',
       createdAt: getTime(-41, -60 * 60 * 2),
       updatedAt: getTime(-40, -60 * 15),
       quantity: 100,
@@ -2348,9 +2385,9 @@ async function registProduct() {
         isBest: true,
         category: ['PC-shop', 'PC-bone'],
         sort: 4,
+        depth: 1,
       },
     },
-
     {
       _id: await nextSeq('product'),
       seller_id: 2,
@@ -2360,9 +2397,15 @@ async function registProduct() {
       active: true,
       name: '오리장각 천연껌',
       options: [
-        { '용량 선택': '기본 단품' },
-        { '용량 선택': '5팩(5% 할인) (+16,880원)' },
-        { '용량 선택': '10팩(10% 할인) (+36,000원)' },
+        {
+          '용량 선택': '기본 단품',
+        },
+        {
+          '용량 선택': '5팩(5% 할인) (+16,880원)',
+        },
+        {
+          '용량 선택': '10팩(10% 할인) (+36,000원)',
+        },
       ],
       mainImages: [
         '//ggaggamukja.com/web/product/big/202207/4c77e71767cf7f04499cc8c2d84ba623.jpg',
@@ -2384,10 +2427,8 @@ async function registProduct() {
         '//ggaggamukja.com/web/upload/NNEditor/20220707/045d10785315966c3739a79e5745755d.jpg',
         '//ggaggamukja.com/web/upload/NNEditor/20220707/bf08cc77261781c571048037bec9a818.jpg',
       ],
-      content: `
-              <div class="product-detail">
-                  <p>오리장각 천연껌</p>
-              </div>`,
+      content:
+        '\n            <div class="product-detail">\n                <p>오리장각 천연껌</p>\n            </div>',
       createdAt: getTime(-41, -60 * 60 * 2),
       updatedAt: getTime(-40, -60 * 15),
       quantity: 100,
@@ -2397,9 +2438,9 @@ async function registProduct() {
         isBest: true,
         category: ['PC-shop', 'PC-bone'],
         sort: 4,
+        depth: 1,
       },
     },
-
     {
       _id: await nextSeq('product'),
       seller_id: 2,
@@ -2409,9 +2450,15 @@ async function registProduct() {
       active: true,
       name: '캥거루꼬리 천연껌',
       options: [
-        { '용량 선택': '기본 단품' },
-        { '용량 선택': '5팩(5% 할인) (+29,630원)' },
-        { '용량 선택': '10팩(10% 할인) (+63,200원)' },
+        {
+          '용량 선택': '기본 단품',
+        },
+        {
+          '용량 선택': '5팩(5% 할인) (+29,630원)',
+        },
+        {
+          '용량 선택': '10팩(10% 할인) (+63,200원)',
+        },
       ],
       mainImages: [
         '//ggaggamukja.com/web/product/big/202111/c2f99f661c7cfa9695a9ddf345c5995c.jpg',
@@ -2433,10 +2480,8 @@ async function registProduct() {
         '//ggaggamukja.com/web/upload/NNEditor/20220707/03a5ee526d8609df1dffa2966c828543.jpg',
         '//ggaggamukja.com/web/upload/NNEditor/20220707/566cd0abb286b8f126b7c762fa2c1c6b.jpg',
       ],
-      content: `
-              <div class="product-detail">
-                  <p>캥거루꼬리 천연껌</p>
-              </div>`,
+      content:
+        '\n            <div class="product-detail">\n                <p>캥거루꼬리 천연껌</p>\n            </div>',
       createdAt: getTime(-41, -60 * 60 * 2),
       updatedAt: getTime(-40, -60 * 15),
       quantity: 100,
@@ -2446,9 +2491,9 @@ async function registProduct() {
         isBest: true,
         category: ['PC-shop', 'PC-bone'],
         sort: 4,
+        depth: 1,
       },
     },
-
     {
       _id: await nextSeq('product'),
       seller_id: 2,
@@ -2458,9 +2503,15 @@ async function registProduct() {
       active: true,
       name: '오리근위 천연껌',
       options: [
-        { '용량 선택': '기본 단품' },
-        { '용량 선택': '5팩(5% 할인) (+22,130원)' },
-        { '용량 선택': '10팩(10% 할인) (+47,200원)' },
+        {
+          '용량 선택': '기본 단품',
+        },
+        {
+          '용량 선택': '5팩(5% 할인) (+22,130원)',
+        },
+        {
+          '용량 선택': '10팩(10% 할인) (+47,200원)',
+        },
       ],
       mainImages: [
         '//ggaggamukja.com/web/product/big/202207/4ae384240f184e0fcc5d818d0f0e6034.jpg',
@@ -2484,10 +2535,8 @@ async function registProduct() {
         '//ggaggamukja.com/web/upload/NNEditor/20220707/d13592c946a09d24412114172db3c00e.jpg',
         '//ggaggamukja.com/web/upload/NNEditor/20220707/d38eb0e447d31d24f3ce2eb35157afc0.jpg',
       ],
-      content: `
-              <div class="product-detail">
-                  <p>오리근위 천연껌</p>
-              </div>`,
+      content:
+        '\n            <div class="product-detail">\n                <p>오리근위 천연껌</p>\n            </div>',
       createdAt: getTime(-41, -60 * 60 * 2),
       updatedAt: getTime(-40, -60 * 15),
       quantity: 100,
@@ -2497,9 +2546,9 @@ async function registProduct() {
         isBest: true,
         category: ['PC-shop', 'PC-bone'],
         sort: 4,
+        depth: 1,
       },
     },
-
     {
       _id: await nextSeq('product'),
       seller_id: 2,
@@ -2509,9 +2558,15 @@ async function registProduct() {
       active: true,
       name: '양등뼈 천연껌',
       options: [
-        { '용량 선택': '기본 단품' },
-        { '용량 선택': '5팩(5% 할인) (+16,880원)' },
-        { '용량 선택': '10팩(10% 할인) (+36,000원)' },
+        {
+          '용량 선택': '기본 단품',
+        },
+        {
+          '용량 선택': '5팩(5% 할인) (+16,880원)',
+        },
+        {
+          '용량 선택': '10팩(10% 할인) (+36,000원)',
+        },
       ],
       mainImages: [
         '//ggaggamukja.com/web/product/big/202112/f167c512114c314b94cac80161f5cdcd.jpg',
@@ -2533,10 +2588,8 @@ async function registProduct() {
         '//ggaggamukja.com/web/upload/NNEditor/20220707/d2c474152d239374771f24f3a8107df5.jpg',
         '//ggaggamukja.com/web/upload/NNEditor/20220707/f337d6d431bedb9f678cf2c70c9ef4f2.jpg',
       ],
-      content: `
-              <div class="product-detail">
-                  <p>양등뼈 천연껌</p>
-              </div>`,
+      content:
+        '\n            <div class="product-detail">\n                <p>양등뼈 천연껌</p>\n            </div>',
       createdAt: getTime(-41, -60 * 60 * 2),
       updatedAt: getTime(-40, -60 * 15),
       quantity: 100,
@@ -2546,9 +2599,9 @@ async function registProduct() {
         isBest: true,
         category: ['PC-shop', 'PC-bone'],
         sort: 4,
+        depth: 1,
       },
     },
-
     {
       _id: await nextSeq('product'),
       seller_id: 2,
@@ -2558,9 +2611,15 @@ async function registProduct() {
       active: true,
       name: '상어연골 천연껌',
       options: [
-        { '용량 선택': '기본 단품' },
-        { '용량 선택': '5팩(5% 할인) (+24,380원)' },
-        { '용량 선택': '10팩(10% 할인) (+52,000원)' },
+        {
+          '용량 선택': '기본 단품',
+        },
+        {
+          '용량 선택': '5팩(5% 할인) (+24,380원)',
+        },
+        {
+          '용량 선택': '10팩(10% 할인) (+52,000원)',
+        },
       ],
       mainImages: [
         '//ggaggamukja.com/web/product/big/202207/df69af13efaafe33be45f0ec3413230e.jpg',
@@ -2582,10 +2641,8 @@ async function registProduct() {
         '//ggaggamukja.com/web/upload/NNEditor/20220706/786b087f0879a5f41fe69b53469c2800.jpg',
         '//ggaggamukja.com/web/upload/NNEditor/20220706/782ec7aa5b0a6cec749b8718e48c6566.jpg',
       ],
-      content: `
-              <div class="product-detail">
-                  <p>상어연골 천연껌</p>
-              </div>`,
+      content:
+        '\n            <div class="product-detail">\n                <p>상어연골 천연껌</p>\n            </div>',
       createdAt: getTime(-41, -60 * 60 * 2),
       updatedAt: getTime(-40, -60 * 15),
       quantity: 100,
@@ -2595,9 +2652,9 @@ async function registProduct() {
         isBest: true,
         category: ['PC-shop', 'PC-bone'],
         sort: 4,
+        depth: 1,
       },
     },
-
     {
       _id: await nextSeq('product'),
       seller_id: 2,
@@ -2607,9 +2664,15 @@ async function registProduct() {
       active: true,
       name: '오리 오돌뼈 천연껌',
       options: [
-        { '용량 선택': '기본 한팩' },
-        { '용량 선택': '5팩(5% 할인) (+24,380원)' },
-        { '용량 선택': '10팩(10% 할인) (+52,000원)' },
+        {
+          '용량 선택': '기본 한팩',
+        },
+        {
+          '용량 선택': '5팩(5% 할인) (+24,380원)',
+        },
+        {
+          '용량 선택': '10팩(10% 할인) (+52,000원)',
+        },
       ],
       mainImages: [
         '//ggaggamukja.com/web/product/big/202112/fc00b86e2537ef4ed46bf9f7f34b8e81.jpg',
@@ -2633,10 +2696,8 @@ async function registProduct() {
         '//ggaggamukja.com/web/upload/NNEditor/20220707/35903921b8b13d83d93760eaaadd963c.jpg',
         '//ggaggamukja.com/web/upload/NNEditor/20220707/1304a7a49ada653c9980326dbe08bb39.jpg',
       ],
-      content: `
-              <div class="product-detail">
-                  <p>오리 오돌뼈 천연껌</p>
-              </div>`,
+      content:
+        '\n            <div class="product-detail">\n                <p>오리 오돌뼈 천연껌</p>\n            </div>',
       createdAt: getTime(-41, -60 * 60 * 2),
       updatedAt: getTime(-40, -60 * 15),
       quantity: 100,
@@ -2646,9 +2707,9 @@ async function registProduct() {
         isBest: true,
         category: ['PC-shop', 'PC-bone'],
         sort: 4,
+        depth: 1,
       },
     },
-
     {
       _id: await nextSeq('product'),
       seller_id: 2,
@@ -2658,9 +2719,15 @@ async function registProduct() {
       active: true,
       name: '한우 소발톱 천연껌',
       options: [
-        { '용량 선택': '기본 단품' },
-        { '용량 선택': '5팩(5% 할인) (+22,130원)' },
-        { '용량 선택': '10팩(10% 할인) (+47,200원)' },
+        {
+          '용량 선택': '기본 단품',
+        },
+        {
+          '용량 선택': '5팩(5% 할인) (+22,130원)',
+        },
+        {
+          '용량 선택': '10팩(10% 할인) (+47,200원)',
+        },
       ],
       mainImages: [
         '//ggaggamukja.com/web/product/big/202207/a5806ed454e6d86d6a9fb805bbe1dc5c.jpg',
@@ -2682,10 +2749,8 @@ async function registProduct() {
         '//ggaggamukja.com/web/upload/NNEditor/20220707/c0302c1c7fed58392ed321b6d36ef92b.jpg',
         '//ggaggamukja.com/web/upload/NNEditor/20220707/3d93e3ce908cb732286336f0067b9c82.jpg',
       ],
-      content: `
-              <div class="product-detail">
-                  <p>한우 소발톱 천연껌</p>
-              </div>`,
+      content:
+        '\n            <div class="product-detail">\n                <p>한우 소발톱 천연껌</p>\n            </div>',
       createdAt: getTime(-41, -60 * 60 * 2),
       updatedAt: getTime(-40, -60 * 15),
       quantity: 100,
@@ -2695,6 +2760,7 @@ async function registProduct() {
         isBest: true,
         category: ['PC-shop', 'PC-bone'],
         sort: 4,
+        depth: 1,
       },
     },
     {
@@ -2724,10 +2790,8 @@ async function registProduct() {
         '//ggaggamukja.com/web/upload/NNEditor/20211013/dd109bf546da0234c58c6b0f43fe951c.jpg',
         '//ggaggamukja.com/web/upload/NNEditor/20211013/7e9470b16b4c6d415292f4c25dcb9685.jpg',
       ],
-      content: `
-              <div class="product-detail">
-                  <p>강아지 전용 멍맥주 220ml</p>
-              </div>`,
+      content:
+        '\n            <div class="product-detail">\n                <p>강아지 전용 멍맥주 220ml</p>\n            </div>',
       createdAt: getTime(-41, -60 * 60 * 2),
       updatedAt: getTime(-40, -60 * 15),
       quantity: 100,
@@ -2737,9 +2801,9 @@ async function registProduct() {
         isBest: true,
         category: ['PC-shop', 'PC-party'],
         sort: 5,
+        depth: 1,
       },
     },
-
     {
       _id: await nextSeq('product'),
       seller_id: 2,
@@ -2758,10 +2822,8 @@ async function registProduct() {
       descriptImages: [
         '//ggaggamukja.com/web/upload/NNEditor/20211013/4debffa6628bcecadf079e7acbde2cb8.jpg',
       ],
-      content: `
-              <div class="product-detail">
-                  <p>숫자 초 (색상랜덤)</p>
-              </div>`,
+      content:
+        '\n            <div class="product-detail">\n                <p>숫자 초 (색상랜덤)</p>\n            </div>',
       createdAt: getTime(-41, -60 * 60 * 2),
       updatedAt: getTime(-40, -60 * 15),
       quantity: 100,
@@ -2771,9 +2833,9 @@ async function registProduct() {
         isBest: true,
         category: ['PC-shop', 'PC-party'],
         sort: 5,
+        depth: 1,
       },
     },
-
     {
       _id: await nextSeq('product'),
       seller_id: 2,
@@ -2801,10 +2863,8 @@ async function registProduct() {
         '//ggaggamukja.com/web/upload/NNEditor/20211013/cb09c051349c35fd7edbcfb7bac06a41.jpg',
         '//ggaggamukja.com/web/upload/NNEditor/20211013/7ea97f56240932f99702a73353b6d467.jpg',
       ],
-      content: `
-              <div class="product-detail">
-                  <p>강아지 전용 멍소주 330ml</p>
-              </div>`,
+      content:
+        '\n            <div class="product-detail">\n                <p>강아지 전용 멍소주 330ml</p>\n            </div>',
       createdAt: getTime(-41, -60 * 60 * 2),
       updatedAt: getTime(-40, -60 * 15),
       quantity: 100,
@@ -2814,9 +2874,9 @@ async function registProduct() {
         isBest: true,
         category: ['PC-shop', 'PC-party'],
         sort: 5,
+        depth: 1,
       },
     },
-
     {
       _id: await nextSeq('product'),
       seller_id: 2,
@@ -2825,7 +2885,14 @@ async function registProduct() {
       show: true,
       active: true,
       name: '스마일 꼬깔모자',
-      options: [{ 사이즈: '소형견용' }, { 사이즈: '중대형견용 (+500원)' }],
+      options: [
+        {
+          사이즈: '소형견용',
+        },
+        {
+          사이즈: '중대형견용 (+500원)',
+        },
+      ],
       mainImages: [
         '//ggaggamukja.com/web/product/big/202110/ee8c49d2a232879b4429df85af2df2c4.png',
       ],
@@ -2835,10 +2902,8 @@ async function registProduct() {
       descriptImages: [
         '//ggaggamukja.com/web/upload/NNEditor/20211013/059f612b403db1aa0210ffdd908858a4.jpg',
       ],
-      content: `
-              <div class="product-detail">
-                  <p>스마일 꼬깔모자</p>
-              </div>`,
+      content:
+        '\n            <div class="product-detail">\n                <p>스마일 꼬깔모자</p>\n            </div>',
       createdAt: getTime(-41, -60 * 60 * 2),
       updatedAt: getTime(-40, -60 * 15),
       quantity: 100,
@@ -2848,9 +2913,9 @@ async function registProduct() {
         isBest: true,
         category: ['PC-shop', 'PC-party'],
         sort: 5,
+        depth: 1,
       },
     },
-
     {
       _id: await nextSeq('product'),
       seller_id: 2,
@@ -2870,10 +2935,8 @@ async function registProduct() {
         '//ggaggamukja.com/web/upload/NNEditor/20220326/d97e60ecc76d7221b62d669837126541.jpg',
         '//ggaggamukja.com/web/upload/NNEditor/20220326/1cd2fb867eb0e590a9ba512a9f167a67.jpg',
       ],
-      content: `
-              <div class="product-detail">
-                  <p>해피벌스데이 케이크 토퍼</p>
-              </div>`,
+      content:
+        '\n            <div class="product-detail">\n                <p>해피벌스데이 케이크 토퍼</p>\n            </div>',
       createdAt: getTime(-41, -60 * 60 * 2),
       updatedAt: getTime(-40, -60 * 15),
       quantity: 100,
@@ -2883,9 +2946,9 @@ async function registProduct() {
         isBest: true,
         category: ['PC-shop', 'PC-party'],
         sort: 5,
+        depth: 1,
       },
     },
-
     {
       _id: await nextSeq('product'),
       seller_id: 2,
@@ -2904,10 +2967,8 @@ async function registProduct() {
       descriptImages: [
         '//ggaggamukja.com/web/upload/NNEditor/20211013/4236e9c768da94134ff37dfb98f41812.jpg',
       ],
-      content: `
-              <div class="product-detail">
-                  <p>스마일 & 꼬깔 초 (색상 랜덤)</p>
-              </div>`,
+      content:
+        '\n            <div class="product-detail">\n                <p>스마일 & 꼬깔 초 (색상 랜덤)</p>\n            </div>',
       createdAt: getTime(-41, -60 * 60 * 2),
       updatedAt: getTime(-40, -60 * 15),
       quantity: 100,
@@ -2917,9 +2978,9 @@ async function registProduct() {
         isBest: true,
         category: ['PC-shop', 'PC-party'],
         sort: 5,
+        depth: 1,
       },
     },
-
     {
       _id: await nextSeq('product'),
       seller_id: 2,
@@ -2938,10 +2999,8 @@ async function registProduct() {
       descriptImages: [
         '//ggaggamukja.com/web/upload/NNEditor/20211013/d9aa0d7464700a293059d56f719209c4.jpg',
       ],
-      content: `
-              <div class="product-detail">
-                  <p>꽃가루 풍선 2개</p>
-              </div>`,
+      content:
+        '\n            <div class="product-detail">\n                <p>꽃가루 풍선 2개</p>\n            </div>',
       createdAt: getTime(-41, -60 * 60 * 2),
       updatedAt: getTime(-40, -60 * 15),
       quantity: 100,
@@ -2951,9 +3010,9 @@ async function registProduct() {
         isBest: true,
         category: ['PC-shop', 'PC-party'],
         sort: 5,
+        depth: 1,
       },
     },
-
     {
       _id: await nextSeq('product'),
       seller_id: 2,
@@ -2972,10 +3031,8 @@ async function registProduct() {
       descriptImages: [
         '//ggaggamukja.com/web/upload/NNEditor/20211013/be3a380cf6f40f450612e01d136a03fa.jpg',
       ],
-      content: `
-              <div class="product-detail">
-                  <p>생일 케이프</p>
-              </div>`,
+      content:
+        '\n            <div class="product-detail">\n                <p>생일 케이프</p>\n            </div>',
       createdAt: getTime(-41, -60 * 60 * 2),
       updatedAt: getTime(-40, -60 * 15),
       quantity: 100,
@@ -2985,9 +3042,9 @@ async function registProduct() {
         isBest: true,
         category: ['PC-shop', 'PC-party'],
         sort: 5,
+        depth: 1,
       },
     },
-
     {
       _id: await nextSeq('product'),
       seller_id: 2,
@@ -2997,8 +3054,12 @@ async function registProduct() {
       active: true,
       name: '핑크색 스트라이프 일회용 디자인 접시',
       options: [
-        { 사이즈: '지름 18cm 3개입' },
-        { 사이즈: '지름 23cm 3개입 (+300원)' },
+        {
+          사이즈: '지름 18cm 3개입',
+        },
+        {
+          사이즈: '지름 23cm 3개입 (+300원)',
+        },
       ],
       mainImages: [
         '//ggaggamukja.com/web/product/big/202203/ef2e520505c40a8810ce14fa2b681705.jpg',
@@ -3011,10 +3072,8 @@ async function registProduct() {
         '//ggaggamukja.com/web/upload/NNEditor/20220326/278c3ff38596b9f1cd92c08befe94611.jpg',
         '//ggaggamukja.com/web/upload/NNEditor/20220326/63c20b7fff64ae7b78792098b0cbaa1a.jpg',
       ],
-      content: `
-              <div class="product-detail">
-                  <p>핑크색 스트라이프 일회용 디자인 접시</p>
-              </div>`,
+      content:
+        '\n            <div class="product-detail">\n                <p>핑크색 스트라이프 일회용 디자인 접시</p>\n            </div>',
       createdAt: getTime(-41, -60 * 60 * 2),
       updatedAt: getTime(-40, -60 * 15),
       quantity: 100,
@@ -3024,9 +3083,9 @@ async function registProduct() {
         isBest: true,
         category: ['PC-shop', 'PC-party'],
         sort: 5,
+        depth: 1,
       },
     },
-
     {
       _id: await nextSeq('product'),
       seller_id: 2,
@@ -3045,10 +3104,8 @@ async function registProduct() {
       descriptImages: [
         '//ggaggamukja.com/web/upload/NNEditor/20211013/aaf243dc22fb3e85c7ff7fcd3c9381e7.jpg',
       ],
-      content: `
-              <div class="product-detail">
-                  <p>꽈배기 & 스마일 초 (색상 랜덤)</p>
-              </div>`,
+      content:
+        '\n            <div class="product-detail">\n                <p>꽈배기 & 스마일 초 (색상 랜덤)</p>\n            </div>',
       createdAt: getTime(-41, -60 * 60 * 2),
       updatedAt: getTime(-40, -60 * 15),
       quantity: 100,
@@ -3058,9 +3115,9 @@ async function registProduct() {
         isBest: true,
         category: ['PC-shop', 'PC-party'],
         sort: 5,
+        depth: 1,
       },
     },
-
     {
       _id: await nextSeq('product'),
       seller_id: 2,
@@ -3088,10 +3145,8 @@ async function registProduct() {
         '//ggaggamukja.com/web/upload/NNEditor/20211013/ff9c4b0d93b77b7c100b06740ddde4d9.jpg',
         '//ggaggamukja.com/web/upload/NNEditor/20211013/e3e9da3158f476f01fa2cc6dd0f79950.jpg',
       ],
-      content: `
-              <div class="product-detail">
-                  <p>강아지 전용 멍와인 340ml</p>
-              </div>`,
+      content:
+        '\n            <div class="product-detail">\n                <p>강아지 전용 멍와인 340ml</p>\n            </div>',
       createdAt: getTime(-41, -60 * 60 * 2),
       updatedAt: getTime(-40, -60 * 15),
       quantity: 100,
@@ -3101,9 +3156,9 @@ async function registProduct() {
         isBest: true,
         category: ['PC-shop', 'PC-party'],
         sort: 5,
+        depth: 1,
       },
     },
-
     {
       _id: await nextSeq('product'),
       seller_id: 2,
@@ -3123,10 +3178,8 @@ async function registProduct() {
         '//ggaggamukja.com/web/upload/NNEditor/20220326/1bcbc3cacdd5c107c4c67162f0189028.jpg',
         '//ggaggamukja.com/web/upload/NNEditor/20220326/419db19fcb5722cf866b57f85476d565.jpg',
       ],
-      content: `
-              <div class="product-detail">
-                  <p>파스텔 풍선 (30cm) 5ea</p>
-              </div>`,
+      content:
+        '\n            <div class="product-detail">\n                <p>파스텔 풍선 (30cm) 5ea</p>\n            </div>',
       createdAt: getTime(-41, -60 * 60 * 2),
       updatedAt: getTime(-40, -60 * 15),
       quantity: 100,
@@ -3136,9 +3189,9 @@ async function registProduct() {
         isBest: true,
         category: ['PC-shop', 'PC-party'],
         sort: 5,
+        depth: 1,
       },
     },
-
     {
       _id: await nextSeq('product'),
       seller_id: 2,
@@ -3158,10 +3211,8 @@ async function registProduct() {
         '//ggaggamukja.com/web/upload/NNEditor/20220326/cae00b0d76597d0e81069e6af23f0279.jpg',
         '//ggaggamukja.com/web/upload/NNEditor/20220326/efbe0e685e08bcb9ae078e64829ddded.jpg',
       ],
-      content: `
-              <div class="product-detail">
-                  <p>데이지 가랜드</p>
-              </div>`,
+      content:
+        '\n            <div class="product-detail">\n                <p>데이지 가랜드</p>\n            </div>',
       createdAt: getTime(-41, -60 * 60 * 2),
       updatedAt: getTime(-40, -60 * 15),
       quantity: 100,
@@ -3171,9 +3222,9 @@ async function registProduct() {
         isBest: true,
         category: ['PC-shop', 'PC-party'],
         sort: 5,
+        depth: 1,
       },
     },
-
     {
       _id: await nextSeq('product'),
       seller_id: 2,
@@ -3195,10 +3246,8 @@ async function registProduct() {
         '//ggaggamukja.com/web/upload/NNEditor/20230912/dc21e32e354b868bd3a167c41cf9f17d.jpg',
         '//ggaggamukja.com/web/upload/NNEditor/20230912/cc731f8d5c01654e2fb01811ce10578c.jpg',
       ],
-      content: `
-              <div class="product-detail">
-                  <p>민트 고깔모자</p>
-              </div>`,
+      content:
+        '\n            <div class="product-detail">\n                <p>민트 고깔모자</p>\n            </div>',
       createdAt: getTime(-41, -60 * 60 * 2),
       updatedAt: getTime(-40, -60 * 15),
       quantity: 100,
@@ -3208,9 +3257,9 @@ async function registProduct() {
         isBest: true,
         category: ['PC-shop', 'PC-party'],
         sort: 5,
+        depth: 1,
       },
     },
-
     {
       _id: await nextSeq('product'),
       seller_id: 2,
@@ -3230,10 +3279,8 @@ async function registProduct() {
         '//ggaggamukja.com/web/upload/NNEditor/20220326/9d28fb2dc4f487c6f9112b89b3a16944.jpg',
         '//ggaggamukja.com/web/upload/NNEditor/20220326/66b54e9cdaedde84cdc4321ab720ec8b.jpg',
       ],
-      content: `
-              <div class="product-detail">
-                  <p>파스텔 생일 가랜드</p>
-              </div>`,
+      content:
+        '\n            <div class="product-detail">\n                <p>파스텔 생일 가랜드</p>\n            </div>',
       createdAt: getTime(-41, -60 * 60 * 2),
       updatedAt: getTime(-40, -60 * 15),
       quantity: 100,
@@ -3243,9 +3290,9 @@ async function registProduct() {
         isBest: true,
         category: ['PC-shop', 'PC-party'],
         sort: 5,
+        depth: 1,
       },
     },
-
     {
       _id: await nextSeq('product'),
       seller_id: 2,
@@ -3264,10 +3311,8 @@ async function registProduct() {
       descriptImages: [
         '//ggaggamukja.com/web/upload/NNEditor/20211013/70ff4708a2575f124097eb4c7cb9a1cc.jpg',
       ],
-      content: `
-              <div class="product-detail">
-                  <p>가랜드 (로즈골드)</p>
-              </div>`,
+      content:
+        '\n            <div class="product-detail">\n                <p>가랜드 (로즈골드)</p>\n            </div>',
       createdAt: getTime(-41, -60 * 60 * 2),
       updatedAt: getTime(-40, -60 * 15),
       quantity: 100,
@@ -3277,9 +3322,9 @@ async function registProduct() {
         isBest: true,
         category: ['PC-shop', 'PC-party'],
         sort: 5,
+        depth: 1,
       },
     },
-
     {
       _id: await nextSeq('product'),
       seller_id: 2,
@@ -3298,10 +3343,8 @@ async function registProduct() {
       descriptImages: [
         '//ggaggamukja.com/web/upload/NNEditor/20211013/19df44d68ee349cd71ecef6a1c4885f8.jpg',
       ],
-      content: `
-              <div class="product-detail">
-                  <p>크레용 초 (색상 랜덤)</p>
-              </div>`,
+      content:
+        '\n            <div class="product-detail">\n                <p>크레용 초 (색상 랜덤)</p>\n            </div>',
       createdAt: getTime(-41, -60 * 60 * 2),
       updatedAt: getTime(-40, -60 * 15),
       quantity: 100,
@@ -3311,9 +3354,9 @@ async function registProduct() {
         isBest: true,
         category: ['PC-shop', 'PC-party'],
         sort: 5,
+        depth: 1,
       },
     },
-
     {
       _id: await nextSeq('product'),
       seller_id: 2,
@@ -3323,8 +3366,12 @@ async function registProduct() {
       active: true,
       name: '스너플 도그비어',
       options: [
-        { '종류 선택': '병 맥주' },
-        { '종류 선택': '캔 맥주 (-1,000원)' },
+        {
+          '종류 선택': '병 맥주',
+        },
+        {
+          '종류 선택': '캔 맥주 (-1,000원)',
+        },
       ],
       mainImages: [
         '//ggaggamukja.com/web/product/big/202309/4e4a90ff9933f1acef4b839a153e5091.png',
@@ -3346,10 +3393,8 @@ async function registProduct() {
         '//ggaggamukja.com/web/upload/NNEditor/20230907/92a83913618cf89dc52cac06da520dae.jpg',
         '//ggaggamukja.com/web/upload/NNEditor/20230907/f338a083418304f5e85749ca77193e23.jpg',
       ],
-      content: `
-              <div class="product-detail">
-                  <p>스너플 도그비어</p>
-              </div>`,
+      content:
+        '\n            <div class="product-detail">\n                <p>스너플 도그비어</p>\n            </div>',
       createdAt: getTime(-41, -60 * 60 * 2),
       updatedAt: getTime(-40, -60 * 15),
       quantity: 100,
@@ -3359,6 +3404,2586 @@ async function registProduct() {
         isBest: true,
         category: ['PC-shop', 'PC-party'],
         sort: 5,
+        depth: 1,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 3500,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '멍도넛',
+      option: '자색고구마(보라색)',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202205/c8a90a8b833ba40366a4fd34e955b590.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202205/d223b65ad2daf105ee11cc874f89fb37.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202205/3e2ed0105b93601e5bc5eadc2d7ea3fc.jpg',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>멍도넛</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 1,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 3500,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '멍도넛',
+      option: '시금치(초록색)',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202205/c8a90a8b833ba40366a4fd34e955b590.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202205/d223b65ad2daf105ee11cc874f89fb37.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202205/3e2ed0105b93601e5bc5eadc2d7ea3fc.jpg',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>멍도넛</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 1,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 3500,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '멍도넛',
+      option: '단호박(노란색)',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202205/c8a90a8b833ba40366a4fd34e955b590.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202205/d223b65ad2daf105ee11cc874f89fb37.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202205/3e2ed0105b93601e5bc5eadc2d7ea3fc.jpg',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>멍도넛</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 1,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 7000,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '콤비네이션 타르트',
+      option: '기본 9.5cm',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202012/8e6738607993c7cbe4b3b724072677e0.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202012/ce2f2ad2acbcb9b993d03113ebf09933.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/421bb9f2cd73a685405a27c2c7c4c392.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/e76f4c46fda5c42a3a8d60f668529109.jpg',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>콤비네이션 타르트</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 5,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 12000,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '콤비네이션 타르트',
+      option: '케이크 대용 12cm (+5,000원)',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202012/8e6738607993c7cbe4b3b724072677e0.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202012/ce2f2ad2acbcb9b993d03113ebf09933.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/421bb9f2cd73a685405a27c2c7c4c392.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/e76f4c46fda5c42a3a8d60f668529109.jpg',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>콤비네이션 타르트</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 5,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 4000,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '코코넛 치즈볼',
+      option: '단품',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202207/18a2e36960287be027bdc83940350d50.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/ac3f42ec81670a739e05ec0092a0ef4d.jpg',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>코코넛 치즈볼</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 8,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 19000,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '코코넛 치즈볼',
+      option: '5팩(5% 할인) (+15,000원)',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202207/18a2e36960287be027bdc83940350d50.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/ac3f42ec81670a739e05ec0092a0ef4d.jpg',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>코코넛 치즈볼</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 8,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 36000,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '코코넛 치즈볼',
+      option: '10팩(10% 할인) (+32,000원)',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202207/18a2e36960287be027bdc83940350d50.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/ac3f42ec81670a739e05ec0092a0ef4d.jpg',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>코코넛 치즈볼</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 8,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 35000,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '까까묵자 X 스너플 도그비어 캠핑 세트',
+      option: '피자+치킨+도그비어',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202308/d85b8fbf57e1ba9093adc4bc0932f09a.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202308/46a1be176219e44531a00ec2239ad64a.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202308/e85ac274e9d0dc16313e8569ff130c98.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202308/01c8a8f7792bc48d005959ccbbd26e86.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202308/809ca66fcf42d83220be466bebf6173e.jpg',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>까까묵자 X 스너플 도그비어 캠핑 세트</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 18,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 23000,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '까까묵자 X 스너플 도그비어 캠핑 세트',
+      option: '피자+도그비어 (-12,000원)',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202308/d85b8fbf57e1ba9093adc4bc0932f09a.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202308/46a1be176219e44531a00ec2239ad64a.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202308/e85ac274e9d0dc16313e8569ff130c98.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202308/01c8a8f7792bc48d005959ccbbd26e86.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202308/809ca66fcf42d83220be466bebf6173e.jpg',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>까까묵자 X 스너플 도그비어 캠핑 세트</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 18,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 21000,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '까까묵자 X 스너플 도그비어 캠핑 세트',
+      option: '치킨+도그비어 (-14,000원)',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202308/d85b8fbf57e1ba9093adc4bc0932f09a.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202308/46a1be176219e44531a00ec2239ad64a.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202308/e85ac274e9d0dc16313e8569ff130c98.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202308/01c8a8f7792bc48d005959ccbbd26e86.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202308/809ca66fcf42d83220be466bebf6173e.jpg',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>까까묵자 X 스너플 도그비어 캠핑 세트</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 18,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 15500,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '까까묵자 X 스너플 콜라보 세트',
+      option: '조각피자+조각치킨+도그비어 캔',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202309/5ba45f0712c3d4ca1c9125ff445ea801.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202308/46a1be176219e44531a00ec2239ad64a.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202309/d16544838014204bfbf2a0b2432f7554.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202309/66e6a1b29c37c525a511ac0624a2538a.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202309/d3228c239cc92c3d38770b536ad70449.jpg',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>까까묵자 X 스너플 콜라보 세트</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 20,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 12000,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '까까묵자 X 스너플 콜라보 세트',
+      option: '조각피자+도그비어 캔 (-3,500원)',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202309/5ba45f0712c3d4ca1c9125ff445ea801.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202308/46a1be176219e44531a00ec2239ad64a.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202309/d16544838014204bfbf2a0b2432f7554.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202309/66e6a1b29c37c525a511ac0624a2538a.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202309/d3228c239cc92c3d38770b536ad70449.jpg',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>까까묵자 X 스너플 콜라보 세트</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 20,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 11500,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '까까묵자 X 스너플 콜라보 세트',
+      option: '조각치킨+도그비어 캔 (-4,000원)',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202309/5ba45f0712c3d4ca1c9125ff445ea801.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202308/46a1be176219e44531a00ec2239ad64a.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202309/d16544838014204bfbf2a0b2432f7554.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202309/66e6a1b29c37c525a511ac0624a2538a.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202309/d3228c239cc92c3d38770b536ad70449.jpg',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>까까묵자 X 스너플 콜라보 세트</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 20,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 3500,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '닭가슴살 테린',
+      option: '기본 단품',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202102/54f9c3a6dbfb72fb4a14df9ffbedf540.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202102/ffcc8452a77c9e12b19c15f2b0c6b74a.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202102/218462e4b1aa57e283a290828eb517c4.jpg',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>닭가슴살 테린</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 23,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 17500,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '닭가슴살 테린',
+      option: '5팩(5% 할인) (+14,000원)',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202102/54f9c3a6dbfb72fb4a14df9ffbedf540.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202102/ffcc8452a77c9e12b19c15f2b0c6b74a.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202102/218462e4b1aa57e283a290828eb517c4.jpg',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>닭가슴살 테린</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 23,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 31500,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '닭가슴살 테린',
+      option: '10팩(10% 할인) (+28,000원)',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202102/54f9c3a6dbfb72fb4a14df9ffbedf540.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202102/ffcc8452a77c9e12b19c15f2b0c6b74a.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202102/218462e4b1aa57e283a290828eb517c4.jpg',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>닭가슴살 테린</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 23,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 5000,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '한우 미트볼',
+      option: '기본 단품',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202110/f8999fa26ba0b517725642c613f93323.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202102/2ea57e843526b9c7ed30a4c8e70ad46f.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202102/28aa8a79f3b6604ff1e6809c691fa4bc.jpg',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>한우 미트볼</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 24,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 23750,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '한우 미트볼',
+      option: '5팩(5% 할인) (+18,750원)',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202110/f8999fa26ba0b517725642c613f93323.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202102/2ea57e843526b9c7ed30a4c8e70ad46f.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202102/28aa8a79f3b6604ff1e6809c691fa4bc.jpg',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>한우 미트볼</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 24,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 45000,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '한우 미트볼',
+      option: '10팩(10% 할인) (+40,000원)',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202110/f8999fa26ba0b517725642c613f93323.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202102/2ea57e843526b9c7ed30a4c8e70ad46f.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202102/28aa8a79f3b6604ff1e6809c691fa4bc.jpg',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>한우 미트볼</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 24,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 4000,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '오리안심 테린',
+      option: '기본 단품',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202102/efd3f06cf95a6693c80118bd08e3575f.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202102/e72f20c9b531d3fe27bde3dca3760975.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202102/9fef9116c51b7a073565fc819dcf2c1b.jpg',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>오리안심 테린</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 25,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 18050,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '오리안심 테린',
+      option: '5팩(5% 할인) (+14,050원)',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202102/efd3f06cf95a6693c80118bd08e3575f.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202102/e72f20c9b531d3fe27bde3dca3760975.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202102/9fef9116c51b7a073565fc819dcf2c1b.jpg',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>오리안심 테린</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 25,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 36000,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '오리안심 테린',
+      option: '10팩(10% 할인) (+32,000원)',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202102/efd3f06cf95a6693c80118bd08e3575f.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202102/e72f20c9b531d3fe27bde3dca3760975.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202102/9fef9116c51b7a073565fc819dcf2c1b.jpg',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>오리안심 테린</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 25,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 4900,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '닭가슴살 육포',
+      option: '기본 단품',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202207/82e27378db65ce514d3c7eda9f45a4a4.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/fd6c177fe9f645e4a10b2f6d32b7e315.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/f9b60ded23b1d7c266b16fff24a03a01.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/f685890f201311e41a988b1f76354a83.jpg',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>닭가슴살 육포</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 31,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 23280,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '닭가슴살 육포',
+      option: '5팩(5% 할인) (+18,380원)',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202207/82e27378db65ce514d3c7eda9f45a4a4.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/fd6c177fe9f645e4a10b2f6d32b7e315.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/f9b60ded23b1d7c266b16fff24a03a01.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/f685890f201311e41a988b1f76354a83.jpg',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>닭가슴살 육포</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 31,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 44100,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '닭가슴살 육포',
+      option: '10팩(10% 할인) (+39,200원)',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202207/82e27378db65ce514d3c7eda9f45a4a4.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/fd6c177fe9f645e4a10b2f6d32b7e315.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/f9b60ded23b1d7c266b16fff24a03a01.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/f685890f201311e41a988b1f76354a83.jpg',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>닭가슴살 육포</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 31,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 6500,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '오리안심 육포',
+      option: '기본 단품',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202207/eab5c40f540af2fad5f855a9d2d1137c.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/7da404fed811162897085729ecfb44ba.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/ae41cc531ef1efad8127d5d428b7dd79.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/fb7dfb5a59c85bfca9583c91cffac696.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/0d4c6e6dcbcffaee83e16f2eefac6c6a.jpg',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>오리안심 육포</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 32,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 30880,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '오리안심 육포',
+      option: '5팩(5% 할인) (+24,380원)',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202207/eab5c40f540af2fad5f855a9d2d1137c.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/7da404fed811162897085729ecfb44ba.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/ae41cc531ef1efad8127d5d428b7dd79.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/fb7dfb5a59c85bfca9583c91cffac696.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/0d4c6e6dcbcffaee83e16f2eefac6c6a.jpg',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>오리안심 육포</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 32,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 58500,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '오리안심 육포',
+      option: '10팩(10% 할인) (+52,000원)',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202207/eab5c40f540af2fad5f855a9d2d1137c.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/7da404fed811162897085729ecfb44ba.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/ae41cc531ef1efad8127d5d428b7dd79.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/fb7dfb5a59c85bfca9583c91cffac696.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/0d4c6e6dcbcffaee83e16f2eefac6c6a.jpg',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>오리안심 육포</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 32,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 6900,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '소고기 큐브',
+      option: '기본 단품',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202207/bccd7356518124a50abe56586768e099.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/f508a90ebd3e16efbb0200066ab8b30b.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/c1b45bd471e4577d69aae758b6b7a928.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/4f3dc8138269fcf58abb03a558d77cb4.jpg',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>소고기 큐브</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 33,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 32780,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '소고기 큐브',
+      option: '5팩(5% 할인) (+25,880원)',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202207/bccd7356518124a50abe56586768e099.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/f508a90ebd3e16efbb0200066ab8b30b.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/c1b45bd471e4577d69aae758b6b7a928.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/4f3dc8138269fcf58abb03a558d77cb4.jpg',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>소고기 큐브</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 33,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 62100,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '소고기 큐브',
+      option: '10팩(10% 할인) (+55,200원)',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202207/bccd7356518124a50abe56586768e099.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/f508a90ebd3e16efbb0200066ab8b30b.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/c1b45bd471e4577d69aae758b6b7a928.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/4f3dc8138269fcf58abb03a558d77cb4.jpg',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>소고기 큐브</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 33,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 6900,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '무염 황태포',
+      option: '기본 단품',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202111/ce6c17bb7c93e1542fa2d68d314af500.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/19222849f435bd92c4cc5889184950a1.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/99c41c5ce1017aba7a2b9654910485a6.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/f6ca78ca97500214f09e7d9d589a02bc.jpg',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>무염 황태포</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 34,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 34500,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '무염 황태포',
+      option: '5팩(5% 할인) (+27,600원)',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202111/ce6c17bb7c93e1542fa2d68d314af500.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/19222849f435bd92c4cc5889184950a1.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/99c41c5ce1017aba7a2b9654910485a6.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/f6ca78ca97500214f09e7d9d589a02bc.jpg',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>무염 황태포</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 34,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 62100,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '무염 황태포',
+      option: '10팩(10% 할인) (+55,200원)',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202111/ce6c17bb7c93e1542fa2d68d314af500.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/19222849f435bd92c4cc5889184950a1.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/99c41c5ce1017aba7a2b9654910485a6.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/f6ca78ca97500214f09e7d9d589a02bc.jpg',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>무염 황태포</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 34,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 5900,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '돼지안심 육포',
+      option: '기본 단품',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202207/84c73d5433269022af69fe53ba3c221c.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/be69424bcfa29d243049ebf1131206fa.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/c4df605459d4f2523270c9a76bf4b7b5.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/08636003c4c5830c2c30328ba714a3bb.jpg',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>돼지안심 육포</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 35,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 28030,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '돼지안심 육포',
+      option: '5팩(5% 할인) (+22,130원)',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202207/84c73d5433269022af69fe53ba3c221c.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/be69424bcfa29d243049ebf1131206fa.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/c4df605459d4f2523270c9a76bf4b7b5.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/08636003c4c5830c2c30328ba714a3bb.jpg',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>돼지안심 육포</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 35,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 53100,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '돼지안심 육포',
+      option: '10팩(10% 할인) (+47,200원)',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202207/84c73d5433269022af69fe53ba3c221c.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/be69424bcfa29d243049ebf1131206fa.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/c4df605459d4f2523270c9a76bf4b7b5.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/08636003c4c5830c2c30328ba714a3bb.jpg',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>돼지안심 육포</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 35,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 7800,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '연어 큐브',
+      option: '기본 단품',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202207/f71a10b75623d1820ae6865a14b31156.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/1dbb7e54cdf25f7cd656aa7335070c6c.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/24ed0ad5ec5ac934fe7e609b3235e766.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/cd16f60d9758a697e7c776d77bbddd73.jpg',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>연어 큐브</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 36,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 37050,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '연어 큐브',
+      option: '5팩(5% 할인) (+29,250원)',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202207/f71a10b75623d1820ae6865a14b31156.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/1dbb7e54cdf25f7cd656aa7335070c6c.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/24ed0ad5ec5ac934fe7e609b3235e766.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/cd16f60d9758a697e7c776d77bbddd73.jpg',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>연어 큐브</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 36,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 70200,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '연어 큐브',
+      option: '10팩(10% 할인) (+62,400원)',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202207/f71a10b75623d1820ae6865a14b31156.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/1dbb7e54cdf25f7cd656aa7335070c6c.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/24ed0ad5ec5ac934fe7e609b3235e766.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/cd16f60d9758a697e7c776d77bbddd73.jpg',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>연어 큐브</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 36,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 7500,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '열빙어 육포',
+      option: '기본 단품',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202207/a5be444af0f495e820e1f88ae9b5819f.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202103/bb6926adde1e3703ef4ce9d32325b859.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/34f93adc5e7a0814b05c077b68c80ae5.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/def2b0b9199160eb5d7d0dcc2dcc4249.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/3c02e4bf5cab37a298d1d6ab4da99cda.jpg',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>열빙어 육포</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 37,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 35630,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '열빙어 육포',
+      option: '5팩(5% 할인) (+28,130원)',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202207/a5be444af0f495e820e1f88ae9b5819f.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202103/bb6926adde1e3703ef4ce9d32325b859.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/34f93adc5e7a0814b05c077b68c80ae5.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/def2b0b9199160eb5d7d0dcc2dcc4249.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/3c02e4bf5cab37a298d1d6ab4da99cda.jpg',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>열빙어 육포</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 37,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 67500,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '열빙어 육포',
+      option: '10팩(10% 할인) (+60,000원)',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202207/a5be444af0f495e820e1f88ae9b5819f.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202103/bb6926adde1e3703ef4ce9d32325b859.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/34f93adc5e7a0814b05c077b68c80ae5.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/def2b0b9199160eb5d7d0dcc2dcc4249.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/3c02e4bf5cab37a298d1d6ab4da99cda.jpg',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>열빙어 육포</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 37,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 6900,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '제주 말고기 큐브',
+      option: '기본 단품',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202207/fb911580fb36b82574e3c7d6af159c4b.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/b1fd6e48309d135b92fbdff9848a3e57.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/c580160f3d2f1ff8406efe0378f44571.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/a0da30f52758f442bc2a261856df0cc1.jpg',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>제주 말고기 큐브</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 38,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 32780,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '제주 말고기 큐브',
+      option: '5팩(5% 할인) (+25,880원)',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202207/fb911580fb36b82574e3c7d6af159c4b.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/b1fd6e48309d135b92fbdff9848a3e57.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/c580160f3d2f1ff8406efe0378f44571.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/a0da30f52758f442bc2a261856df0cc1.jpg',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>제주 말고기 큐브</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 38,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 62100,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '제주 말고기 큐브',
+      option: '10팩(10% 할인) (+55,200원)',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202207/fb911580fb36b82574e3c7d6af159c4b.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/b1fd6e48309d135b92fbdff9848a3e57.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/c580160f3d2f1ff8406efe0378f44571.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/a0da30f52758f442bc2a261856df0cc1.jpg',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>제주 말고기 큐브</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 38,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 4500,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '한우 소간 육포',
+      option: '기본 단품',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202207/db8d9610a952e0dbf4f12db9d1ebec90.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/e3b9462535616599a81e9be12d032c27.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/27e83cdd218ee86d2dfc42b4ee26416f.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/fb00ea26253af9f3cc015403f3ae4f7f.jpg',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>한우 소간 육포</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 39,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 21380,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '한우 소간 육포',
+      option: '5팩(5% 할인) (+16,880원)',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202207/db8d9610a952e0dbf4f12db9d1ebec90.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/e3b9462535616599a81e9be12d032c27.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/27e83cdd218ee86d2dfc42b4ee26416f.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/fb00ea26253af9f3cc015403f3ae4f7f.jpg',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>한우 소간 육포</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 39,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 40500,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '한우 소간 육포',
+      option: '10팩(10% 할인) (+36,000원)',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202207/db8d9610a952e0dbf4f12db9d1ebec90.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/e3b9462535616599a81e9be12d032c27.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/27e83cdd218ee86d2dfc42b4ee26416f.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/fb00ea26253af9f3cc015403f3ae4f7f.jpg',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>한우 소간 육포</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 39,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 5900,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '한우 우족 천연껌',
+      option: '기본 단품',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202111/3339b97d1c243c143ca4cd41d20177d9.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/ff6b8a69211770b42389d6921961ce4f.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/483e210a9b791d8cfa93711eb8555e51.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/f3f26cd2d5e94b853b1bb2fbaef27dcc.jpg',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>한우 우족 천연껌</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 40,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 28030,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '한우 우족 천연껌',
+      option: '5팩(5% 할인) (+22,130원)',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202111/3339b97d1c243c143ca4cd41d20177d9.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/ff6b8a69211770b42389d6921961ce4f.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/483e210a9b791d8cfa93711eb8555e51.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/f3f26cd2d5e94b853b1bb2fbaef27dcc.jpg',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>한우 우족 천연껌</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 40,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 53100,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '한우 우족 천연껌',
+      option: '10팩(10% 할인) (+47,200원)',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202111/3339b97d1c243c143ca4cd41d20177d9.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/ff6b8a69211770b42389d6921961ce4f.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/483e210a9b791d8cfa93711eb8555e51.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/f3f26cd2d5e94b853b1bb2fbaef27dcc.jpg',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>한우 우족 천연껌</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 40,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 4000,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '메추리 천연껌',
+      option: '기본 단품',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202207/424f0152158efa65c94aa9af9f4d2be7.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/265c7c60078037547983ed8ad7ff677d.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/a208ac112e444338f07da24a9fdc73f8.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/a3348f72b29550d828aa874f35795bac.jpg',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>메추리 천연껌</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 41,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 19000,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '메추리 천연껌',
+      option: '5팩(5% 할인) (+15,000원)',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202207/424f0152158efa65c94aa9af9f4d2be7.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/265c7c60078037547983ed8ad7ff677d.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/a208ac112e444338f07da24a9fdc73f8.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/a3348f72b29550d828aa874f35795bac.jpg',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>메추리 천연껌</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 41,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 36000,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '메추리 천연껌',
+      option: '10팩(10% 할인) (+32,000원)',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202207/424f0152158efa65c94aa9af9f4d2be7.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/265c7c60078037547983ed8ad7ff677d.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/a208ac112e444338f07da24a9fdc73f8.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/a3348f72b29550d828aa874f35795bac.jpg',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>메추리 천연껌</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 41,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 7900,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '송아지목뼈 천연껌',
+      option: '기본 단품',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202207/fc313662a4a1b1be059ece9c78be29a3.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/6bba1a8a7c575ff55b3f5ea5bfd859d5.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/0c4d9843ca35d6e6890e4c662fea577f.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/1a732d934f872ef4032df1f95c15a497.jpg',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>송아지목뼈 천연껌</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 42,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 37530,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '송아지목뼈 천연껌',
+      option: '5팩(5% 할인) (+29,630원)',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202207/fc313662a4a1b1be059ece9c78be29a3.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/6bba1a8a7c575ff55b3f5ea5bfd859d5.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/0c4d9843ca35d6e6890e4c662fea577f.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/1a732d934f872ef4032df1f95c15a497.jpg',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>송아지목뼈 천연껌</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 42,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 71100,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '송아지목뼈 천연껌',
+      option: '10팩(10% 할인) (+63,200원)',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202207/fc313662a4a1b1be059ece9c78be29a3.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/6bba1a8a7c575ff55b3f5ea5bfd859d5.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/0c4d9843ca35d6e6890e4c662fea577f.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/1a732d934f872ef4032df1f95c15a497.jpg',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>송아지목뼈 천연껌</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 42,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 9500,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '제주 말갈비 천연껌',
+      option: '기본 단품',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202112/e68f7baedc07f6c4ee6a1bc96ac6d4aa.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202112/08f97304b5476a08c34b816001312ffd.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202112/36bf4bf95b50433e70857e9418735523.jpg',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>제주 말갈비 천연껌</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 43,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 45130,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '제주 말갈비 천연껌',
+      option: '5팩(5% 할인) (+35,630원)',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202112/e68f7baedc07f6c4ee6a1bc96ac6d4aa.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202112/08f97304b5476a08c34b816001312ffd.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202112/36bf4bf95b50433e70857e9418735523.jpg',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>제주 말갈비 천연껌</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 43,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 85500,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '제주 말갈비 천연껌',
+      option: '10팩(10% 할인) (+76,000원)',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202112/e68f7baedc07f6c4ee6a1bc96ac6d4aa.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202112/08f97304b5476a08c34b816001312ffd.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202112/36bf4bf95b50433e70857e9418735523.jpg',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>제주 말갈비 천연껌</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 43,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 4500,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '오리장각 천연껌',
+      option: '기본 단품',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202207/4c77e71767cf7f04499cc8c2d84ba623.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/08a635de8f16ec48054160f7749503ca.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/6625e0c139fd0411391031dbbeab9523.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/bd4c5a7d34c32c613a14b0090b69fcb0.jpg',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>오리장각 천연껌</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 44,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 21380,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '오리장각 천연껌',
+      option: '5팩(5% 할인) (+16,880원)',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202207/4c77e71767cf7f04499cc8c2d84ba623.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/08a635de8f16ec48054160f7749503ca.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/6625e0c139fd0411391031dbbeab9523.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/bd4c5a7d34c32c613a14b0090b69fcb0.jpg',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>오리장각 천연껌</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 44,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 40500,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '오리장각 천연껌',
+      option: '10팩(10% 할인) (+36,000원)',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202207/4c77e71767cf7f04499cc8c2d84ba623.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/08a635de8f16ec48054160f7749503ca.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/6625e0c139fd0411391031dbbeab9523.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/bd4c5a7d34c32c613a14b0090b69fcb0.jpg',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>오리장각 천연껌</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 44,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 7900,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '캥거루꼬리 천연껌',
+      option: '기본 단품',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202111/c2f99f661c7cfa9695a9ddf345c5995c.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/dd8ef9d8a73f632fa354c2f29c211995.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/8d03098c1c389e719a1898570aba420c.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/4c2fe865bf1ff1a9d87d332146d07145.jpg',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>캥거루꼬리 천연껌</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 45,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 37530,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '캥거루꼬리 천연껌',
+      option: '5팩(5% 할인) (+29,630원)',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202111/c2f99f661c7cfa9695a9ddf345c5995c.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/dd8ef9d8a73f632fa354c2f29c211995.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/8d03098c1c389e719a1898570aba420c.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/4c2fe865bf1ff1a9d87d332146d07145.jpg',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>캥거루꼬리 천연껌</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 45,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 71100,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '캥거루꼬리 천연껌',
+      option: '10팩(10% 할인) (+63,200원)',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202111/c2f99f661c7cfa9695a9ddf345c5995c.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/dd8ef9d8a73f632fa354c2f29c211995.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/8d03098c1c389e719a1898570aba420c.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/4c2fe865bf1ff1a9d87d332146d07145.jpg',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>캥거루꼬리 천연껌</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 45,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 5900,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '오리근위 천연껌',
+      option: '기본 단품',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202207/4ae384240f184e0fcc5d818d0f0e6034.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/88396e8c72c2437f0c53b212b7782ffe.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/1575782a7f9d431db83451166a3d71cf.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/a85dcffe31df58b8d578be4cd1f05506.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/0b13a2ed898e67f7a8c7288c2f2ab9e4.jpg',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>오리근위 천연껌</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 46,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 28030,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '오리근위 천연껌',
+      option: '5팩(5% 할인) (+22,130원)',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202207/4ae384240f184e0fcc5d818d0f0e6034.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/88396e8c72c2437f0c53b212b7782ffe.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/1575782a7f9d431db83451166a3d71cf.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/a85dcffe31df58b8d578be4cd1f05506.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/0b13a2ed898e67f7a8c7288c2f2ab9e4.jpg',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>오리근위 천연껌</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 46,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 53100,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '오리근위 천연껌',
+      option: '10팩(10% 할인) (+47,200원)',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202207/4ae384240f184e0fcc5d818d0f0e6034.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/88396e8c72c2437f0c53b212b7782ffe.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/1575782a7f9d431db83451166a3d71cf.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/a85dcffe31df58b8d578be4cd1f05506.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/0b13a2ed898e67f7a8c7288c2f2ab9e4.jpg',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>오리근위 천연껌</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 46,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 4500,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '양등뼈 천연껌',
+      option: '기본 단품',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202112/f167c512114c314b94cac80161f5cdcd.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/c8ff6974f4dff0dbdadc770311a9b995.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/0cfa079a23f84d12a05a1b7a8bc6f9f3.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/1f7701d1fb2e43dca3611d410bc4f7de.jpg',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>양등뼈 천연껌</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 47,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 21380,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '양등뼈 천연껌',
+      option: '5팩(5% 할인) (+16,880원)',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202112/f167c512114c314b94cac80161f5cdcd.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/c8ff6974f4dff0dbdadc770311a9b995.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/0cfa079a23f84d12a05a1b7a8bc6f9f3.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/1f7701d1fb2e43dca3611d410bc4f7de.jpg',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>양등뼈 천연껌</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 47,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 40500,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '양등뼈 천연껌',
+      option: '10팩(10% 할인) (+36,000원)',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202112/f167c512114c314b94cac80161f5cdcd.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/c8ff6974f4dff0dbdadc770311a9b995.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/0cfa079a23f84d12a05a1b7a8bc6f9f3.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/1f7701d1fb2e43dca3611d410bc4f7de.jpg',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>양등뼈 천연껌</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 47,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 6500,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '상어연골 천연껌',
+      option: '기본 단품',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202207/df69af13efaafe33be45f0ec3413230e.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/e48a6d3a2cf6a07e145857a3e233718b.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/fa32b31d8bcaba8c3a2bc6ccbad0c9c8.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/b515718bf7ad469122529b91fef185c7.jpg',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>상어연골 천연껌</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 48,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 30880,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '상어연골 천연껌',
+      option: '5팩(5% 할인) (+24,380원)',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202207/df69af13efaafe33be45f0ec3413230e.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/e48a6d3a2cf6a07e145857a3e233718b.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/fa32b31d8bcaba8c3a2bc6ccbad0c9c8.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/b515718bf7ad469122529b91fef185c7.jpg',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>상어연골 천연껌</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 48,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 58500,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '상어연골 천연껌',
+      option: '10팩(10% 할인) (+52,000원)',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202207/df69af13efaafe33be45f0ec3413230e.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/e48a6d3a2cf6a07e145857a3e233718b.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/fa32b31d8bcaba8c3a2bc6ccbad0c9c8.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/b515718bf7ad469122529b91fef185c7.jpg',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>상어연골 천연껌</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 48,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 6500,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '오리 오돌뼈 천연껌',
+      option: '기본 한팩',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202112/fc00b86e2537ef4ed46bf9f7f34b8e81.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202112/a2b20eebc1d4ef2f6a9ceaef950ebe9f.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202112/59afb8f30b66c231fafc7b0061041b33.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/7e922439ce70b87c5bca0fe9e59ebd02.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/32fd9a27cad707e1c9f56a142d1f782e.jpg',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>오리 오돌뼈 천연껌</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 49,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 30880,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '오리 오돌뼈 천연껌',
+      option: '5팩(5% 할인) (+24,380원)',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202112/fc00b86e2537ef4ed46bf9f7f34b8e81.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202112/a2b20eebc1d4ef2f6a9ceaef950ebe9f.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202112/59afb8f30b66c231fafc7b0061041b33.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/7e922439ce70b87c5bca0fe9e59ebd02.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/32fd9a27cad707e1c9f56a142d1f782e.jpg',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>오리 오돌뼈 천연껌</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 49,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 58500,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '오리 오돌뼈 천연껌',
+      option: '10팩(10% 할인) (+52,000원)',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202112/fc00b86e2537ef4ed46bf9f7f34b8e81.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202112/a2b20eebc1d4ef2f6a9ceaef950ebe9f.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202112/59afb8f30b66c231fafc7b0061041b33.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/7e922439ce70b87c5bca0fe9e59ebd02.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/32fd9a27cad707e1c9f56a142d1f782e.jpg',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>오리 오돌뼈 천연껌</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 49,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 5900,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '한우 소발톱 천연껌',
+      option: '기본 단품',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202207/a5806ed454e6d86d6a9fb805bbe1dc5c.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/df05607099c558f08da73db618c9bf74.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/8b9e7362ac2ea12dceaa143c8d68f37f.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/f731301c825cc87f2ee4830034db1757.jpg',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>한우 소발톱 천연껌</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 50,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 28030,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '한우 소발톱 천연껌',
+      option: '5팩(5% 할인) (+22,130원)',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202207/a5806ed454e6d86d6a9fb805bbe1dc5c.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/df05607099c558f08da73db618c9bf74.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/8b9e7362ac2ea12dceaa143c8d68f37f.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/f731301c825cc87f2ee4830034db1757.jpg',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>한우 소발톱 천연껌</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 50,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 53100,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '한우 소발톱 천연껌',
+      option: '10팩(10% 할인) (+47,200원)',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202207/a5806ed454e6d86d6a9fb805bbe1dc5c.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/df05607099c558f08da73db618c9bf74.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/8b9e7362ac2ea12dceaa143c8d68f37f.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202207/f731301c825cc87f2ee4830034db1757.jpg',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>한우 소발톱 천연껌</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 50,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 800,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '숫자 초 (색상 랜덤)',
+      option: '0',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202110/e0bd41c91b4a6bae9406bbe92bc6bb71.png',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>숫자 초 (색상랜덤)</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 52,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 800,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '숫자 초 (색상 랜덤)',
+      option: '1',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202110/e0bd41c91b4a6bae9406bbe92bc6bb71.png',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>숫자 초 (색상랜덤)</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 52,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 800,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '숫자 초 (색상 랜덤)',
+      option: '2',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202110/e0bd41c91b4a6bae9406bbe92bc6bb71.png',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>숫자 초 (색상랜덤)</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 52,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 800,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '숫자 초 (색상 랜덤)',
+      option: '3',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202110/e0bd41c91b4a6bae9406bbe92bc6bb71.png',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>숫자 초 (색상랜덤)</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 52,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 800,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '숫자 초 (색상 랜덤)',
+      option: '4',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202110/e0bd41c91b4a6bae9406bbe92bc6bb71.png',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>숫자 초 (색상랜덤)</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 52,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 800,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '숫자 초 (색상 랜덤)',
+      option: '5',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202110/e0bd41c91b4a6bae9406bbe92bc6bb71.png',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>숫자 초 (색상랜덤)</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 52,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 800,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '숫자 초 (색상 랜덤)',
+      option: '6',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202110/e0bd41c91b4a6bae9406bbe92bc6bb71.png',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>숫자 초 (색상랜덤)</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 52,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 800,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '숫자 초 (색상 랜덤)',
+      option: '7',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202110/e0bd41c91b4a6bae9406bbe92bc6bb71.png',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>숫자 초 (색상랜덤)</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 52,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 800,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '숫자 초 (색상 랜덤)',
+      option: '8',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202110/e0bd41c91b4a6bae9406bbe92bc6bb71.png',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>숫자 초 (색상랜덤)</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 52,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 800,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '숫자 초 (색상 랜덤)',
+      option: '9',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202110/e0bd41c91b4a6bae9406bbe92bc6bb71.png',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>숫자 초 (색상랜덤)</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 52,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 2500,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '스마일 꼬깔모자',
+      option: '소형견용',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202110/ee8c49d2a232879b4429df85af2df2c4.png',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>스마일 꼬깔모자</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 54,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 3000,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '스마일 꼬깔모자',
+      option: '중대형견용 (+500원)',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202110/ee8c49d2a232879b4429df85af2df2c4.png',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>스마일 꼬깔모자</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 54,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 7500,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '생일 케이프',
+      option: '핑크색',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202110/b2072642354505330e6ebe10feec4709.png',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>생일 케이프</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 58,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 7500,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '생일 케이프',
+      option: '하늘색',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202110/b2072642354505330e6ebe10feec4709.png',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>생일 케이프</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 58,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 1200,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '핑크색 스트라이프 일회용 디자인 접시',
+      option: '지름 18cm 3개입',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202203/ef2e520505c40a8810ce14fa2b681705.jpg',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>핑크색 스트라이프 일회용 디자인 접시</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 59,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 1500,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '핑크색 스트라이프 일회용 디자인 접시',
+      option: '지름 23cm 3개입 (+300원)',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202203/ef2e520505c40a8810ce14fa2b681705.jpg',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>핑크색 스트라이프 일회용 디자인 접시</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 59,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 9000,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '스너플 도그비어',
+      option: '병 맥주',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202309/4e4a90ff9933f1acef4b839a153e5091.png',
+        '//ggaggamukja.com/web/product/extra/big/202309/4eee7fd5f276c673c66393de5814f9c0.png',
+        '//ggaggamukja.com/web/product/extra/big/202308/46a1be176219e44531a00ec2239ad64a.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202309/d16544838014204bfbf2a0b2432f7554.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202309/66e6a1b29c37c525a511ac0624a2538a.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202309/d3228c239cc92c3d38770b536ad70449.jpg',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>스너플 도그비어</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 68,
+      },
+    },
+    {
+      _id: await nextSeq('product'),
+      seller_id: 2,
+      price: 8000,
+      shippingFees: 0,
+      show: true,
+      active: true,
+      name: '스너플 도그비어',
+      option: '캔 맥주 (-1,000원)',
+      quantity: 100,
+      buyQuantity: 0,
+      mainImages: [
+        '//ggaggamukja.com/web/product/big/202309/4e4a90ff9933f1acef4b839a153e5091.png',
+        '//ggaggamukja.com/web/product/extra/big/202309/4eee7fd5f276c673c66393de5814f9c0.png',
+        '//ggaggamukja.com/web/product/extra/big/202308/46a1be176219e44531a00ec2239ad64a.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202309/d16544838014204bfbf2a0b2432f7554.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202309/66e6a1b29c37c525a511ac0624a2538a.jpg',
+        '//ggaggamukja.com/web/product/extra/big/202309/d3228c239cc92c3d38770b536ad70449.jpg',
+      ],
+      content:
+        '\n            <div class="product-detail">\n                <p>스너플 도그비어</p>\n            </div>',
+      createdAt: getTime(-41, -60 * 60 * 2),
+      updatedAt: getTime(-40, -60 * 15),
+      extra: {
+        depth: 2,
+        parent: 68,
       },
     },
   ];
@@ -3699,7 +6324,7 @@ async function registReply() {
       createdAt: getTime(-3, -60 * 60 * 1),
       extra: {
         type: 'reviewComment',
-        boardId: 5,
+        boardId: 8,
       },
     },
     {
