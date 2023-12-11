@@ -3699,7 +3699,7 @@ async function registReply() {
       createdAt: getTime(-3, -60 * 60 * 1),
       extra: {
         type: 'reviewComment',
-        boardId: 5,
+        boardId: 8,
       },
     },
     {
