@@ -119,7 +119,7 @@ async function registUser() {
       name: '네오',
       phone: '01022223333',
       address: '서울시 강남구 삼성동 456',
-      type: 'seller',
+      type: 'user',
       createdAt: getTime(-50),
       updatedAt: getTime(-30, -60 * 60 * 3),
       extra: {
@@ -143,10 +143,10 @@ async function registUser() {
       _id: await nextSeq('user'),
       email: 's2@market.com',
       password: '$2b$10$S.8GNMDyvUF0xzujPtHBu.j5gtS19.OhRmYbpJBnCHg2S83WLx1T2',
-      name: '어피치',
+      name: '윤동주',
       phone: '01033334444',
       address: '서울시 강남구 도곡동 789',
-      type: 'seller',
+      type: 'user',
       createdAt: getTime(-40, -60 * 30),
       updatedAt: getTime(-30, -60 * 20),
       extra: {
@@ -172,6 +172,87 @@ async function registUser() {
       email: 'u1@market.com',
       password: '$2b$10$S.8GNMDyvUF0xzujPtHBu.j5gtS19.OhRmYbpJBnCHg2S83WLx1T2',
       name: '제이지',
+      phone: '01044445555',
+      address: '서울시 강남구 논현동 222',
+      type: 'user',
+      createdAt: getTime(-20, -60 * 30),
+      updatedAt: getTime(-10, -60 * 60 * 12),
+      extra: {
+        birthday: '11-30',
+        membershipClass: 'MC02',
+        address: [
+          {
+            id: 1,
+            name: '회사',
+            value: '서울시 강동구 천호동 123',
+          },
+          {
+            id: 2,
+            name: '집',
+            value: '서울시 강동구 성내동 234',
+          },
+        ],
+      },
+    },
+    {
+      _id: await nextSeq('user'),
+      email: 'star@naver.com',
+      password: '$2b$10$S.8GNMDyvUF0xzujPtHBu.j5gtS19.OhRmYbpJBnCHg2S83WLx1T2',
+      name: '이동호',
+      phone: '01044445555',
+      address: '서울시 강남구 논현동 222',
+      type: 'user',
+      createdAt: getTime(-20, -60 * 30),
+      updatedAt: getTime(-10, -60 * 60 * 12),
+      extra: {
+        birthday: '11-30',
+        membershipClass: 'MC02',
+        address: [
+          {
+            id: 1,
+            name: '회사',
+            value: '서울시 강동구 천호동 123',
+          },
+          {
+            id: 2,
+            name: '집',
+            value: '서울시 강동구 성내동 234',
+          },
+        ],
+      },
+    },
+    {
+      _id: await nextSeq('user'),
+      email: 'usami@naver.com',
+      password: '$2b$10$S.8GNMDyvUF0xzujPtHBu.j5gtS19.OhRmYbpJBnCHg2S83WLx1T2',
+      name: '장효윤',
+      phone: '01044445555',
+      address: '서울시 강남구 논현동 222',
+      type: 'user',
+      createdAt: getTime(-20, -60 * 30),
+      updatedAt: getTime(-10, -60 * 60 * 12),
+      extra: {
+        birthday: '11-30',
+        membershipClass: 'MC02',
+        address: [
+          {
+            id: 1,
+            name: '회사',
+            value: '서울시 강동구 천호동 123',
+          },
+          {
+            id: 2,
+            name: '집',
+            value: '서울시 강동구 성내동 234',
+          },
+        ],
+      },
+    },
+    {
+      _id: await nextSeq('user'),
+      email: 'duck@naver.com',
+      password: '$2b$10$S.8GNMDyvUF0xzujPtHBu.j5gtS19.OhRmYbpJBnCHg2S83WLx1T2',
+      name: '김건주',
       phone: '01044445555',
       address: '서울시 강남구 논현동 222',
       type: 'user',
@@ -3527,7 +3608,50 @@ async function registReply() {
     },
     {
       _id: await nextSeq('reply'),
+      user_id: 3,
+      product_id: 27,
+      rating: 5,
+      content: '자주 사줘야겠어요 너무 좋아하네요ㅎㅎ',
+      createdAt: getTime(-4, -60 * 60 * 12),
+      extra: {
+        type: 'review',
+        title: '수제간식은 처음인데',
+        attachFile:
+          'https://mblogthumb-phinf.pstatic.net/MjAyMzA3MDRfMTk1/MDAxNjg4NDYxNjMxMjQ5.iIw2f7FVQ5WTM-4wLuH2Vr4_okbvb-ltFHvq0eUgrpUg.xWHabA-9oBQEqwiQidz_kXUl4AmBPNLcK_PjDltYPWgg.JPEG.keroann/IMG_4234.JPG?type=w800',
+      },
+    },
+    {
+      _id: await nextSeq('reply'),
       user_id: 2,
+      product_id: 46,
+      rating: 5,
+      content:
+        '급하게 주문했는데 일정확인해주시고 보내주셔서 생일파티 무사히 했어요~ 색감도 예쁘고 포장도 잘 밀폐되어 왔습니다',
+      createdAt: getTime(-4, -60 * 60 * 12),
+      extra: {
+        type: 'review',
+        title: '덕분에 파티 잘했습니다!',
+        attachFile:
+          'https://sitem.ssgcdn.com/22/75/45/item/1000038457522_i1_750.jpg',
+      },
+    },
+    {
+      _id: await nextSeq('reply'),
+      user_id: 5,
+      product_id: 68,
+      rating: 5,
+      content: '크기도 먹기 좋고 냄새가 좋아서 제가 먹을뻔했네요 : )',
+      createdAt: getTime(-4, -60 * 60 * 12),
+      extra: {
+        type: 'review',
+        title: '고소한 냄새가 납니다',
+        attachFile:
+          'https://mblogthumb-phinf.pstatic.net/MjAyMTAxMjdfMyAg/MDAxNjExNzA5OTE2NjQ5.EH929fhtAtdTvk_22oXeyiq6jLzW3DizR0_RF2TgQtQg.HZTX8EM0KrWoUh2Ma6Io6emX2-UnO6wLCSVPcTwe33gg.JPEG.lovelovejb/KakaoTalk_20210124_122920326_05.jpg?type=w800',
+      },
+    },
+    {
+      _id: await nextSeq('reply'),
+      user_id: 6,
       product_id: 11,
       rating: 4,
       content: '배송이 느린거 제외하고는 애기가 좋아해서 괜찮았어요',
@@ -3539,7 +3663,7 @@ async function registReply() {
     },
     {
       _id: await nextSeq('reply'),
-      user_id: 4,
+      user_id: 7,
       product_id: 65,
       rating: 1,
       content: '문의드렸는데 아직도 답변이 없네요',
@@ -3551,7 +3675,7 @@ async function registReply() {
     },
     {
       _id: await nextSeq('reply'),
-      user_id: 4,
+      user_id: 5,
       product_id: 24,
       content: '배송 언제쯤 시작되나요',
       rating: 1,
@@ -3563,7 +3687,7 @@ async function registReply() {
     },
     {
       _id: await nextSeq('reply'),
-      user_id: 2,
+      user_id: 6,
       product_id: 56,
       content: '제곧내',
       rating: 1,
@@ -3583,6 +3707,32 @@ async function registReply() {
       extra: {
         type: 'reviewComment',
         boardId: 5,
+      },
+    },
+    {
+      _id: await nextSeq('reply'),
+      user_id: 7,
+      product_id: 8,
+      content: '문희는 포도가 먹고찌픈데',
+      rating: 1,
+      createdAt: getTime(-3, -60 * 60 * 1),
+      extra: {
+        type: 'qna',
+        title: '문의요',
+        attachFile:
+          'https://www.issueedico.co.kr/data/photos/20191145/art_15729953444281_5115b4.jpg',
+      },
+    },
+    {
+      _id: await nextSeq('reply'),
+      user_id: 7,
+      product_id: 43,
+      content: '12월 25일 전까지는 받아볼수있을까요',
+      rating: 1,
+      createdAt: getTime(-3, -60 * 60 * 1),
+      extra: {
+        type: 'qna',
+        title: '주문했어요',
       },
     },
   ];
