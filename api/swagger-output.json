@@ -959,6 +959,16 @@
         }
       }
     },
+    "/carts/local": {
+      "post": {
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/carts/": {
       "get": {
         "description": "",
@@ -993,8 +1003,22 @@
       "delete": {
         "description": "",
         "responses": {
-          "default": {
-            "description": ""
+          "200": {
+            "description": "OK"
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "carts": {
+                    "example": "any"
+                  }
+                }
+              }
+            }
           }
         }
       },
@@ -1451,7 +1475,7 @@
                   "_id": {
                     "example": "any"
                   },
-                  "user_id": {
+                  "user": {
                     "example": "any"
                   }
                 }

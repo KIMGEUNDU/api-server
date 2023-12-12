@@ -68,7 +68,6 @@ async function initDB() {
 function getDay(day = 0) {
   return moment().add(day, 'days').format('YYYY.MM.DD');
 }
-
 function getTime(day = 0, second = 0) {
   return moment()
     .add(day, 'days')
