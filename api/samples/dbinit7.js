@@ -6186,33 +6186,6 @@ async function registReply() {
   var data = [
     {
       _id: await nextSeq('reply'),
-      user_id: 1,
-      product_id: 1,
-      content: '',
-      createdAt: getTime(-4, -60 * 60 * 12),
-      extra: {
-        type: 'notice',
-        title: '카카오톡 채널 친구추가 EVENT',
-        attachFile:
-          'https://github.com/likelion-plus/counting-stars-13/assets/126174401/1b3a17c4-f26b-485c-9211-b91f4025a4f5',
-        tag: '공지',
-      },
-    },
-    {
-      _id: await nextSeq('reply'),
-      user_id: 1,
-      product_id: 1,
-      content:
-        '<center><h3>⭐ 별해달 ⭐</h3>&nbsp;<h4>쇼핑지원금 5,000원 시크릿 쿠폰!</h4>&nbsp;<p>선착순 3000건의 온라인 배송건(모든 배송건 아이스박스 1개당 쿠폰하나)에 5,000원의 시크릿 쿠폰 동봉하여 보내드립니다.</p > </p>쿠폰 많이많이 활용해주세요 ❤️🩷❤️🩷</p > </center>',
-      createdAt: getTime(-4, -60 * 60 * 12),
-      extra: {
-        type: 'notice',
-        title: '별해달 5,000원 쇼핑 쿠폰 받기',
-        tag: '공지',
-      },
-    },
-    {
-      _id: await nextSeq('reply'),
       user_id: 4,
       product_id: 33,
       rating: 5,
@@ -6290,68 +6263,18 @@ async function registReply() {
         title: '하루만에 고장났어요.',
       },
     },
-    {
-      _id: await nextSeq('reply'),
-      user_id: 5,
-      product_id: 24,
-      content: '배송 언제쯤 시작되나요',
-      rating: 1,
-      createdAt: getTime(-2, -60 * 60 * 10),
-      extra: {
-        type: 'qna',
-        title: '배송문의',
-      },
-    },
-    {
-      _id: await nextSeq('reply'),
-      user_id: 6,
-      product_id: 56,
-      content: '제곧내',
-      rating: 1,
-      createdAt: getTime(-2, -60 * 60 * 10),
-      extra: {
-        type: 'qna',
-        title: '재입고 언제되나요',
-      },
-    },
-    {
-      _id: await nextSeq('reply'),
-      user_id: 1,
-      product_id: 1,
-      content: '카카오톡으로 답변드렸습니다. 불편을 드려 죄송합니다.',
-      rating: 1,
-      createdAt: getTime(-3, -60 * 60 * 1),
-      extra: {
-        type: 'reviewComment',
-        boardId: 8,
-      },
-    },
-    {
-      _id: await nextSeq('reply'),
-      user_id: 7,
-      product_id: 8,
-      content: '문희는 포도가 먹고찌픈데',
-      rating: 1,
-      createdAt: getTime(-3, -60 * 60 * 1),
-      extra: {
-        type: 'qna',
-        title: '문의요',
-        attachFile:
-          'https://www.issueedico.co.kr/data/photos/20191145/art_15729953444281_5115b4.jpg',
-      },
-    },
-    {
-      _id: await nextSeq('reply'),
-      user_id: 7,
-      product_id: 43,
-      content: '12월 25일 전까지는 받아볼수있을까요',
-      rating: 1,
-      createdAt: getTime(-3, -60 * 60 * 1),
-      extra: {
-        type: 'qna',
-        title: '주문했어요',
-      },
-    },
+    // {
+    //   _id: await nextSeq('reply'),
+    //   user_id: 1,
+    //   product_id: 1,
+    //   content: '카카오톡으로 답변드렸습니다. 불편을 드려 죄송합니다.',
+    //   rating: 1,
+    //   createdAt: getTime(-3, -60 * 60 * 1),
+    //   extra: {
+    //     type: 'reviewComment',
+    //     boardId: 5,
+    //   },
+    // },
   ];
 
   await db.reply.insertMany(data);
@@ -6681,101 +6604,99 @@ async function registPost() {
     {
       _id: await nextSeq('post'),
       type: 'qna',
-      product_id: 1,
-      seller_id: 2,
+      product_id: 24,
+      seller_id: 1,
       user: {
-        _id: 4,
-        name: '데이지',
+        _id: 5,
+        name: '이**',
       },
-      title: '크기가 얼만만한가요?',
-      content: '아이가 6살인데 가지고 놀기 적당한 크기인가요?',
-      replies: [
-        {
-          _id: 1,
-          user: {
-            _id: 2,
-            name: '네오',
-          },
-          content: '크기는 상품 상세정보에 나와 있습니다.',
-          createdAt: getTime(-2, -60 * 60 * 20),
-          updatedAt: getTime(-2, -60 * 60 * 2),
-        },
-        {
-          _id: 2,
-          user: {
-            _id: 4,
-            name: '데이지',
-          },
-          content: '어디있나 모르겠어요.',
-          createdAt: getTime(-2, -60 * 60 * 10),
-          updatedAt: getTime(-2, -60 * 60 * 1),
-        },
-        {
-          _id: 3,
-          user: {
-            _id: 2,
-            name: '네오',
-          },
-          content: '높이 60cm 입니다.',
-          createdAt: getTime(-2, -60 * 60 * 9),
-          updatedAt: getTime(-1, -60 * 60 * 20),
-        },
-      ],
+      title: '배송문의',
+      content: '배송 언제쯤 시작되나요',
       createdAt: getTime(-3, -60 * 60 * 2),
       updatedAt: getTime(-3, -60 * 60 * 2),
+      replies: [],
     },
     {
       _id: await nextSeq('post'),
       type: 'qna',
-      product_id: 1,
-      seller_id: 2,
+      product_id: 56,
+      seller_id: 1,
       user: {
-        _id: 4,
-        name: '데이지',
+        _id: 6,
+        name: '장**',
       },
-      title: '이번주 토요일까지 받아볼 수 있을까요?',
-      content: '토요일 생일 선물로 준비중인데 그때까지 배송 가능할까요?',
+      title: '재입고 언제되나요',
+      content: '제곧내',
       createdAt: getTime(-2, -60 * 60 * 1),
       updatedAt: getTime(-1, -60 * 60 * 20),
+      replies: [],
     },
     {
       _id: await nextSeq('post'),
       type: 'qna',
-      product_id: 4,
-      seller_id: 3,
+      product_id: 8,
+      seller_id: 1,
       user: {
-        _id: 2,
-        name: '네오',
+        _id: 7,
+        name: '김**',
       },
-      title: '배송 빨리 보내주세요.',
-      content: '양품으로 보내주세요.',
+      title: '문의요',
+      content: '문희는 포도가 먹고찌픈데',
       createdAt: getTime(-1, -60 * 60 * 14),
       updatedAt: getTime(-1, -60 * 60 * 2),
+      extra: {
+        attachFile:
+          'https://www.issueedico.co.kr/data/photos/20191145/art_15729953444281_5115b4.jpg',
+      },
+      replies: [],
+    },
+    {
+      _id: await nextSeq('post'),
+      type: 'qna',
+      product_id: 43,
+      seller_id: 1,
+      user: {
+        _id: 7,
+        name: '김**',
+      },
+      title: '주문했어요',
+      content: '12월 25일 전까지는 받아볼수있을까요',
+      createdAt: getTime(-1, -60 * 60 * 14),
+      updatedAt: getTime(-1, -60 * 60 * 2),
+      replies: [],
     },
     {
       _id: await nextSeq('post'),
       type: 'notice',
       user: {
         _id: 1,
-        name: '무지',
+        name: '무*',
       },
-      title: '배송지연 안내',
-      content: '크리스마스 물류 증가로 인해 평소보다 2~3일 지연될 예정입니다.',
+      title: '카카오톡 채널 친구추가 EVENT',
+      content: ' ',
       createdAt: getTime(-4, -60 * 60 * 2),
       updatedAt: getTime(-2, -60 * 60 * 13),
+      extra: {
+        attachFile:
+          'https://github.com/likelion-plus/counting-stars-13/assets/126174401/1b3a17c4-f26b-485c-9211-b91f4025a4f5',
+        tag: '공지',
+      },
     },
     {
       _id: await nextSeq('post'),
       type: 'notice',
       user: {
         _id: 1,
-        name: '무지',
+        name: '무*',
       },
-      title: '배송비 인상 안내',
+      title: '별해달 5,000원 쇼핑 쿠폰 받기',
       content:
-        '택배사 배송비 인상으로 인해 기존 3,000원에서 3,500원으로 인상됩니다.',
+        '<center><h3>⭐ 별해달 ⭐</h3>&nbsp;<h4>쇼핑지원금 5,000원 시크릿 쿠폰!</h4>&nbsp;<p>선착순 3000건의 온라인 배송건(모든 배송건 아이스박스 1개당 쿠폰하나)에 5,000원의 시크릿 쿠폰 동봉하여 보내드립니다.</p > </p>쿠폰 많이많이 활용해주세요 ❤️🩷❤️🩷</p > </center>',
       createdAt: getTime(-6, -60 * 60 * 20),
       updatedAt: getTime(-4, -60 * 60 * 13),
+      extra: {
+        tag: '공지',
+      },
     },
   ];
   await db.post.insertMany(data);
