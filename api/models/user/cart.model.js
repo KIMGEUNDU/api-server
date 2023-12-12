@@ -45,7 +45,41 @@ const cart = {
     return list;
   },
 
-  // 회원의 장바구니 목록 조회
+  // 장바구니 목록 조회(비로그인 상태))
+  async findLocalCart({ products, discount }) {
+    logger.trace(arguments);
+    const carts = {
+      products: [],
+      cost: {},
+    };
+    for (let { _id, quantity } of products) {
+      const product = await productModel.findById({ _id });
+      if (product) {
+        carts.products.push({
+          _id,
+          quantity,
+          quantityInStock: product.quantity - product.buyQuantity,
+          seller_id: product.seller_id,
+          name: product.name,
+          image: product.mainImages[0],
+          price: product.price * quantity,
+          extra: product.extra,
+        });
+      } else {
+        throw createError(422, `상품번호 ${_id}인 상품이 존재하지 않습니다.`);
+      }
+    }
+
+    carts.cost = await priceUtil.getCost({
+      products,
+      clientDiscount: discount,
+    });
+
+    logger.debug(carts);
+    return carts;
+  },
+
+  // 장바구니 목록 조회(로그인 상태)
   async findByUser(user_id, discount) {
     logger.trace(arguments);
     // const list = await db.cart.find({ user_id }).sort({ createdAt: -1 }).toArray();
@@ -80,22 +114,22 @@ const cart = {
             'product.quantity': '$product.quantity',
             'product.buyQuantity': '$product.buyQuantity',
             'product.image': { $arrayElemAt: ['$product.mainImages', 0] },
+            'product.extra': '$product.extra',
             'product.option': '$product.option',
-            'product.extra.parent': '$product.extra.parent',
           },
         },
       ])
       .sort({ _id: -1 })
       .toArray();
 
-    list.cost = await priceUtil.getCost(
-      user_id,
-      _.map(list, (cart) => ({
+    list.cost = await priceUtil.getCost({
+      products: _.map(list, (cart) => ({
         _id: cart.product._id,
         quantity: cart.quantity,
       })),
-      discount
-    );
+      clientDiscount: discount,
+      user_id,
+    });
 
     logger.debug(list);
     return list;
