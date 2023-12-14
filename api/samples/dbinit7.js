@@ -6216,7 +6216,7 @@ async function registReply() {
       product_id: 65,
       rating: 1,
       content: '문의드렸는데 아직도 답변이 없네요',
-      createdAt: getTime(-2, -60 * 60 * 10),
+      createdAt: getTime(-3, -60 * 60 * 3),
       extra: {
         type: 'review',
         title: '하루만에 고장났어요.',
