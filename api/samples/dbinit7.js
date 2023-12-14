@@ -6213,6 +6213,18 @@ async function registReply() {
     {
       _id: await nextSeq('reply'),
       user_id: 2,
+      product_id: 65,
+      rating: 1,
+      content: '문의드렸는데 아직도 답변이 없네요',
+      createdAt: getTime(-3, -60 * 60 * 3),
+      extra: {
+        type: 'review',
+        title: '하루만에 고장났어요.',
+      },
+    },
+    {
+      _id: await nextSeq('reply'),
+      user_id: 7,
       product_id: 46,
       rating: 5,
       content:
@@ -6251,30 +6263,6 @@ async function registReply() {
         title: '배송이 좀 느려요.',
       },
     },
-    {
-      _id: await nextSeq('reply'),
-      user_id: 7,
-      product_id: 65,
-      rating: 1,
-      content: '문의드렸는데 아직도 답변이 없네요',
-      createdAt: getTime(-2, -60 * 60 * 10),
-      extra: {
-        type: 'review',
-        title: '하루만에 고장났어요.',
-      },
-    },
-    // {
-    //   _id: await nextSeq('reply'),
-    //   user_id: 1,
-    //   product_id: 1,
-    //   content: '카카오톡으로 답변드렸습니다. 불편을 드려 죄송합니다.',
-    //   rating: 1,
-    //   createdAt: getTime(-3, -60 * 60 * 1),
-    //   extra: {
-    //     type: 'reviewComment',
-    //     boardId: 5,
-    //   },
-    // },
   ];
 
   await db.reply.insertMany(data);
@@ -6614,7 +6602,27 @@ async function registPost() {
       content: '배송 언제쯤 시작되나요',
       createdAt: getTime(-3, -60 * 60 * 2),
       updatedAt: getTime(-3, -60 * 60 * 2),
-      replies: [],
+      replies: [
+        {
+          content:
+            '12월 12일 배송시작된 걸로 나옵니다. 발송일 기준 최대 3일~5일안에 받아보실 수 있습니다.😀',
+          extra: {
+            boardId: 1,
+          },
+          _id: 1,
+          user: {
+            _id: 1,
+            name: '무지',
+          },
+          createdAt: getTime(-1, -60 * 60 * 14),
+          updatedAt: getTime(-1, -60 * 60 * 2),
+        },
+      ],
+      extra: {
+        product_name: '한우 미트볼',
+        product_image:
+          '//ggaggamukja.com/web/product/big/202110/f8999fa26ba0b517725642c613f93323.jpg',
+      },
     },
     {
       _id: await nextSeq('post'),
@@ -6629,7 +6637,27 @@ async function registPost() {
       content: '제곧내',
       createdAt: getTime(-2, -60 * 60 * 1),
       updatedAt: getTime(-1, -60 * 60 * 20),
-      replies: [],
+      replies: [
+        {
+          content:
+            '수제로 만들어지는 간식이라 다음주쯤 입고될 예정입니다. 빠른 시일안에 입고할 수 있도록 노력하겠습니다.😭',
+          extra: {
+            boardId: 2,
+          },
+          _id: 1,
+          user: {
+            _id: 1,
+            name: '무지',
+          },
+          createdAt: getTime(-1, -60 * 60 * 14),
+          updatedAt: getTime(-1, -60 * 60 * 2),
+        },
+      ],
+      extra: {
+        product_name: '스마일 & 꼬깔 초 (색상 랜덤)',
+        product_image:
+          '//ggaggamukja.com/web/product/big/202110/6a138d913534d4595dc3756969415122.png',
+      },
     },
     {
       _id: await nextSeq('post'),
@@ -6647,8 +6675,25 @@ async function registPost() {
       extra: {
         attachFile:
           'https://www.issueedico.co.kr/data/photos/20191145/art_15729953444281_5115b4.jpg',
+        product_name: '코코넛 치즈볼',
+        product_image:
+          '//ggaggamukja.com/web/product/big/202207/18a2e36960287be027bdc83940350d50.jpg',
       },
-      replies: [],
+      replies: [
+        {
+          content: '🍠호박고구마',
+          extra: {
+            boardId: 3,
+          },
+          _id: 1,
+          user: {
+            _id: 1,
+            name: '무지',
+          },
+          createdAt: getTime(-1, -60 * 60 * 14),
+          updatedAt: getTime(-1, -60 * 60 * 2),
+        },
+      ],
     },
     {
       _id: await nextSeq('post'),
@@ -6663,7 +6708,27 @@ async function registPost() {
       content: '12월 25일 전까지는 받아볼수있을까요',
       createdAt: getTime(-1, -60 * 60 * 14),
       updatedAt: getTime(-1, -60 * 60 * 2),
-      replies: [],
+      replies: [
+        {
+          content:
+            '오늘 오후에 발송예정이며 발송일 기준 최대 3일~5일안에 받아보실 수 있을겁니다☺️',
+          extra: {
+            boardId: 4,
+          },
+          _id: 1,
+          user: {
+            _id: 1,
+            name: '무지',
+          },
+          createdAt: getTime(-1, -60 * 60 * 14),
+          updatedAt: getTime(-1, -60 * 60 * 2),
+        },
+      ],
+      extra: {
+        product_name: '제주 말갈비 천연껌',
+        product_image:
+          'https://ggaggamukja.com/web/product/big/202112/e68f7baedc07f6c4ee6a1bc96ac6d4aa.jpg',
+      },
     },
     {
       _id: await nextSeq('post'),
@@ -6697,6 +6762,100 @@ async function registPost() {
       extra: {
         tag: '공지',
       },
+    },
+    {
+      _id: await nextSeq('post'),
+      type: 'reviewComment',
+      product_id: 43,
+      seller_id: 1,
+      user: {
+        _id: 1,
+        name: '별해달',
+      },
+      title: '리뷰댓글용',
+      content: '리뷰 댓글용 데이터입니다',
+      createdAt: getTime(-1, -60 * 60 * 14),
+      updatedAt: getTime(-1, -60 * 60 * 2),
+      replies: [
+        {
+          content: '감사합니다🐶 항상 만족을 드리는 별해달이 되겠습니다',
+          extra: {
+            boardId: 1,
+          },
+          _id: 1,
+          user: {
+            _id: 1,
+            name: '무지',
+          },
+          createdAt: getTime(-1, -60 * 60 * 14),
+          updatedAt: getTime(-1, -60 * 60 * 2),
+        },
+        {
+          content: '감사합니다🐶 애기가 너무 귀여워요',
+          extra: {
+            boardId: 2,
+          },
+          _id: 1,
+          user: {
+            _id: 1,
+            name: '무지',
+          },
+          createdAt: getTime(-1, -60 * 60 * 14),
+          updatedAt: getTime(-1, -60 * 60 * 2),
+        },
+        {
+          content: '카카오톡으로 답변드렸습니다. 불편을 드려 죄송합니다.',
+          extra: {
+            boardId: 3,
+          },
+          _id: 1,
+          user: {
+            _id: 1,
+            name: '무지',
+          },
+          createdAt: getTime(-1, -60 * 60 * 14),
+          updatedAt: getTime(-1, -60 * 60 * 2),
+        },
+        {
+          content: '감사합니다🐶 애기가 즐거워하는게 보여서 다행이네요',
+          extra: {
+            boardId: 4,
+          },
+          _id: 1,
+          user: {
+            _id: 1,
+            name: '무지',
+          },
+          createdAt: getTime(-1, -60 * 60 * 14),
+          updatedAt: getTime(-1, -60 * 60 * 2),
+        },
+        {
+          content: '사람이 먹어도 몸에 지장은 없지만 맛은 보장못합니다😂',
+          extra: {
+            boardId: 5,
+          },
+          _id: 1,
+          user: {
+            _id: 1,
+            name: '무지',
+          },
+          createdAt: getTime(-1, -60 * 60 * 14),
+          updatedAt: getTime(-1, -60 * 60 * 2),
+        },
+        {
+          content: '빠른 배송할수 있도록 노력하겠습니다. 감사합니다🐶',
+          extra: {
+            boardId: 6,
+          },
+          _id: 1,
+          user: {
+            _id: 1,
+            name: '무지',
+          },
+          createdAt: getTime(-1, -60 * 60 * 14),
+          updatedAt: getTime(-1, -60 * 60 * 2),
+        },
+      ],
     },
   ];
   await db.post.insertMany(data);
