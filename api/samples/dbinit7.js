@@ -284,7 +284,11 @@ async function registProduct() {
       show: true,
       active: true,
       name: '멍도넛',
-      options: ['자색고구마(보라색)', '시금치(초록색)', '단호박(노란색)'],
+      productOptions: [
+        '자색고구마(보라색)',
+        '시금치(초록색)',
+        '단호박(노란색)',
+      ],
       mainImages: [
         '//ggaggamukja.com/web/product/big/202205/c8a90a8b833ba40366a4fd34e955b590.jpg',
         '//ggaggamukja.com/web/product/extra/big/202205/d223b65ad2daf105ee11cc874f89fb37.jpg',
@@ -325,7 +329,7 @@ async function registProduct() {
       show: true,
       active: true,
       name: '고구마 쏙 마들렌 6P',
-      options: [],
+      productOptions: [],
       mainImages: [
         '//ggaggamukja.com/web/product/big/202012/d43b0de7333bd9958b2eecd11d71c595.jpg',
         '//ggaggamukja.com/web/product/extra/big/202012/beb59e159c2cc6fffe9126e5b4c86def.jpg',
@@ -366,7 +370,7 @@ async function registProduct() {
       show: true,
       active: true,
       name: '단호박 무스 타르트',
-      options: [],
+      productOptions: [],
       mainImages: [
         '//ggaggamukja.com/web/product/big/202012/0740fcbf4d3e6e312f6b79c96dc7c257.jpg',
         '//ggaggamukja.com/web/product/extra/big/202012/b9f4fec880e7c3928b5b773086e49681.jpg',
@@ -407,7 +411,7 @@ async function registProduct() {
       show: true,
       active: true,
       name: '당근 와플',
-      options: [],
+      productOptions: [],
       mainImages: [
         '//ggaggamukja.com/web/product/big/202012/ed1921cb5ab43b150901ded7fc783072.jpg',
         '//ggaggamukja.com/web/product/extra/big/202012/e3b713c1ade84a441e2eba0032150024.jpg',
@@ -448,7 +452,7 @@ async function registProduct() {
       show: true,
       active: true,
       name: '콤비네이션 타르트',
-      options: [
+      productOptions: [
         {
           사이즈: '기본 9.5cm',
         },
@@ -498,7 +502,7 @@ async function registProduct() {
       show: true,
       active: true,
       name: '단호박 머핀 2P',
-      options: [],
+      productOptions: [],
       mainImages: [
         '//ggaggamukja.com/web/product/big/202102/53b029a9a7e0f51578fa17f02a39f233.jpg',
         '//ggaggamukja.com/web/product/extra/big/202102/d87ae97ad26735aaed4be5e4e60bc39b.jpg',
@@ -539,7 +543,7 @@ async function registProduct() {
       show: true,
       active: true,
       name: '멍치킨',
-      options: [],
+      productOptions: [],
       mainImages: [
         '//ggaggamukja.com/web/product/big/202207/faa22208906b96be2b548f02ada28ed3.jpg',
         '//ggaggamukja.com/web/product/extra/big/202106/dd8d6ca6b62e383acdbb98dc955e479b.jpg',
@@ -583,7 +587,7 @@ async function registProduct() {
       show: true,
       active: true,
       name: '코코넛 치즈볼',
-      options: [
+      productOptions: [
         {
           용량: '단품',
         },
@@ -632,7 +636,7 @@ async function registProduct() {
       show: true,
       active: true,
       name: '치즈 호두과자 6P',
-      options: [],
+      productOptions: [],
       mainImages: [
         '//ggaggamukja.com/web/product/big/202205/4297c3aa5ac5a96200aa5c256d79fdaa.jpg',
         '//ggaggamukja.com/web/product/extra/big/202205/fe5df30e752344a0a117ac3277b1fc93.jpg',
@@ -673,7 +677,7 @@ async function registProduct() {
       show: true,
       active: true,
       name: '멍피자',
-      options: [],
+      productOptions: [],
       mainImages: [
         '//ggaggamukja.com/web/product/big/202207/ff41e97c0152a925ee4e5e4dadc5d6aa.jpg',
         '//ggaggamukja.com/web/product/extra/big/202106/a9faef64dd57734fd2a236038d59e791.jpg',
@@ -715,7 +719,7 @@ async function registProduct() {
       show: true,
       active: true,
       name: '피크닉 도시락 세트',
-      options: [],
+      productOptions: [],
       mainImages: [
         '//ggaggamukja.com/web/product/big/202307/5a9cfa0e0b7fa21e0a30ca4c0fe967c6.jpg',
         '//ggaggamukja.com/web/product/extra/big/202303/32e4798fb99f03a686c7d956f888cf3e.jpg',
@@ -768,7 +772,7 @@ async function registProduct() {
       show: true,
       active: true,
       name: '특별한 날엔 케이크',
-      options: [],
+      productOptions: [],
       mainImages: [
         '//ggaggamukja.com/web/product/big/202303/f4214eea999cd049e8dd9feefbcf7c90.jpg',
         '//ggaggamukja.com/web/product/extra/big/202303/d696664674894ea9d8cb1d72f8e588b1.jpg',
@@ -813,7 +817,7 @@ async function registProduct() {
       show: true,
       active: true,
       name: '멍피자 멍치킨 피크닉 세트',
-      options: [],
+      productOptions: [],
       mainImages: [
         '//ggaggamukja.com/web/product/big/202303/10e4612462adca4ed8178f25e12e8083.jpg',
         '//ggaggamukja.com/web/product/extra/big/202303/b83a3d8f88f030b4f28e0987c83020de.jpg',
@@ -870,7 +874,7 @@ async function registProduct() {
       show: true,
       active: true,
       name: '바캉스 도시락 세트',
-      options: [],
+      productOptions: [],
       mainImages: [
         '//ggaggamukja.com/web/product/big/202308/5108e846edd53fd2907958444aeb5107.jpg',
         '//ggaggamukja.com/web/product/extra/big/202308/0bbfa406cbb510881d717ff98c8d7a5f.jpg',
@@ -914,7 +918,7 @@ async function registProduct() {
       show: true,
       active: true,
       name: '특별한 날 간식세트 2023',
-      options: [],
+      productOptions: [],
       mainImages: [
         '//ggaggamukja.com/web/product/big/202307/90e56026066aa0740e415c143de27cdb.jpg',
         '//ggaggamukja.com/web/product/extra/big/202307/773f85817d07dfa8edd381fa69897983.jpg',
@@ -972,7 +976,7 @@ async function registProduct() {
       show: true,
       active: true,
       name: '까까묵자 생일 파티 세트',
-      options: [],
+      productOptions: [],
       mainImages: [
         '//ggaggamukja.com/web/product/big/202308/7626c41a25d53564cf7fd0c4469e48fd.png',
         '//ggaggamukja.com/web/product/extra/big/202308/912732c3e402df6d05dd7d0793441d13.jpg',
@@ -1019,7 +1023,7 @@ async function registProduct() {
       show: true,
       active: true,
       name: '곰돌이 주먹밥 3p',
-      options: [],
+      productOptions: [],
       mainImages: [
         '//ggaggamukja.com/web/product/big/202307/3a35082ddc35302a4823f68ffd5ba857.jpg',
         '//ggaggamukja.com/web/product/extra/big/202307/54f267802d5ff9cc37a4c092ba0c6ca8.jpg',
@@ -1064,7 +1068,7 @@ async function registProduct() {
       show: true,
       active: true,
       name: '까까묵자 X 스너플 도그비어 캠핑 세트',
-      options: [
+      productOptions: [
         {
           '세트 선택': '피자+치킨+도그비어',
         },
@@ -1123,7 +1127,7 @@ async function registProduct() {
       show: true,
       active: true,
       name: '베이커리 파티 세트',
-      options: [],
+      productOptions: [],
       mainImages: [
         '//ggaggamukja.com/web/product/big/202308/6946f1239a991a71f2013da01452e32a.jpg',
         '//ggaggamukja.com/web/product/extra/big/202308/25cf9ecf468b854a061a0251c744c4c5.jpg',
@@ -1179,7 +1183,7 @@ async function registProduct() {
       show: true,
       active: true,
       name: '까까묵자 X 스너플 콜라보 세트',
-      options: [
+      productOptions: [
         {
           '세트 선택': '조각피자+조각치킨+도그비어 캔',
         },
@@ -1237,7 +1241,7 @@ async function registProduct() {
       show: true,
       active: true,
       name: '풀패키지 파티 세트',
-      options: [],
+      productOptions: [],
       mainImages: [
         '//ggaggamukja.com/web/product/big/202308/470fd82f6a66297c201522014ab6a097.jpg',
         '//ggaggamukja.com/web/product/extra/big/202308/0f9a55e934af6af866fd85271664b15b.jpg',
@@ -1293,7 +1297,7 @@ async function registProduct() {
       show: true,
       active: true,
       name: '소풍 도시락 세트',
-      options: [],
+      productOptions: [],
       mainImages: [
         '//ggaggamukja.com/web/product/big/202303/ff18ad6bd94837694c095f4b4e308f56.jpg',
         '//ggaggamukja.com/web/product/extra/big/202303/32e4798fb99f03a686c7d956f888cf3e.jpg',
@@ -1339,7 +1343,7 @@ async function registProduct() {
       show: true,
       active: true,
       name: '닭가슴살 테린',
-      options: [
+      productOptions: [
         {
           '용량 선택': '기본 단품',
         },
@@ -1390,7 +1394,7 @@ async function registProduct() {
       show: true,
       active: true,
       name: '한우 미트볼',
-      options: [
+      productOptions: [
         {
           '용량 선택': '기본 단품',
         },
@@ -1441,7 +1445,7 @@ async function registProduct() {
       show: true,
       active: true,
       name: '오리안심 테린',
-      options: [
+      productOptions: [
         {
           '용량 선택': '기본 단품',
         },
@@ -1492,7 +1496,7 @@ async function registProduct() {
       show: true,
       active: true,
       name: '오리 핫도그 (대)',
-      options: [],
+      productOptions: [],
       mainImages: [
         '//ggaggamukja.com/web/product/big/202112/7adb945ee4e648b1142667e6cf58d05a.jpg',
         '//ggaggamukja.com/web/product/extra/big/202112/bd3aafae9c6b611a8c1e72e5967278e9.jpg',
@@ -1536,7 +1540,7 @@ async function registProduct() {
       show: true,
       active: true,
       name: '멍김밥',
-      options: [],
+      productOptions: [],
       mainImages: [
         '//ggaggamukja.com/web/product/big/202207/885223ea2c8094f00d04369add009393.jpg',
         '//ggaggamukja.com/web/product/extra/big/202205/ceb3ca10cbe58a89f80308538e88db2a.jpg',
@@ -1575,7 +1579,7 @@ async function registProduct() {
       show: true,
       active: true,
       name: '멍돈까스',
-      options: [],
+      productOptions: [],
       mainImages: [
         '//ggaggamukja.com/web/product/big/202303/9a0d91db522758c9ba7e3a764acca74e.jpg',
         '//ggaggamukja.com/web/product/extra/big/202303/2d331c8980222af7b3faeae9efdaeab6.jpg',
@@ -1620,7 +1624,7 @@ async function registProduct() {
       show: true,
       active: true,
       name: '캥거루 스테이크 2P',
-      options: [],
+      productOptions: [],
       mainImages: [
         '//ggaggamukja.com/web/product/big/202309/b5cbe0d1a23f5f96738faca250ee78ea.jpg',
         '//ggaggamukja.com/web/product/extra/big/202307/9d3fb3d2a4e57f249678bb9a174330d0.jpg',
@@ -1662,7 +1666,7 @@ async function registProduct() {
       show: true,
       active: true,
       name: '말고기 스테이크 2P',
-      options: [],
+      productOptions: [],
       mainImages: [
         '//ggaggamukja.com/web/product/big/202309/50ebd8f574ebe7574a7247f4904d72d5.jpg',
         '//ggaggamukja.com/web/product/extra/big/202307/eb0140777bd3de5427e5e97695bb8a88.jpg',
@@ -1704,7 +1708,7 @@ async function registProduct() {
       show: true,
       active: true,
       name: '닭가슴살 육포',
-      options: [
+      productOptions: [
         {
           '용량 선택': '기본 단품',
         },
@@ -1757,7 +1761,7 @@ async function registProduct() {
       show: true,
       active: true,
       name: '오리안심 육포',
-      options: [
+      productOptions: [
         {
           '용량 선택': '기본 단품',
         },
@@ -1812,7 +1816,7 @@ async function registProduct() {
       show: true,
       active: true,
       name: '소고기 큐브',
-      options: [
+      productOptions: [
         {
           '용량 선택': '기본 단품',
         },
@@ -1865,7 +1869,7 @@ async function registProduct() {
       show: true,
       active: true,
       name: '무염 황태포',
-      options: [
+      productOptions: [
         {
           '용량 선택': '기본 단품',
         },
@@ -1918,7 +1922,7 @@ async function registProduct() {
       show: true,
       active: true,
       name: '돼지안심 육포',
-      options: [
+      productOptions: [
         {
           '용량 선택': '기본 단품',
         },
@@ -1971,7 +1975,7 @@ async function registProduct() {
       show: true,
       active: true,
       name: '연어 큐브',
-      options: [
+      productOptions: [
         {
           '용량 선택': '기본 단품',
         },
@@ -2024,7 +2028,7 @@ async function registProduct() {
       show: true,
       active: true,
       name: '열빙어 육포',
-      options: [
+      productOptions: [
         {
           '용량 선택': '기본 단품',
         },
@@ -2079,7 +2083,7 @@ async function registProduct() {
       show: true,
       active: true,
       name: '제주 말고기 큐브',
-      options: [
+      productOptions: [
         {
           '용량 선택': '기본 단품',
         },
@@ -2132,7 +2136,7 @@ async function registProduct() {
       show: true,
       active: true,
       name: '한우 소간 육포',
-      options: [
+      productOptions: [
         {
           '용량 선택': '기본 단품',
         },
@@ -2185,7 +2189,7 @@ async function registProduct() {
       show: true,
       active: true,
       name: '한우 우족 천연껌',
-      options: [
+      productOptions: [
         {
           '용량 선택': '기본 단품',
         },
@@ -2238,7 +2242,7 @@ async function registProduct() {
       show: true,
       active: true,
       name: '메추리 천연껌',
-      options: [
+      productOptions: [
         {
           '용량 선택': '기본 단품',
         },
@@ -2291,7 +2295,7 @@ async function registProduct() {
       show: true,
       active: true,
       name: '송아지목뼈 천연껌',
-      options: [
+      productOptions: [
         {
           '용량 선택': '기본 단품',
         },
@@ -2344,7 +2348,7 @@ async function registProduct() {
       show: true,
       active: true,
       name: '제주 말갈비 천연껌',
-      options: [
+      productOptions: [
         {
           '용량 선택': '기본 단품',
         },
@@ -2395,7 +2399,7 @@ async function registProduct() {
       show: true,
       active: true,
       name: '오리장각 천연껌',
-      options: [
+      productOptions: [
         {
           '용량 선택': '기본 단품',
         },
@@ -2448,7 +2452,7 @@ async function registProduct() {
       show: true,
       active: true,
       name: '캥거루꼬리 천연껌',
-      options: [
+      productOptions: [
         {
           '용량 선택': '기본 단품',
         },
@@ -2501,7 +2505,7 @@ async function registProduct() {
       show: true,
       active: true,
       name: '오리근위 천연껌',
-      options: [
+      productOptions: [
         {
           '용량 선택': '기본 단품',
         },
@@ -2556,7 +2560,7 @@ async function registProduct() {
       show: true,
       active: true,
       name: '양등뼈 천연껌',
-      options: [
+      productOptions: [
         {
           '용량 선택': '기본 단품',
         },
@@ -2609,7 +2613,7 @@ async function registProduct() {
       show: true,
       active: true,
       name: '상어연골 천연껌',
-      options: [
+      productOptions: [
         {
           '용량 선택': '기본 단품',
         },
@@ -2662,7 +2666,7 @@ async function registProduct() {
       show: true,
       active: true,
       name: '오리 오돌뼈 천연껌',
-      options: [
+      productOptions: [
         {
           '용량 선택': '기본 한팩',
         },
@@ -2717,7 +2721,7 @@ async function registProduct() {
       show: true,
       active: true,
       name: '한우 소발톱 천연껌',
-      options: [
+      productOptions: [
         {
           '용량 선택': '기본 단품',
         },
@@ -2770,7 +2774,7 @@ async function registProduct() {
       show: true,
       active: true,
       name: '강아지 전용 멍맥주 220ml',
-      options: [],
+      productOptions: [],
       mainImages: [
         '//ggaggamukja.com/web/product/big/202110/4329ce74a81f9d59db063b5badf067b5.png',
         '//ggaggamukja.com/web/product/extra/big/202110/d3429011c3264041e111183a3523e622.jpg',
@@ -2811,7 +2815,7 @@ async function registProduct() {
       show: true,
       active: true,
       name: '숫자 초 (색상 랜덤)',
-      options: ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
+      productOptions: ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
       mainImages: [
         '//ggaggamukja.com/web/product/big/202110/e0bd41c91b4a6bae9406bbe92bc6bb71.png',
       ],
@@ -2843,7 +2847,7 @@ async function registProduct() {
       show: true,
       active: true,
       name: '강아지 전용 멍소주 330ml',
-      options: [],
+      productOptions: [],
       mainImages: [
         '//ggaggamukja.com/web/product/big/202110/dcfec4998d7808b1b58dcc4f94ad8b1c.png',
         '//ggaggamukja.com/web/product/extra/big/202110/72eb24a4f5ea8c8967fc13f1e7dcba07.jpg',
@@ -2884,7 +2888,7 @@ async function registProduct() {
       show: true,
       active: true,
       name: '스마일 꼬깔모자',
-      options: [
+      productOptions: [
         {
           사이즈: '소형견용',
         },
@@ -2923,7 +2927,7 @@ async function registProduct() {
       show: true,
       active: true,
       name: '해피벌스데이 케이크 토퍼',
-      options: [],
+      productOptions: [],
       mainImages: [
         '//ggaggamukja.com/web/product/big/202203/31ab6ed030e81587a50b598a90414d4f.png',
       ],
@@ -2956,7 +2960,7 @@ async function registProduct() {
       show: true,
       active: true,
       name: '스마일 & 꼬깔 초 (색상 랜덤)',
-      options: [],
+      productOptions: [],
       mainImages: [
         '//ggaggamukja.com/web/product/big/202110/6a138d913534d4595dc3756969415122.png',
       ],
@@ -2988,7 +2992,7 @@ async function registProduct() {
       show: true,
       active: true,
       name: '꽃가루 풍선 2개',
-      options: [],
+      productOptions: [],
       mainImages: [
         '//ggaggamukja.com/web/product/big/202110/c31318a8a513343a1089acce6ddd9b50.png',
       ],
@@ -3020,7 +3024,7 @@ async function registProduct() {
       show: true,
       active: true,
       name: '생일 케이프',
-      options: ['핑크색', '하늘색'],
+      productOptions: ['핑크색', '하늘색'],
       mainImages: [
         '//ggaggamukja.com/web/product/big/202110/b2072642354505330e6ebe10feec4709.png',
       ],
@@ -3052,7 +3056,7 @@ async function registProduct() {
       show: true,
       active: true,
       name: '핑크색 스트라이프 일회용 디자인 접시',
-      options: [
+      productOptions: [
         {
           사이즈: '지름 18cm 3개입',
         },
@@ -3093,7 +3097,7 @@ async function registProduct() {
       show: true,
       active: true,
       name: '꽈배기 & 스마일 초 (색상 랜덤)',
-      options: [],
+      productOptions: [],
       mainImages: [
         '//ggaggamukja.com/web/product/big/202110/68754ad8a4513cedf82c1d49fcc3e1b2.png',
       ],
@@ -3125,7 +3129,7 @@ async function registProduct() {
       show: true,
       active: true,
       name: '강아지 전용 멍와인 340ml',
-      options: [],
+      productOptions: [],
       mainImages: [
         '//ggaggamukja.com/web/product/big/202110/d127740c3de561facfa285e9ed88a470.png',
         '//ggaggamukja.com/web/product/extra/big/202110/40e4a0e1d4cebbaceb043c723fef527a.jpg',
@@ -3166,7 +3170,7 @@ async function registProduct() {
       show: true,
       active: true,
       name: '파스텔 풍선 (30cm) 5ea',
-      options: [],
+      productOptions: [],
       mainImages: [
         '//ggaggamukja.com/web/product/big/202203/763f248e0a28dbab687727b79626e2c7.jpg',
       ],
@@ -3199,7 +3203,7 @@ async function registProduct() {
       show: true,
       active: true,
       name: '데이지 가랜드',
-      options: [],
+      productOptions: [],
       mainImages: [
         '//ggaggamukja.com/web/product/big/202302/b3e0343d62fc6ce45f5545ed8ae362c0.png',
       ],
@@ -3232,7 +3236,7 @@ async function registProduct() {
       show: true,
       active: true,
       name: '민트 고깔모자',
-      options: [],
+      productOptions: [],
       mainImages: [
         '//ggaggamukja.com/web/product/big/202309/5ea95fc750782a9b39171f2964f4cabd.jpg',
         '//ggaggamukja.com/web/product/extra/big/202309/ef865dd2ee19b167107bd6655cff30a2.jpg',
@@ -3267,7 +3271,7 @@ async function registProduct() {
       show: true,
       active: true,
       name: '파스텔 생일 가랜드',
-      options: [],
+      productOptions: [],
       mainImages: [
         '//ggaggamukja.com/web/product/big/202302/76a5dcffa1265ad208e78644d4e32388.png',
       ],
@@ -3300,7 +3304,7 @@ async function registProduct() {
       show: true,
       active: true,
       name: '가랜드 (로즈골드)',
-      options: [],
+      productOptions: [],
       mainImages: [
         '//ggaggamukja.com/web/product/big/202110/cde8edf79cb582817a1cc73928ed0227.png',
       ],
@@ -3332,7 +3336,7 @@ async function registProduct() {
       show: true,
       active: true,
       name: '크레용 초 (색상 랜덤)',
-      options: [],
+      productOptions: [],
       mainImages: [
         '//ggaggamukja.com/web/product/big/202110/a655cb5ef5a613f9239d21904ab81cc2.png',
       ],
@@ -3364,7 +3368,7 @@ async function registProduct() {
       show: true,
       active: true,
       name: '스너플 도그비어',
-      options: [
+      productOptions: [
         {
           '종류 선택': '병 맥주',
         },
