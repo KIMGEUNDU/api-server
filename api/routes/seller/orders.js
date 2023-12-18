@@ -1,3 +1,5 @@
+import _ from 'lodash';
+import moment from 'moment';
 import express from 'express';
 import { query, body } from 'express-validator';
 
@@ -5,17 +7,56 @@ import logger from '#utils/logger.js';
 import validator from '#middlewares/validator.js';
 import model from '#models/user/order.model.js';
 import sellerModel from '#models/seller/order.model.js';
-import _ from 'lodash';
-import moment from 'moment';
 
 const router = express.Router();
 
 // 판매자의 모든 주문 내역 조회
-router.get('/', async function(req, res, next) {
+router.get('/', [
+  query('custom').optional().isJSON().withMessage('custom 값은 JSON 형식의 문자열이어야 합니다.'),
+  query('sort').optional().isJSON().withMessage('sort 값은 JSON 형식의 문자열이어야 합니다.')
+], validator.checkResult, async function(req, res, next) {
   try{
-    const item = await sellerModel.findBy({seller_id: req.user._id, query: {}, sortBy: {_id: -1}});
-    res.json({ ok: 1, item });
+    logger.trace(req.query);
 
+    // 검색 옵션
+    let search = {};
+    const state = req.query.state;
+    const custom = req.query.custom;
+
+    if(state){
+      search['state'] = state;
+    }
+    
+    if(custom){
+      search = { ...search, ...JSON.parse(custom) };
+    }
+
+    // 정렬 옵션
+    let sortBy = JSON.parse(req.query.sort || '{}');
+
+    // 기본 정렬 옵션은 구매일의 내림차순
+    sortBy['createdAt'] = sortBy['createdAt'] || -1; // 내림차순
+
+    const page = Number(req.query.page || 1);
+    const limit = Number(req.query.limit || 0);
+
+    const result = await sellerModel.findBy({seller_id: req.user._id, search, sortBy, page, limit });
+    res.json({ ok: 1, ...result });
+
+  }catch(err){
+    next(err);
+  }
+});
+
+// 주문 상세 조회
+router.get('/:_id', async function(req, res, next) {
+  try{
+    const item = await sellerModel.findById(Number(req.params._id), req.user._id);
+    if(item){
+      res.json({ ok: 1, item });
+    }else{
+      next();
+    }
   }catch(err){
     next(err);
   }

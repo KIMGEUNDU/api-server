@@ -36,9 +36,7 @@
   "paths": {
     "/users/": {
       "post": {
-        "tags": [
-          "회원"
-        ],
+        "tags": ["회원"],
         "summary": "회원 가입 - 1차",
         "description": "회원 가입을 합니다.<br>회원 가입을 완료한 후 회원 정보를 반환합니다.",
         "responses": {
@@ -111,9 +109,7 @@
     },
     "/users/email": {
       "get": {
-        "tags": [
-          "회원"
-        ],
+        "tags": ["회원"],
         "summary": "이메일 중복 체크 - 1차",
         "description": "이메일 중복 여부를 체크 합니다.",
         "parameters": [
@@ -155,9 +151,7 @@
     },
     "/users/login": {
       "post": {
-        "tags": [
-          "회원"
-        ],
+        "tags": ["회원"],
         "summary": "로그인 - 1차",
         "description": "이메일과 비밀번호를 입력해 로그인을 한다.<br>응답 데이터에 token 속성으로 JWT 기반의 Access Token과 Refresh Token을 반환한다.<br>이후 로그인이 필요한 모든 요청에는 Authorization 헤더에 Bearer 방식의 Access Token을 보내야 한다.",
         "responses": {
@@ -217,9 +211,7 @@
     },
     "/users/refresh": {
       "get": {
-        "tags": [
-          "회원"
-        ],
+        "tags": ["회원"],
         "summary": "Access 토큰 재발행 - 1차",
         "description": "Authorization 헤더에 Bearer 방식의 Refresh Token을 보내서 Access Token을 재발급 한다.",
         "parameters": [
@@ -274,9 +266,7 @@
     },
     "/users/{_id}/{*}": {
       "get": {
-        "tags": [
-          "회원"
-        ],
+        "tags": ["회원"],
         "summary": "회원 정보 조회(단일 속성) - 1차",
         "description": "회원 정보 중 한가지 속성을 조회한다.",
         "parameters": [
@@ -357,9 +347,7 @@
     },
     "/users/{_id}": {
       "get": {
-        "tags": [
-          "회원"
-        ],
+        "tags": ["회원"],
         "summary": "회원 정보 조회(모든 속성) - 1차",
         "description": "회원 정보의 모든 속성을 조회한다.",
         "parameters": [
@@ -428,9 +416,7 @@
         ]
       },
       "patch": {
-        "tags": [
-          "회원"
-        ],
+        "tags": ["회원"],
         "summary": "회원 정보 수정 - 2차",
         "description": "회원 정보를 수정한다.",
         "parameters": [
@@ -517,9 +503,7 @@
     },
     "/products/": {
       "get": {
-        "tags": [
-          "상품"
-        ],
+        "tags": ["상품"],
         "summary": "상품 목록 조회 - 1차",
         "description": "상품 목록을 조회한다.",
         "parameters": [
@@ -610,9 +594,7 @@
     },
     "/products/{_id}": {
       "get": {
-        "tags": [
-          "상품"
-        ],
+        "tags": ["상품"],
         "summary": "상품 상세 조회 - 1차",
         "description": "상품 상세 정보를 조회한다.",
         "parameters": [
@@ -663,9 +645,7 @@
     },
     "/orders/": {
       "post": {
-        "tags": [
-          "구매"
-        ],
+        "tags": ["구매"],
         "summary": "상품 구매 - 1차",
         "description": "상품을 구매한다.",
         "responses": {
@@ -728,9 +708,7 @@
         }
       },
       "get": {
-        "tags": [
-          "구매"
-        ],
+        "tags": ["구매"],
         "summary": "구매 목록 조회 - 1차",
         "description": "구매 목록을 조회한다.",
         "responses": {
@@ -746,6 +724,24 @@
       }
     },
     "/orders/{_id}": {
+      "get": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
       "patch": {
         "description": "",
         "parameters": [
@@ -767,9 +763,7 @@
     },
     "/replies/": {
       "post": {
-        "tags": [
-          "구매 후기"
-        ],
+        "tags": ["구매 후기"],
         "summary": "구매 후기 등록 - 1차",
         "description": "구매 후기를 등록한다.",
         "responses": {
@@ -864,9 +858,7 @@
     },
     "/files/": {
       "post": {
-        "tags": [
-          "파일"
-        ],
+        "tags": ["파일"],
         "summary": "파일 업로드 - 1차",
         "description": "한번에 최대 10개 까지 파일을 업로드 합니다.<br>회원 가입시 프로필 이미지를 첨부하거나 상품의 이미지를 미리 업로드 한 후 응답 받은 파일 경로를 사용하면 업로드한 파일에 접근이 가능합니다.<br>파일 업로드 완료 후 파일명과 경로를 반환합니다.",
         "responses": {
@@ -943,10 +935,23 @@
             "schema": {
               "type": "string"
             }
-          },
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/files/download/{fileName}": {
+      "get": {
+        "description": "",
+        "parameters": [
           {
-            "name": "name",
-            "in": "query",
+            "name": "fileName",
+            "in": "path",
+            "required": true,
             "schema": {
               "type": "string"
             }
@@ -1133,9 +1138,7 @@
     },
     "/codes/": {
       "get": {
-        "tags": [
-          "코드"
-        ],
+        "tags": ["코드"],
         "summary": "코드 목록 조회 - 선택",
         "description": "코드 목록을 조회한다.",
         "responses": {
@@ -1164,9 +1167,7 @@
     },
     "/codes/{_id}": {
       "get": {
-        "tags": [
-          "코드"
-        ],
+        "tags": ["코드"],
         "summary": "코드 한건 조회 - 2차",
         "description": "코드 한건을 조회한다.",
         "parameters": [
@@ -1290,260 +1291,9 @@
         }
       }
     },
-    "/posts/": {
-      "get": {
-        "description": "",
-        "parameters": [
-          {
-            "name": "keyword",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "type",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      },
-      "post": {
-        "description": "",
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/posts/users/{_id}": {
-      "get": {
-        "description": "",
-        "parameters": [
-          {
-            "name": "_id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "keyword",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "type",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/posts/seller/{_id}": {
-      "get": {
-        "description": "",
-        "parameters": [
-          {
-            "name": "_id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "keyword",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "type",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/posts/{_id}": {
-      "get": {
-        "description": "",
-        "parameters": [
-          {
-            "name": "_id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      },
-      "patch": {
-        "description": "",
-        "parameters": [
-          {
-            "name": "_id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      },
-      "delete": {
-        "description": "",
-        "parameters": [
-          {
-            "name": "_id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/posts/{_id}/replies": {
-      "post": {
-        "description": "",
-        "parameters": [
-          {
-            "name": "_id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
-        "responses": {
-          "201": {
-            "description": "Created"
-          }
-        },
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "type": "object",
-                "properties": {
-                  "_id": {
-                    "example": "any"
-                  },
-                  "user": {
-                    "example": "any"
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/posts/{_id}/replies/{reply_id}": {
-      "patch": {
-        "description": "",
-        "parameters": [
-          {
-            "name": "_id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "reply_id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      },
-      "delete": {
-        "description": "",
-        "parameters": [
-          {
-            "name": "_id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "reply_id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
     "/seller/products/": {
       "get": {
-        "tags": [
-          "상품"
-        ],
+        "tags": ["상품"],
         "summary": "판매 상품 목록 조회 - 1차",
         "description": "자신의 판매 상품 목록을 조회한다.",
         "responses": {
@@ -1558,9 +1308,7 @@
         ]
       },
       "post": {
-        "tags": [
-          "상품"
-        ],
+        "tags": ["상품"],
         "summary": "상품 등록 - 1차",
         "description": "상품을 등록합니다.<br>상품 등록 후 상품 정보를 반환합니다.",
         "responses": {
@@ -1625,9 +1373,7 @@
     },
     "/seller/products/{_id}": {
       "get": {
-        "tags": [
-          "상품"
-        ],
+        "tags": ["상품"],
         "summary": "판매 상품 상세 조회 - 1차",
         "description": "자신의 판매 상품 정보를 조회한다.",
         "parameters": [
@@ -1671,9 +1417,7 @@
         ]
       },
       "patch": {
-        "tags": [
-          "상품"
-        ],
+        "tags": ["상품"],
         "summary": "상품 수정 - 1차",
         "description": "상품을 수정한다.",
         "parameters": [
@@ -1758,9 +1502,7 @@
         }
       },
       "delete": {
-        "tags": [
-          "상품"
-        ],
+        "tags": ["상품"],
         "summary": "상품 삭제 - 1차",
         "description": "상품을 삭제한다.",
         "parameters": [
@@ -1827,6 +1569,43 @@
     "/seller/orders/": {
       "get": {
         "description": "",
+        "parameters": [
+          {
+            "name": "state",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "custom",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "sort",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
         "responses": {
           "200": {
             "description": "OK"
@@ -1835,6 +1614,24 @@
       }
     },
     "/seller/orders/{_id}": {
+      "get": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
       "patch": {
         "description": "",
         "parameters": [
@@ -1870,9 +1667,7 @@
     },
     "/admin/codes/": {
       "post": {
-        "tags": [
-          "코드"
-        ],
+        "tags": ["코드"],
         "summary": "코드 등록 - 2차",
         "description": "코드를 등록합니다.<br>코드 등록을 완료한 후 코드 정보를 반환합니다.",
         "responses": {
@@ -1957,9 +1752,7 @@
     },
     "/admin/codes/{_id}": {
       "put": {
-        "tags": [
-          "코드"
-        ],
+        "tags": ["코드"],
         "summary": "코드 수정 - 2차",
         "description": "코드를 수정한다.",
         "parameters": [
@@ -2038,9 +1831,7 @@
         }
       },
       "delete": {
-        "tags": [
-          "코드"
-        ],
+        "tags": ["코드"],
         "summary": "코드 삭제 - 1차",
         "description": "코드를 삭제한다.",
         "parameters": [
@@ -2102,6 +1893,88 @@
             "Access Token": []
           }
         ]
+      }
+    },
+    "/admin/users/": {
+      "get": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "_id",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "email",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "name",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "phone",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "type",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "address",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "custom",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "sort",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
       }
     }
   },
@@ -2398,9 +2271,7 @@
           },
           "mainImages": {
             "type": "array",
-            "example": [
-              "/uploads/sample-janngu.jpg"
-            ],
+            "example": ["/uploads/sample-janngu.jpg"],
             "items": {
               "type": "string"
             }
@@ -2430,10 +2301,7 @@
               },
               "category": {
                 "type": "array",
-                "example": [
-                  "PC02",
-                  "PC0201"
-                ],
+                "example": ["PC02", "PC0201"],
                 "items": {
                   "type": "string"
                 }
@@ -2479,9 +2347,7 @@
           },
           "mainImages": {
             "type": "array",
-            "example": [
-              "/uploads/sample-jjangu.jpg"
-            ],
+            "example": ["/uploads/sample-jjangu.jpg"],
             "items": {
               "type": "string"
             }
@@ -2528,9 +2394,7 @@
               },
               "mainImages": {
                 "type": "array",
-                "example": [
-                  "/uploads/sample-janngu.jpg"
-                ],
+                "example": ["/uploads/sample-janngu.jpg"],
                 "items": {
                   "type": "string"
                 }
@@ -2560,10 +2424,7 @@
                   },
                   "category": {
                     "type": "array",
-                    "example": [
-                      "PC02",
-                      "PC0201"
-                    ],
+                    "example": ["PC02", "PC0201"],
                     "items": {
                       "type": "string"
                     }
@@ -2636,9 +2497,7 @@
                 },
                 "mainImages": {
                   "type": "array",
-                  "example": [
-                    "/uploads/sample-skibidi11.jpg"
-                  ],
+                  "example": ["/uploads/sample-skibidi11.jpg"],
                   "items": {
                     "type": "string"
                   }
@@ -2664,10 +2523,7 @@
                     },
                     "category": {
                       "type": "array",
-                      "example": [
-                        "PC01",
-                        "PC0103"
-                      ],
+                      "example": ["PC01", "PC0103"],
                       "items": {
                         "type": "string"
                       }
@@ -2731,9 +2587,7 @@
               },
               "mainImages": {
                 "type": "array",
-                "example": [
-                  "/uploads/sample-bugatti.png"
-                ],
+                "example": ["/uploads/sample-bugatti.png"],
                 "items": {
                   "type": "string"
                 }
@@ -2763,10 +2617,7 @@
                   },
                   "category": {
                     "type": "array",
-                    "example": [
-                      "PC03",
-                      "PC0303"
-                    ],
+                    "example": ["PC03", "PC0303"],
                     "items": {
                       "type": "string"
                     }
@@ -2849,9 +2700,7 @@
               },
               "mainImages": {
                 "type": "array",
-                "example": [
-                  "/uploads/sample-jjangu.jpg"
-                ],
+                "example": ["/uploads/sample-jjangu.jpg"],
                 "items": {
                   "type": "string"
                 }
@@ -3252,10 +3101,7 @@
             "example": "12345678"
           }
         },
-        "required": [
-          "email",
-          "password"
-        ]
+        "required": ["email", "password"]
       },
       "createUser": {
         "type": "object",
@@ -3274,10 +3120,7 @@
           },
           "type": {
             "type": "string",
-            "enum": [
-              "user",
-              "seller"
-            ],
+            "enum": ["user", "seller"],
             "description": "회원 구분(user: 일반 회원, seller: 판매 회원)"
           },
           "phone": {
@@ -3293,12 +3136,7 @@
             "description": "추가 속성들 정의"
           }
         },
-        "required": [
-          "email",
-          "password",
-          "name",
-          "type"
-        ]
+        "required": ["email", "password", "name", "type"]
       },
       "createCode": {
         "type": "object",
@@ -3316,11 +3154,7 @@
             "description": "코드값 배열"
           }
         },
-        "required": [
-          "_id",
-          "title",
-          "codes"
-        ]
+        "required": ["_id", "title", "codes"]
       }
     },
     "examples": {
@@ -3584,10 +3418,7 @@
           "extra": {
             "gender": "extra에는 프로젝트에서 필요한 아무 속성이나",
             "age": "필요한 값을",
-            "address": [
-              "넣으면",
-              "됩니다."
-            ],
+            "address": ["넣으면", "됩니다."],
             "profileImage": "/uploads/swagger.jpg",
             "obj": {
               "hello": "객체로",
@@ -3633,10 +3464,7 @@
             "extra": {
               "gender": "extra에는 프로젝트에서 필요한 아무 속성이나",
               "age": "필요한 값을",
-              "address": [
-                "넣으면",
-                "됩니다."
-              ],
+              "address": ["넣으면", "됩니다."],
               "profileImage": "/uploads/swagger.jpg",
               "obj": {
                 "hello": "객체로",
